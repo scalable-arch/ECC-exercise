@@ -9,7 +9,7 @@
 
 
 I would like to express our gratitude to the people at SAL (Scalable Architecture Lab). 
-I hope this will be a great aid in your studies on ECC (Error Correcting Code). 
+This will be a great aid in your studies on ECC (Error Correcting Code). 
 The methods were applied in the following papers [1-3] (the code can be found in the SAL repo), so we encourage you to read through the issues, study the papers, examine the experimental code, and consider constructing experimental methodologies based on them.
 
 # [1] [ACCESS'22] SEC-BADAEC: An Efficient ECC With No Vacancy for Strong Memory Protection.
