@@ -1,4 +1,4 @@
-# 03 [10, 6] Systematic code
+# [10, 6] Systematic code
 
 ## Author
 
