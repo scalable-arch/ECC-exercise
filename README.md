@@ -4,7 +4,6 @@
 
 **Dongwhee Kim** 
 
-- Github: [@your_github_handle](https://github.com/your_github_handle)
 - Email: xyz12347976@gmail.com
 
 
