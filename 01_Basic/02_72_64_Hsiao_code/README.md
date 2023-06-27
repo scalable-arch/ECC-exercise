@@ -1,4 +1,4 @@
-# ECC-exercise
+# [72, 64] SEC-DED code - Hsiao
 
 ## Author
 
