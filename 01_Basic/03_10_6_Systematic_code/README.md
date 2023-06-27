@@ -1,4 +1,4 @@
-# ECC-exercise
+# 03 [10, 6] Systematic code
 
 ## Author
 
