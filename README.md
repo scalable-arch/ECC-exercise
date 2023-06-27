@@ -1,4 +1,4 @@
-# 03
+# ECC-exercise
 
 ## Author
 
