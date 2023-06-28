@@ -1,6 +1,6 @@
 # [72, 64] SEC-DED code - Hsiao
 
-## Author
+# Author
 
 **Dongwhee Kim** 
 
