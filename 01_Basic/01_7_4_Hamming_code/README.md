@@ -1,6 +1,6 @@
 # [7, 4] Hamming code
 
-## Author
+# Author
 
 **Dongwhee Kim** 
 
