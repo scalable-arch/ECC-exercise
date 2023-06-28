@@ -38,7 +38,11 @@
 - SDC_cnt: 0
 
 If the result differs from these numbers, something is wrong. Please analyze the code!
+
+
 You've coded incorrectly if you can't correct all one million random 1 symbol errors!
+
+
 The answer code is in the Solution folder.
 
 # Hint
