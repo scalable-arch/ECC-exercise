@@ -19,7 +19,7 @@
 
 # Getting Started
 - $ python main.py
-- The example of execution can be found at 'ECC 1st homework.pdf'.
+- The example of execution can be found at **'ECC 1st homework.pdf'**.
 
 # Answer
 - CE_cnt : 1000
