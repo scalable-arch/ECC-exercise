@@ -1,5 +1,8 @@
 # [20, 16] RS (Reed-Solomon) code
 
+- Source code URL: http://www.eccpage.com/rs.c
+- This code has been modified for easy use.
+
 # Author
 
 **Dongwhee Kim** 
@@ -9,25 +12,26 @@
 # Objectives
 - Implement a [20, 16] RS code **[1]** over GF(256).
 - Understand the decoding method of RS code.
-- Implement the **Berlekamp-Massey Algorithm**.
-- Original source code URL (I modified): http://www.eccpage.com/rs.c
+- Implement the **Berlekamp-Massey Algorithm [2]**.
+- **The above method must be used for multi-symbol correction in RS codes**.
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/08_RS_code_Multi_Symbol_Correction_Berlekamp_Massey/RS%20code%20-%20DSC.png)
 
 # Code flows
 - 1. Codeword setting: all zero (no error)
-- 2. Error injection (1 symbol error)
+- 2. Error injection (1~tt symbol error)
 - 3. Correct all symbol errors in the codeword (based on 8-bit symbol)
 - 4. Return result_type_rs_code (classified into the following 3 types)
 >> 1. **NE**: If there is no error when checking the codeword
 >> 2. **CE**: If there is an error but it is correctable and the error has been corrected
->> 3. **DUE**: If there is an error but it is not correctable
-- 5. I recommend updating the **error_symbol_position** and **Syndrome** variables as well. These could be useful depending on the ECC (Error Correction Code) scheme being used **[2-4]**.
+>> 3. **DUE**: If there is an error but it is not correctable.
 
 # To do
-- Construct **decoding** function in RS_code.cpp
+- Construct **decode_rs()** function in RS_code.cpp
+- Input: recd (received codeword), data (information part), bb (redundancy part)
 - decoding function input: codeword - unsigned integer array
+- decoding function content: Correct all symbol errors within **tt (correction capability)** in the received codeword (based on 8-bit symbol)
 - decoding function output: result_type_rs_code (NE, CE, DUE)
 
 # Getting Started
@@ -41,27 +45,32 @@
 
 If the result differs from these numbers, something is wrong. Please analyze the code!
 
-You've coded incorrectly if you can't correct all one million random 1 symbol errors!
+You've coded incorrectly if you can't correct all one million random symbol errors!
 
 The answer code is in the Solution folder.
 
 # Hint
-- Correction capability: DSC (Double Symbol Correction)
-- Section 2 of **[5]**
+- Correction capability (tt): DSC (Double Symbol Correction)
 
 # Additional Information
 - CE: Correctable Error
 - DUE: Detectable but Uncorrectable Error
 - SDC: Silent-Data Corruption
-- In the codeword, an error is indicated by 1.
-- Example) codeword: 0010000....00 => error occurred at the 3rd bit.
-- This exercise only injects 1 symbol error.
-- Code configuration is set to match Chipkill-correct of DDR5 **[4]**. Each beat is configured as (32+8), and 2 beats are combined to form (64+16) using 8-bit symbols for RS-code.
+- This exercise only injects a **1 ~ tt** symbol error.
+- 
 
 # Reference
 - **[1]** Reed, Irving S., and Gustave Solomon. "Polynomial codes over certain finite fields." Journal of the society for industrial and applied mathematics 8.2 (1960): 300-304.
-- **[2]** https://www.amd.com/system/files/TechDocs/42301_15h_Mod_00h-0Fh_BKDG.pdf
-- **[3]** Song, Yuseok, et al. "SEC-BADAEC: An Efficient ECC With No Vacancy for Strong Memory Protection." IEEE Access 10 (2022): 89769-89780.
-- **[4]** Kim, Dongwhee, et al. "Unity ECC: Unified Memory Protection for Bit and Chip Errors." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2023.
-- **[5]** Pontarelli, Salvatore, et al. "Low delay single symbol error correction codes based on reed solomon codes." IEEE transactions on computers 64.5 (2014): 1497-1501.
+- **[2]** https://en.wikipedia.org/wiki/Berlekamp%E2%80%93Massey_algorithm
+
+
+
+
+
+Code Description
+In this case, error injection is done at more than one symbol (Errors occur within tt (correction capability)).
+The Code configuration is [20, 16] DSC (Double Symbol Correction), and GF(2^8). -> 8-bit symbol (In terms of bits, it's a (160, 128) code.)
+Correction capability: DSC (Double Symbol Correction)
+1~2 symbol errors occur a million times. Since tt=2, correction of up to 2 symbols is possible, so CE should be 100%.
+This is a systematic-code.
 
