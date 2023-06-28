@@ -20,6 +20,9 @@
 - Num of parity chips: 2
 - Chip capacity
 
+# Fault model [2] configuration
+- Code: FaultRateInfo.hh
+
 # To do
 - Fill in the **hsiao.cc**
 - You just need to fill in 2 parts labeled "Fill your code here!!"
