@@ -1,4 +1,4 @@
-# [10, 6] Systematic code
+# CRC (Cyclic Redundancy Check) code
 
 # Author
 
