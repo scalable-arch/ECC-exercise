@@ -1,4 +1,4 @@
-# [72, 64] SEC-DED code - Hsiao
+# [72, 64] Hsiao code
 
 # Author
 
