@@ -45,4 +45,4 @@ UCE: Un-Correctable Error
 - In the codeword, an error is indicated by 1.
 - Example) codeword: 0010000....00 => error occurred at the 3rd bit.
 - In this problem, only 1-bit and 2-bit errors occur (each in 1000 iterations). Hence, 100% error correction/detection must be achieved.
-- If UE_cnt>0, something is off, so try changing the H-Matrix!
+- If UE_cnt>0, something is wrong, so try changing the H-Matrix!
