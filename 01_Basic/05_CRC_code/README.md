@@ -3,7 +3,6 @@
 # Author
 
 **Taewon Park** 
-
 - Email: pdtowctor@gmail.com
 
 # Objectives
