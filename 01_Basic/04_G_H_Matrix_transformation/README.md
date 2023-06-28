@@ -1,4 +1,4 @@
-# [72, 64] SEC-DED code - Hsiao
+# G-Matrix <-> H-Matrix transform
 
 # Author
 
