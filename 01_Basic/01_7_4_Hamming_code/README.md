@@ -26,13 +26,13 @@
 
 If the result differs from the above, please modify the H_Matrix.txt accordingly.
 
-CE: Correctable Error
-UCE: Un-Correctable Error
-
 # Hint
 - Let's consider the conditions the H-Matrix must meet for 1-bit error correction.
+- Hamming SEC code URL: https://ieeexplore.ieee.org/abstract/document/6772729
 
 # Additional Information
+- CE: Correctable Error
+- UCE: Un-Correctable Error
 - In the codeword, an error is indicated by 1.
 - Example) codeword: 0010000 => error occurred at the 3rd bit
 - In this problem, only a 1-bit error occurs (in 1000 iterations).
