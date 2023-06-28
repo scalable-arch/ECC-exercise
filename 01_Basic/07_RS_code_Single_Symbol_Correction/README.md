@@ -24,7 +24,9 @@
 >> 3. **DUE**: If there is an error but it is not correctable
 
 # To do
-- Construct H-Matrix.txt
+- Construct **decoding** function in RS_code.cpp
+- decoding function input: codeword - integer array
+- decoding(codeword, &result_type_rs_code, &error_symbol_position, &Syndrome);
 
 # Getting Started
 - $ g++ RS_code.cpp
