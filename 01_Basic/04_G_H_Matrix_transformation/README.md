@@ -8,10 +8,10 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Writing a (72,64) Hsiao SEC-DED (Single-Error Correction) code
-- Design an H-Matrix (Parity Check Matrix) with the corresponding correction capability
-- Design a hardware-friendly H-Matrix
-- Design a Systematic code. (Advantage: Simplicity, Efficiency)
+- Understand the transformation process from H-Matrix to G-Matrix.
+- Both systematic and non-systematic code.
+- H-Matrix.txt as input and generates the corresponding G-Matrix.txt
+
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
@@ -20,12 +20,10 @@
 - Construct H-Matrix.txt
 
 # Getting Started
-- $ python Hsiao_SEC_DED.py
+- $ python Matrix_transformation.py
 
 # Answer
-- CE_cnt : 1000
-- DUE_cnt : 1000
-- UCE_cnt: 0
+- Solution folder
 
 If the results differ from the above, please modify the H_Matrix.txt.
 
