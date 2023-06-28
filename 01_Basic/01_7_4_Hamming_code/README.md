@@ -9,7 +9,7 @@
 
 # Objective
 - Construct (7,4) Hamming SEC (Single-Error Correction) code 
-- Designing the H-Matrix (Parity Check Matrix) with the corresponding correction capability
+- Design the H-Matrix (Parity Check Matrix) with the corresponding correction capability
 
 # To do
 - Construct H-Matrix.txt
