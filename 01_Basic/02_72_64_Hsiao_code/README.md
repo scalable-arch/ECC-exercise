@@ -29,10 +29,6 @@
 
 If the results differ from the above, please modify the H_Matrix.txt.
 
-- CE: Correctable Error
-- DUE: Detectable but Uncorrectable Error
-- UCE: Un-Correctable Error
-
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
 - Also, because Hsiao code is hardware friendly, let's consider ways to minimize the depth of the 'xor' tree.
@@ -42,6 +38,9 @@ If the results differ from the above, please modify the H_Matrix.txt.
 - Hsiao SEC-DED code URL: https://people.eecs.berkeley.edu/~culler/cs252-s02/papers/hsiao70.pdf
 
 # Additional Information
+- CE: Correctable Error
+- DUE: Detectable but Uncorrectable Error
+- UCE: Un-Correctable Error
 - In the codeword, an error is indicated by 1.
 - Example) codeword: 0010000....00 => error occurred at the 3rd bit.
 - In this problem, only 1-bit and 2-bit errors occur (each in 1000 iterations). Hence, 100% error correction/detection must be achieved.
