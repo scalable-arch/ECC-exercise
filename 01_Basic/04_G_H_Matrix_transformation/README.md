@@ -10,15 +10,14 @@
 # Objectives
 - Understand the transformation process from H-Matrix to G-Matrix.
 - Both systematic and non-systematic code.
-- H-Matrix.txt as input and generates the corresponding G-Matrix.txt
+- Construct a G-matrix corresponding to the H-Matrix.
 - I recommend outputting the entire process of H to G-Matrix conversion.
-
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
 
 # To do
-- Fill the Matrix_transformation.py code
+- Fill in the Matrix_transformation.py code
 
 # Getting Started
 - $ python Matrix_transformation.py
@@ -27,6 +26,9 @@
 - Answer folder
 
 # Hint
+- Function input: H-Matrix.txt
+- Function output: G-Matrix.txt
+- 
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
 - Also, because Hsiao code is hardware friendly, let's consider ways to minimize the depth of the 'xor' tree.
 - While it is possible to implement SEC-DED with Hamming code, the goal is to understand hardware-friendly H-Matrix by implementing it with Hsiao code.
