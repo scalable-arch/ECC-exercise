@@ -34,7 +34,7 @@ DUE: Detectable but Uncorrectable Error
 UCE: Un-Correctable Error
 
 # Hint
-- Let's consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
+- Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
 - Also, because Hsiao code is hardware friendly, let's consider ways to minimize the depth of the 'xor' tree.
 - While it is possible to implement SEC-DED with Hamming code, the goal is to understand hardware-friendly H-Matrix by implementing it with Hsiao code.
 - ECC essentially begins with the design of the H-Matrix.
