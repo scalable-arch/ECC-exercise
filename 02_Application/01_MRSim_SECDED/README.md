@@ -8,8 +8,7 @@
 
 # Objectives
 - Implement **Rank-Level ECC (RL-ECC)** of DDR4 ECC-DIMM
-- 
-- Understand the construction of the fault model **[3]**
+- Understand the method of constructing fault model **[2]**
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model.png)
@@ -115,6 +114,21 @@ SDC
 0.00060000000
 
 If the results differ from the above, your code might be wrong.
+
+- How to Check the Answer: The result of the 010.4x18.SECDED.0.S file should be as follows!!!
+- Retire, DUE and SDC are the probabilities of Retire, DUE and SDC occurring when run 100 times and 10000 times, respectively. (0~1)
+- The probability of Retire, DUE, SDC occurring each year -> cumulative.
+- Ex)
+
+0.01230000000 -> After 1 year
+  
+0.02430000000 -> After 2 years
+
+0.03520000000 -> After 3 years
+
+0.04880000000 -> After 4 years
+
+0.06110000000 -> After 5 years
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
