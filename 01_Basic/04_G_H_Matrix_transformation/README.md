@@ -18,7 +18,7 @@
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
 
 # To do
-- Construct H-Matrix.txt
+- Fill the Matrix_transformation.py code
 
 # Getting Started
 - $ python Matrix_transformation.py
