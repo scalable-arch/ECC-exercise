@@ -41,3 +41,7 @@
 - Example) codeword: 0010000....00 => error occurred at the 3rd bit.
 - In this problem, only 1-bit and 2-bit errors occur (each in 1000 iterations). Hence, 100% error correction/detection must be achieved.
 - If UE_cnt>0, something is wrong, so try changing the H-Matrix!
+
+# Reference
+- https://www.di-mgt.com.au/cgi-bin/matrix_stdform.cgi
+- [HILL86] Raymond Hill, A First Course In Coding Theory, OUP, 1986
