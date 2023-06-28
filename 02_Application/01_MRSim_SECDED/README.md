@@ -116,9 +116,8 @@ SDC
 
 If the results differ from the above, your code might be wrong.
 
-- How to Check the Answer: The result of the 010.4x18.SECDED.0.S file should be as follows!!!
-- Retire, DUE and SDC are the probabilities of Retire, DUE and SDC occurring when run 100 times and 10000 times, respectively. (0~1)
-- The probability of Retire, DUE, SDC occurring each year -> cumulative.
+- Retire, DUE and SDC are the probabilities of Retire, DUE, and SDC occurring when run 100 times and 10000 times, respectively. (0~1)
+- The Retire, DUE, SDC probability occurring each year -> **cumulative**.
 - Ex)
 
 0.01230000000 -> After 1 year
