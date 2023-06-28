@@ -13,7 +13,7 @@
 - Implement a [20, 16] systematic shortened RS code **[1]** over GF(256).
 - Understand the decoding method of RS code.
 - Implement the **Berlekamp-Massey Algorithm [2]**.
-- **The above method must be used for multi-symbol correction in RS codes**.
+- **The above method must be used for multi-symbol correction in RS codes [3-4]**.
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/08_RS_code_Multi_Symbol_Correction_Berlekamp_Massey/RS%20code%20-%20DSC.png)
@@ -61,7 +61,8 @@ The answer code is in the Solution folder.
 # Reference
 - **[1]** Reed, Irving S., and Gustave Solomon. "Polynomial codes over certain finite fields." Journal of the society for industrial and applied mathematics 8.2 (1960): 300-304.
 - **[2]** https://en.wikipedia.org/wiki/Berlekamp%E2%80%93Massey_algorithm
-
+- **[3]** Kim, Jungrae, Michael Sullivan, and Mattan Erez. "Bamboo ECC: Strong, safe, and flexible codes for reliable computer memory." 2015 IEEE 21st International Symposium on High Performance Computer Architecture (HPCA). IEEE, 2015.
+- **[4]** Gong, Seong-Lyong, et al. "Duo: Exposing on-chip redundancy to rank-level ecc for high reliability." 2018 IEEE International Symposium on High Performance Computer Architecture (HPCA). IEEE, 2018.
 
 
 
