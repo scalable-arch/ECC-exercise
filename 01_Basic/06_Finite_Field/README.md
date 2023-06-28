@@ -22,7 +22,7 @@
 
 # Getting Started
 - $ python main.py
-- The example of execution can be found at **'ECC 3rd homework.pdf'**.
+- The example of execution can be found at **ECC 3rd homework.pdf**.
 
 # Answer
 - Please refer to **ECC 3rd homework.pdf**.
@@ -30,6 +30,9 @@
 If the results differ from the above, please modify the finitefield.py
 
 # Hint
-- Modular-2 opeartion.
-- Galois Field example URL: https://asecuritysite.com/principles/gf
-- Finite Field URL: https://mathworld.wolfram.com/FiniteField.html
+- Modular-2 operation
+- **[1-2]**
+
+# References
+- **[1]** https://asecuritysite.com/principles/gf
+- **[2]** https://mathworld.wolfram.com/FiniteField.html
