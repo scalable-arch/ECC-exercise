@@ -23,7 +23,7 @@
 - Num of DQ: 4 (x4 chip)
 
 # ECC configuration
-- RL-ECC of this exercise: (72,64) Hsiao SEC-DED code **[1]**
+- RL-ECC: (72,64) Hsiao SEC-DED code **[1]**
 
 # Fault model configuration (FaultRateInfo.hh)
 - **[3]** DDR2 Jaguar system
