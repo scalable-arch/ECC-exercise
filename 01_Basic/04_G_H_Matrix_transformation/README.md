@@ -1,4 +1,4 @@
-# G-Matrix <-> H-Matrix transform
+# Transformation from H-Matrix to G-Matrix
 
 # Author
 
