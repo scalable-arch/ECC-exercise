@@ -23,9 +23,7 @@
 - $ python Matrix_transformation.py
 
 # Answer
-- Solution folder
-
-If the results differ from the above, please modify the H_Matrix.txt.
+- Answer folder
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
