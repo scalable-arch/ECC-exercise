@@ -8,7 +8,7 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Writing a (72,64) Hsiao SEC-DED (Single-Error Correction) code
+- Writing a (72,64) Hsiao SEC-DED (Single-Error Correction) code **[1]**
 - Design an H-Matrix (Parity Check Matrix) with the corresponding correction capability
 - Design a hardware-friendly H-Matrix
 - Design a Systematic code. (Advantage: Simplicity, Efficiency)
@@ -35,7 +35,6 @@ If the results differ from the above, please modify the H_Matrix.txt.
 - While it is possible to implement SEC-DED with Hamming code, the goal is to understand hardware-friendly H-Matrix by implementing it with Hsiao code.
 - ECC essentially begins with the design of the H-Matrix.
 - Once you construct the H-Matrix, you can derive the corresponding G-Matrix (Generator Matrix).
-- Hsiao SEC-DED code URL: https://people.eecs.berkeley.edu/~culler/cs252-s02/papers/hsiao70.pdf
 
 # Additional Information
 - CE: Correctable Error
@@ -45,3 +44,6 @@ If the results differ from the above, please modify the H_Matrix.txt.
 - Example) codeword: 0010000....00 => error occurred at the 3rd bit.
 - In this problem, only 1-bit and 2-bit errors occur (each in 1000 iterations). Hence, 100% error correction/detection must be achieved.
 - If UE_cnt>0, something is wrong, so try changing the H-Matrix!
+
+# References
+- **[1]** Hsiao, Mu-Yue. "A class of optimal minimum odd-weight-column SEC-DED codes." IBM Journal of Research and Development 14.4 (1970): 395-401.
