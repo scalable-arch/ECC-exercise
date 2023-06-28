@@ -14,7 +14,6 @@
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/01_7_4_Hamming_code/%5B7%2C%204%5D%20Hamming%20code.png)
 
-
 # To do
 - Construct H-Matrix.txt
 
