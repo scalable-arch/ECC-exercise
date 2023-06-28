@@ -29,9 +29,9 @@
 
 If the results differ from the above, please modify the H_Matrix.txt.
 
-CE: Correctable Error
-DUE: Detectable but Uncorrectable Error
-UCE: Un-Correctable Error
+- CE: Correctable Error
+- DUE: Detectable but Uncorrectable Error
+- UCE: Un-Correctable Error
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
