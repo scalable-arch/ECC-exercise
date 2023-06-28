@@ -1,17 +1,13 @@
-# [72, 64] SEC-DED code - Hsiao
+# [10, 8] RS (Reed-Solomon) code
 
 # Author
 
 **Dongwhee Kim** 
-
 - Email: xyz12347976@gmail.com
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Writing a (72,64) Hsiao SEC-DED (Single-Error Correction) code
-- Design an H-Matrix (Parity Check Matrix) with the corresponding correction capability
-- Design a hardware-friendly H-Matrix
-- Design a Systematic code. (Advantage: Simplicity, Efficiency)
+- Implement a [10, 8] RS code over GF(256)
 - I recommend updating the error_symbol_position and Syndrome as well.
 - These could be useful depending on the ECC (Error Correction Code) scheme being used **[1-3]**.
 
@@ -19,8 +15,10 @@
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
 
 # Code flows
-- 1. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
-- 2. Update result_type_rs_code (classified into the following 3 types)
+- 1. Codeword setting: all zero (no error)
+- 2. Error injection (1 symbol error)
+- 3. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
+- 4. Update result_type_rs_code (classified into the following 3 types)
 >> 1. **NE**: If there is no error when checking the codeword
 >> 2. **CE**: If there is an error but it is correctable and the error has been corrected
 >> 3. **DUE**: If there is an error but it is not correctable
@@ -44,6 +42,7 @@ You've coded incorrectly if you can't correct all one million random 1 symbol er
 The answer code is in the Solution folder.
 
 # Hint
+- d
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
 - Also, because Hsiao code is hardware friendly, let's consider ways to minimize the depth of the 'xor' tree.
 - While it is possible to implement SEC-DED with Hamming code, the goal is to understand hardware-friendly H-Matrix by implementing it with Hsiao code.
