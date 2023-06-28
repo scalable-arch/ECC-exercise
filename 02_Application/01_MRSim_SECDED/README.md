@@ -2,7 +2,7 @@
 
 # Author
 
-**Jungrae Kim** 
+**Prof. Jungrae Kim** 
 - Email: dale40@gmail.com
 - Google Scholar: https://scholar.google.com/citations?user=Jbpv5q0AAAAJ&hl=ko&oi=ao
 
