@@ -16,18 +16,28 @@
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
 
+# Code flows
+- 1. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
+- 2. Update result_type_rs_code (classified into the following 3 types)
+  > 2-1. **NE**: If there is no error when checking the codeword
+  > 2-2. **CE**: If there is an error but it is correctable and the error has been corrected
+  > 2-3. **DUE**: If there is an error but it is not correctable
+
 # To do
 - Construct H-Matrix.txt
 
 # Getting Started
-- $ python Hsiao_SEC_DED.py
+- $ g++ RS_code.cpp
+- $ ./a.out
 
 # Answer
-- CE_cnt : 1000
-- DUE_cnt : 1000
-- UCE_cnt: 0
+- CE_cnt: 1,000,000
+- DUE_cnt: 0
+- SDC_cnt: 0
 
-If the results differ from the above, please modify the H_Matrix.txt.
+If the result differs from these numbers, something is wrong. Please analyze the code!
+You've coded incorrectly if you can't correct all one million random 1 symbol errors!
+The answer code is in the Solution folder.
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
@@ -45,3 +55,20 @@ If the results differ from the above, please modify the H_Matrix.txt.
 - Example) codeword: 0010000....00 => error occurred at the 3rd bit.
 - In this problem, only 1-bit and 2-bit errors occur (each in 1000 iterations). Hence, 100% error correction/detection must be achieved.
 - If UE_cnt>0, something is wrong, so try changing the H-Matrix!
+
+
+
+
+
+
+Code Description
+This case only injects 1 symbol error.
+Code configuration is set to match AMDCHIPKILL of DDR5. Each beat is configured as (32+8), and 2 beats are combined to form (64+16) using 8-bit symbols for RS-code.
+Correction capability: SSC (Single Symbol Correction)
+
+What needs to be done!!
+****** Implementation of decoding function ******
+
+Input: codeword
+
+Function Content: Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
