@@ -39,7 +39,7 @@ UCE: Un-Correctable Error
 - While it is possible to implement SEC-DED with Hamming code, the goal is to understand hardware-friendly H-Matrix by implementing it with Hsiao code.
 - ECC essentially begins with the design of the H-Matrix.
 - Once you construct the H-Matrix, you can derive the corresponding G-Matrix (Generator Matrix).
-- Hsiao code URL: https://people.eecs.berkeley.edu/~culler/cs252-s02/papers/hsiao70.pdf
+- Hsiao SEC-DED code URL: https://people.eecs.berkeley.edu/~culler/cs252-s02/papers/hsiao70.pdf
 
 # Additional Information
 - In the codeword, an error is indicated by 1.
