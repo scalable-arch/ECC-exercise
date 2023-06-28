@@ -16,9 +16,11 @@
 
 # DIMM configuration
 - DDR4 ECC-DIMM
+- Num of rank: 2
 - Num of data chips: 16
 - Num of parity chips: 2
-- Chip capacity
+- Chip capacity: 8Gb
+- Num of DQ: 4 (x4 chip)
 
 # Fault model [2] configuration
 - Code: FaultRateInfo.hh
