@@ -1,4 +1,4 @@
-# [72, 64] SEC-DED code - Hsiao
+# DDR5 On-Die ECC & Rank-Level ECC
 
 # Author
 
