@@ -10,7 +10,7 @@
 - Check the error detection capability of CRC.
 
 # Overview
-![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/03_10_6_Systematic_code/%5B10%2C%206%5D%20Systematic%20code.PNG)
+![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/05_CRC_code/CRC%20code.png)
 
 # To do
 - Fill in the crc.py
