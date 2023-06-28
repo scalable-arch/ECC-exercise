@@ -13,7 +13,7 @@
 - Design a hardware-friendly H-Matrix
 - Design a Systematic code. (Advantage: Simplicity, Efficiency)
 - I recommend updating the error_symbol_position and Syndrome as well.
-- These could be useful depending on the ECC (Error Correction Code) scheme being used **[1]**.
+- These could be useful depending on the ECC (Error Correction Code) scheme being used **[1-3]**.
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
@@ -54,17 +54,14 @@ The answer code is in the Solution folder.
 # Additional Information
 - CE: Correctable Error
 - DUE: Detectable but Uncorrectable Error
-- UCE: Un-Correctable Error
+- SDC: Silent-Data Corruption
 - In the codeword, an error is indicated by 1.
 - Example) codeword: 0010000....00 => error occurred at the 3rd bit.
-- In this problem, only 1-bit and 2-bit errors occur (each in 1000 iterations). Hence, 100% error correction/detection must be achieved.
-- If UE_cnt>0, something is wrong, so try changing the H-Matrix!
 
 # Reference
 - **[1]** https://www.amd.com/system/files/TechDocs/42301_15h_Mod_00h-0Fh_BKDG.pdf
-- 
-
-
+- **[2]** Song, Yuseok, et al. "SEC-BADAEC: An Efficient ECC With No Vacancy for Strong Memory Protection." IEEE Access 10 (2022): 89769-89780.
+- **[3]** Kim, Dongwhee, et al. "Unity ECC: Unified Memory Protection for Bit and Chip Errors." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2023.
 
 
 Code Description
