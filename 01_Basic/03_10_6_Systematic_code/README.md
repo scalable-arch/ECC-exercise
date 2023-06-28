@@ -30,4 +30,9 @@ If the results differ from the above, please modify the code.py.
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit aligned double adjacent error correction.
-- Modify from the [10, 6] shortened Hamming code.
+- Modify from the [10, 6] shortened Hamming code **[1]**.
+- Understand the code construction flow of **[2]**.
+
+# References
+- **[1]** Hamming, Richard W. "Error detecting and error correcting codes." The Bell system technical journal 29.2 (1950): 147-160.
+- **[2]** Dutta, Avijit, and Nur A. Touba. "Multiple bit upset tolerant memory using a selective cycle avoidance based SEC-DED-DAEC code." 25th IEEE VLSI Test Symposium (VTS'07). IEEE, 2007.
