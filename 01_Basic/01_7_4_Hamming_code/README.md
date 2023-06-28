@@ -1,4 +1,4 @@
-# ECC-exercise
+# [7, 4] Hamming code
 
 ## Author
 
