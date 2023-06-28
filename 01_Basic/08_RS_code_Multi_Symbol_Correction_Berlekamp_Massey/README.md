@@ -10,7 +10,7 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Implement a [20, 16] RS code **[1]** over GF(256).
+- Implement a [20, 16] systematic RS code **[1]** over GF(256).
 - Understand the decoding method of RS code.
 - Implement the **Berlekamp-Massey Algorithm [2]**.
 - **The above method must be used for multi-symbol correction in RS codes**.
@@ -57,7 +57,6 @@ The answer code is in the Solution folder.
 - DUE: Detectable but Uncorrectable Error
 - SDC: Silent-Data Corruption
 - This exercise only injects a **1 ~ tt** symbol error.
-- 
 
 # Reference
 - **[1]** Reed, Irving S., and Gustave Solomon. "Polynomial codes over certain finite fields." Journal of the society for industrial and applied mathematics 8.2 (1960): 300-304.
@@ -65,12 +64,4 @@ The answer code is in the Solution folder.
 
 
 
-
-
-Code Description
-In this case, error injection is done at more than one symbol (Errors occur within tt (correction capability)).
-The Code configuration is [20, 16] DSC (Double Symbol Correction), and GF(2^8). -> 8-bit symbol (In terms of bits, it's a (160, 128) code.)
-Correction capability: DSC (Double Symbol Correction)
-1~2 symbol errors occur a million times. Since tt=2, correction of up to 2 symbols is possible, so CE should be 100%.
-This is a systematic-code.
 
