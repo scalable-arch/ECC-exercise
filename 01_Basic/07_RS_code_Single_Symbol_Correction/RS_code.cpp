@@ -196,6 +196,7 @@ int main(int argc, char* argv[])
 
     // 2. H_Matrix 설정
     // RECC H-Matrix 설정 (GF(2^8) [10,8] Single Symbol Correction Reed-Solomon code)
+    // H_Matrix_RECC는 사용하지 않아도 무방합니다.
     /*
         RECC H-Matrix는 아래와 같은 모양이다.
         primitive polynomial : 𝑥^8+ 𝑥^4+ 𝑥^3+ 𝑥^2+ 1
