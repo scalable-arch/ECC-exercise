@@ -25,10 +25,10 @@
 - The example of execution can be found at **'ECC 3rd homework.pdf'**.
 
 # Answer
-- Please refer to ECC 3rd homework.pdf
+- Please refer to **ECC 3rd homework.pdf**.
 
 If the results differ from the above, please modify the finitefield.py
 
 # Hint
-- Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit aligned double adjacent error correction.
-- Modify from the [10, 6] shortened Hamming code.
+- Modular-2 opeartion.
+- Galois Field example URL: https://asecuritysite.com/principles/gf
