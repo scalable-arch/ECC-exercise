@@ -1,12 +1,3 @@
-/*
-** 체크해야 할 것
- (1) conservative : BL32 묶음 내에서 error가 다른 chip에서 나오는가 (1-bit error는 내부 OECC에서 고쳐서 나온다.)
-   => on/off 가능하도록 만들기 [일단 끄고 하자.]
- (2) 
-
-*/
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
