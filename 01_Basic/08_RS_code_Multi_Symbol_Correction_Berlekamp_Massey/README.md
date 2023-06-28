@@ -9,6 +9,8 @@
 # Objectives
 - Implement a [20, 16] RS code **[1]** over GF(256).
 - Understand the decoding method of RS code.
+- Implement the Berlekamp-Massey Algorithm.
+- Original source code URL (I modified): http://www.eccpage.com/rs.c
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/07_RS_code_Single_Symbol_Correction/RS%20code%20-%20SSC.png)
