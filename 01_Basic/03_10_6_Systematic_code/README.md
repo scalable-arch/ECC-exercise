@@ -30,7 +30,7 @@ If the results differ from the above, please modify the code.py.
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit aligned double adjacent error correction.
-- All columns of H-Matrix should be unique.
+- All columns of the H-Matrix should be non-zero and unique.
 - Modify from the [10, 6] shortened Hamming code **[1]**.
 - Understand the code construction method of **[2]**.
 
