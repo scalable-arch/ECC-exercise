@@ -19,9 +19,9 @@
 # Code flows
 - 1. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
 - 2. Update result_type_rs_code (classified into the following 3 types)
-- **NE**: If there is no error when checking the codeword
-- **CE**: If there is an error but it is correctable and the error has been corrected
-- **DUE**: If there is an error but it is not correctable
+>> **NE**: If there is no error when checking the codeword
+>> **CE**: If there is an error but it is correctable and the error has been corrected
+>> **DUE**: If there is an error but it is not correctable
 
 # To do
 - Construct H-Matrix.txt
