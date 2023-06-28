@@ -13,7 +13,7 @@
 - Original source code URL (I modified): http://www.eccpage.com/rs.c
 
 # Overview
-![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/07_RS_code_Single_Symbol_Correction/RS%20code%20-%20SSC.png)
+![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/08_RS_code_Multi_Symbol_Correction_Berlekamp_Massey/RS%20code%20-%20DSC.png)
 
 # Code flows
 - 1. Codeword setting: all zero (no error)
