@@ -6,7 +6,7 @@
 - Email: pdtowctor@gmail.com
 
 # Objectives
-- Check the error detection capability of CRC.
+- Check the error detection capability of CRC code **[1]**.
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/05_CRC_code/CRC%20code.png)
@@ -33,4 +33,6 @@ If the results differ from the above, please modify the crc.py
 
 # Hint
 - Modular-2 operation
-- CRC code URL: https://ieeexplore.ieee.org/abstract/document/4066263
+
+# References
+- **[1]** Peterson, William Wesley, and Daniel T. Brown. "Cyclic codes for error detection." Proceedings of the IRE 49.1 (1961): 228-235.
