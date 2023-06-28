@@ -12,6 +12,8 @@
 - Design an H-Matrix (Parity Check Matrix) with the corresponding correction capability
 - Design a hardware-friendly H-Matrix
 - Design a Systematic code. (Advantage: Simplicity, Efficiency)
+- I recommend 
+- decoding(codeword, &result_type_rs_code, &error_symbol_position, &Syndrome);
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
@@ -25,8 +27,8 @@
 
 # To do
 - Construct **decoding** function in RS_code.cpp
-- decoding function input: codeword - integer array
-- decoding(codeword, &result_type_rs_code, &error_symbol_position, &Syndrome);
+- decoding function input: codeword - unsigned integer array
+- decoding function output: result_type_rs_code (NE, CE, DUE)
 
 # Getting Started
 - $ g++ RS_code.cpp
