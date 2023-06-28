@@ -8,7 +8,7 @@
 
 # Objectives
 - Implement **Rank-Level ECC (RL-ECC)** of DDR4 ECC-DIMM
-- Understand the method of constructing fault model **[2]**
+- Understand the method of constructing fault model simulation **[2]**
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model.png)
