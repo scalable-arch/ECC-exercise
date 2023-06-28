@@ -18,7 +18,7 @@
 - Construct H-Matrix.txt
 
 # Getting Started
-- python Hamming_SEC.py
+- $ python Hamming_SEC.py
 
 # Answer
 - CE_cnt : 1000
