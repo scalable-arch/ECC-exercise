@@ -8,29 +8,23 @@
 
 # Objectives
 - Implement (10, 6) SEC-DADAEC (Single Error Correcting-Double bit Aligned Double Adjacent Error Correcting) code
-- Designing an H-Matrix (Parity Check Matrix) with the corresponding correction capability
-- Let's aim to design a Systematic code. (Advantage: Simplicity, Efficiency)
+- Design an H-Matrix (Parity Check Matrix) with the corresponding correction capability
+- Design a Systematic code. (Advantage: Simplicity, Efficiency)
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/03_10_6_Systematic_code/%5B10%2C%206%5D%20Systematic%20code.PNG)
 
 # To do
-- Construct H-Matrix.txt
+- Fill the code.py
 
 # Getting Started
 - $ python main.py
 - The example of execution can be found at **'ECC 1st homework.pdf'**.
 
 # Answer
-- CE_cnt : 1000
-- DUE_cnt : 1000
-- UCE_cnt: 0
+- Your code passes all the test cases!!
 
-If the results differ from the above, please modify the H_Matrix.txt.
-
-CE: Correctable Error
-DUE: Detectable but Uncorrectable Error
-UCE: Un-Correctable Error
+If the results differ from the above, please modify the code.py.
 
 # Hint
 - Let's consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
