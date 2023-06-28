@@ -7,8 +7,7 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Understand the transformation process from H-Matrix to G-Matrix.
-- Both systematic and non-systematic code.
+- Understand the transformation process from H-Matrix to G-Matrix for both systematic and non-systematic code.
 - Construct a G-matrix corresponding to the H-Matrix.
 - I recommend outputting the entire process of H to G-Matrix conversion.
 
