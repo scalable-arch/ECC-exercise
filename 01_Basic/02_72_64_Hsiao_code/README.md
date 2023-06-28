@@ -9,9 +9,9 @@
 
 # Objectives
 - Writing a (72,64) Hsiao SEC-DED (Single-Error Correction) code
-- Designing an H-Matrix (Parity Check Matrix) with the corresponding correction capability
-- Designing a hardware-friendly H-Matrix
-- Let's aim to design a Systematic code. (Advantage: Simplicity, Efficiency)
+- Design an H-Matrix (Parity Check Matrix) with the corresponding correction capability
+- Design a hardware-friendly H-Matrix
+- Design a Systematic code. (Advantage: Simplicity, Efficiency)
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
