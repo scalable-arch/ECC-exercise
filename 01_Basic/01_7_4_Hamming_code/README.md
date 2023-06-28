@@ -39,6 +39,5 @@ UCE: Un-Correctable Error
 - Example) codeword: 0010000 => error occurred at the 3rd bit
 - In this problem, only a 1-bit error occurs (in 1000 iterations).
 - Hence, 100% error correction must be achieved. (If UCE_cnt>0, something is off, so try changing the H-Matrix!)
-
-# ECC essentially begins with the design of the H-Matrix.
-# Once you construct the H-Matrix, you can derive the corresponding G-Matrix (Generator Matrix)
+- ECC essentially begins with the design of the H-Matrix.
+- Once you construct the H-Matrix, you can derive the corresponding G-Matrix (Generator Matrix)
