@@ -52,7 +52,7 @@ The answer code is in the Solution folder.
 - In the codeword, an error is indicated by 1.
 - Example) codeword: 0010000....00 => error occurred at the 3rd bit.
 - This exercise only injects 1 symbol error.
-- Code configuration is set to match AMDCHIPKILL of DDR5. Each beat is configured as (32+8), and 2 beats are combined to form (64+16) using 8-bit symbols for RS-code.
+- Code configuration is set to match Chipkill-correct of DDR5 **[4]**. Each beat is configured as (32+8), and 2 beats are combined to form (64+16) using 8-bit symbols for RS-code.
 
 # Reference
 - **[1]** Reed, Irving S., and Gustave Solomon. "Polynomial codes over certain finite fields." Journal of the society for industrial and applied mathematics 8.2 (1960): 300-304.
