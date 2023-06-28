@@ -12,7 +12,9 @@
 - Design the H-Matrix (Parity Check Matrix) with the corresponding correction capability
 
 # Overview
-![image](01_Basic/01_7_4_Hamming_code/[7, 4] Hamming code.png)
+<p align="center">
+  <img src="이미지URL">
+</p>
 
 # To do
 - Construct H-Matrix.txt
