@@ -7,9 +7,7 @@
 - Email: pdtowctor@gmail.com
 
 # Objectives
-- Implement (10, 6) SEC-DADAEC (Single Error Correcting-Double bit Aligned Double Adjacent Error Correcting) code
-- Design an encode and decode the function of the SEC-DADAEC code
-- Design a Systematic code. (Advantage: Simplicity, Efficiency)
+- Implement the FiniteField class
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/03_10_6_Systematic_code/%5B10%2C%206%5D%20Systematic%20code.PNG)
