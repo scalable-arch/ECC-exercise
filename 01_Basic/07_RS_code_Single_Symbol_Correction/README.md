@@ -7,9 +7,8 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Implement a [10, 8] RS code over GF(256)
-- I recommend updating the error_symbol_position and Syndrome as well.
-- These could be useful depending on the ECC (Error Correction Code) scheme being used **[1-3]**.
+- Implement a [10, 8] RS code **[1]** over GF(256).
+- Understand the decoding method of RS code.
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/07_RS_code_Single_Symbol_Correction/RS%20code%20-%20SSC.png)
@@ -22,6 +21,7 @@
 >> 1. **NE**: If there is no error when checking the codeword
 >> 2. **CE**: If there is an error but it is correctable and the error has been corrected
 >> 3. **DUE**: If there is an error but it is not correctable
+- 5. I recommend updating the **error_symbol_position** and **Syndrome** variables as well. These could be useful depending on the ECC (Error Correction Code) scheme being used **[2-4]**.
 
 # To do
 - Construct **decoding** function in RS_code.cpp
@@ -43,7 +43,7 @@ The answer code is in the Solution folder.
 
 # Hint
 - Correction capability: SSC (Single Symbol Correction)
-- Section 2 of **[4]**
+- Section 2 of **[5]**
 
 # Additional Information
 - CE: Correctable Error
@@ -55,8 +55,9 @@ The answer code is in the Solution folder.
 - Code configuration is set to match AMDCHIPKILL of DDR5. Each beat is configured as (32+8), and 2 beats are combined to form (64+16) using 8-bit symbols for RS-code.
 
 # Reference
-- **[1]** https://www.amd.com/system/files/TechDocs/42301_15h_Mod_00h-0Fh_BKDG.pdf
-- **[2]** Song, Yuseok, et al. "SEC-BADAEC: An Efficient ECC With No Vacancy for Strong Memory Protection." IEEE Access 10 (2022): 89769-89780.
-- **[3]** Kim, Dongwhee, et al. "Unity ECC: Unified Memory Protection for Bit and Chip Errors." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2023.
-- **[4]** Pontarelli, Salvatore, et al. "Low delay single symbol error correction codes based on reed solomon codes." IEEE transactions on computers 64.5 (2014): 1497-1501.
+- **[1]** Reed, Irving S., and Gustave Solomon. "Polynomial codes over certain finite fields." Journal of the society for industrial and applied mathematics 8.2 (1960): 300-304.
+- **[2]** https://www.amd.com/system/files/TechDocs/42301_15h_Mod_00h-0Fh_BKDG.pdf
+- **[3]** Song, Yuseok, et al. "SEC-BADAEC: An Efficient ECC With No Vacancy for Strong Memory Protection." IEEE Access 10 (2022): 89769-89780.
+- **[4]** Kim, Dongwhee, et al. "Unity ECC: Unified Memory Protection for Bit and Chip Errors." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2023.
+- **[5]** Pontarelli, Salvatore, et al. "Low delay single symbol error correction codes based on reed solomon codes." IEEE transactions on computers 64.5 (2014): 1497-1501.
 
