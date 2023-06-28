@@ -10,8 +10,9 @@
 # Objectives
 - Implement (72,64) Hsiao SEC-DED (Single-Error Correction) code **[1]**
 - Design an H-Matrix (Parity Check Matrix) with the corresponding correction capability
-- Design a hardware-friendly H-Matrix (minimum xor gate)
+- Design a hardware-friendly H-Matrix (minimum depth of xor tree)
 - Design a Systematic code. (Advantage: Simplicity, Efficiency)
+- While it is possible to implement SEC-DED with Hamming code, the goal is to understand hardware-friendly H-Matrix by implementing it with Hsiao code
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
@@ -31,10 +32,7 @@ If the results differ from the above, please modify the H_Matrix.txt.
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
-- Also, because Hsiao code is hardware friendly, let's consider ways to minimize the depth of the 'xor' tree.
-- While it is possible to implement SEC-DED with Hamming code, the goal is to understand hardware-friendly H-Matrix by implementing it with Hsiao code.
-- ECC essentially begins with the design of the H-Matrix.
-- Once you construct the H-Matrix, you can derive the corresponding G-Matrix (Generator Matrix).
+- Also, because Hsiao code is hardware friendly, consider ways to minimize the depth of the 'xor' tree.
 
 # Additional Information
 - CE: Correctable Error
