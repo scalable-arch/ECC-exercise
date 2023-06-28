@@ -12,7 +12,7 @@
 - These could be useful depending on the ECC (Error Correction Code) scheme being used **[1-3]**.
 
 # Overview
-![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
+![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/07_RS_code_Single_Symbol_Correction/RS%20code%20-%20SSC.png)
 
 # Code flows
 - 1. Codeword setting: all zero (no error)
