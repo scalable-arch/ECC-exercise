@@ -14,7 +14,7 @@
 - Let's aim to design a Systematic code. (Advantage: Simplicity, Efficiency)
 
 # Overview
-![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/01_7_4_Hamming_code/%5B7%2C%204%5D%20Hamming%20code.png)
+![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
 
 # To do
 - Construct H-Matrix.txt
