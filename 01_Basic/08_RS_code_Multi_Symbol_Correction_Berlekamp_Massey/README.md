@@ -9,7 +9,7 @@
 # Objectives
 - Implement a [20, 16] RS code **[1]** over GF(256).
 - Understand the decoding method of RS code.
-- Implement the Berlekamp-Massey Algorithm.
+- Implement the **Berlekamp-Massey Algorithm**.
 - Original source code URL (I modified): http://www.eccpage.com/rs.c
 
 # Overview
@@ -18,7 +18,7 @@
 # Code flows
 - 1. Codeword setting: all zero (no error)
 - 2. Error injection (1 symbol error)
-- 3. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
+- 3. Correct all symbol errors in the codeword (based on 8-bit symbol)
 - 4. Update result_type_rs_code (classified into the following 3 types)
 >> 1. **NE**: If there is no error when checking the codeword
 >> 2. **CE**: If there is an error but it is correctable and the error has been corrected
