@@ -8,7 +8,7 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objective
-- Construct (7,4) Hamming SEC (Single-Error Correction) code 
+- Construct (7,4) Hamming SEC (Single-Error Correction) code **[1]** 
 - Design the H-Matrix (Parity Check Matrix) with the corresponding correction capability
 
 # Overview
@@ -27,8 +27,7 @@
 If the result differs from the above, please modify the H_Matrix.txt accordingly.
 
 # Hint
-- Let's consider the conditions the H-Matrix must meet for 1-bit error correction.
-- Hamming SEC code URL: https://ieeexplore.ieee.org/abstract/document/6772729
+- Consider the conditions the H-Matrix must meet for 1-bit error correction.
 
 # Additional Information
 - CE: Correctable Error
@@ -39,3 +38,6 @@ If the result differs from the above, please modify the H_Matrix.txt accordingly
 - Hence, 100% error correction must be achieved. (If UCE_cnt>0, something is off, so try changing the H-Matrix!)
 - ECC essentially begins with the design of the H-Matrix.
 - Once you construct the H-Matrix, you can derive the corresponding G-Matrix (Generator Matrix)
+
+# References
+- **[1]** Hamming, Richard W. "Error detecting and error correcting codes." The Bell system technical journal 29.2 (1950): 147-160.
