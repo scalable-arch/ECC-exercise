@@ -1,4 +1,4 @@
-# [72, 64] Hsiao code
+# DDR4 Fault model & Rank-Level ECC
 
 # Author
 
