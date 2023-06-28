@@ -7,14 +7,14 @@
 - Google Scholar: https://scholar.google.com/citations?user=Jbpv5q0AAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Implement (72,64) Hsiao SEC-DED (Single-Error Correction) code **[1]**
+- Implement (72,64) Hsiao SEC-DED code **[1]**
 - De
 - 
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
 
-# DIMM configuration
+# DIMM configuration (Config.hh)
 - DDR4 ECC-DIMM
 - Num of rank: 2
 - Num of data chips: 16
@@ -22,8 +22,8 @@
 - Chip capacity: 8Gb
 - Num of DQ: 4 (x4 chip)
 
-# Fault model [2] configuration
-- Code: FaultRateInfo.hh
+# Fault model configuration (FaultRateInfo.hh)
+- **[2]** DDR2 Jaguar system
 
 # To do
 - Fill in the **hsiao.cc**
