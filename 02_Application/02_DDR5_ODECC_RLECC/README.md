@@ -3,15 +3,12 @@
 # Author
 
 **Dongwhee Kim** 
-
 - Email: xyz12347976@gmail.com
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Writing a (72,64) Hsiao SEC-DED (Single-Error Correction) code
-- Design an H-Matrix (Parity Check Matrix) with the corresponding correction capability
-- Design a hardware-friendly H-Matrix
-- Design a Systematic code. (Advantage: Simplicity, Efficiency)
+- Implement On-Die ECC (OD-ECC) and Rank-Level ECC (RL-ECC)
+- Understand the ECC scheme to improve reliability.
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/02_DDR5_ODECC_RLECC/DDR5%20OD-ECC%20%26%20RL-ECC.png)
