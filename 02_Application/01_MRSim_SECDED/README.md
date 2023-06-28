@@ -7,9 +7,9 @@
 - Google Scholar: https://scholar.google.com/citations?user=Jbpv5q0AAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Implement (72,64) Hsiao SEC-DED code **[1]**
-- De
+- Implement **Rank-Level ECC (RL-ECC)** of DDR4 ECC-DIMM
 - 
+- Understand the construction of the fault model **[3]**
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/02_72_64_Hsiao_code/%5B72%2C%2064%5D%20Hsiao%20code.png)
@@ -22,8 +22,11 @@
 - Chip capacity: 8Gb
 - Num of DQ: 4 (x4 chip)
 
+# ECC configuration
+- RL-ECC of this exercise: (72,64) Hsiao SEC-DED code **[1]**
+
 # Fault model configuration (FaultRateInfo.hh)
-- **[2]** DDR2 Jaguar system
+- **[3]** DDR2 Jaguar system
 
 # To do
 - Fill in the **hsiao.cc**
@@ -34,7 +37,7 @@
 - $ make
 - $ python run.py
 
-# Answer
+# Answer (010.4x18.SECDED.0.S)
 After 100 runs
 
 Retire
