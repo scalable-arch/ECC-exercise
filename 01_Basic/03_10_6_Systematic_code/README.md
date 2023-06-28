@@ -6,12 +6,9 @@
 
 - Email: pdtowctor@gmail.com
 
-
-
 # Objectives
-- Writing a (72,64) Hsiao SEC-DED (Single-Error Correction) code
+- Implement (10, 6) SEC-DADAEC (Single Error Correcting-Double bit Aligned Double Adjacent Error Correcting) code
 - Designing an H-Matrix (Parity Check Matrix) with the corresponding correction capability
-- Designing a hardware-friendly H-Matrix
 - Let's aim to design a Systematic code. (Advantage: Simplicity, Efficiency)
 
 # Overview
@@ -21,7 +18,8 @@
 - Construct H-Matrix.txt
 
 # Getting Started
-- $ python Hsiao_SEC_DED.py
+- $ python main.py
+- The example of execution can be found at 'ECC 1st homework.pdf'.
 
 # Answer
 - CE_cnt : 1000
