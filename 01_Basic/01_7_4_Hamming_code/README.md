@@ -14,6 +14,9 @@
 # To do
 - Construct H-Matrix.txt
 
+# Usage
+- python Hamming_SEC.py
+
 # Answer
 - CE_cnt : 1000
 - UCE_cnt: 0
