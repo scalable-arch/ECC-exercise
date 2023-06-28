@@ -13,18 +13,21 @@
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/03_10_6_Systematic_code/%5B10%2C%206%5D%20Systematic%20code.PNG)
 
 # To do
-- Fill in the code.py
-- 1st step: encode
-- 2nd step: decode
+- Fill in the finitefield.py
+- 1st function: printField
+- 2nd function: add
+- 3rd function: sub
+- 4th function: mul
+- 5th function: div
 
 # Getting Started
 - $ python main.py
-- The example of execution can be found at **'ECC 1st homework.pdf'**.
+- The example of execution can be found at **'ECC 3rd homework.pdf'**.
 
 # Answer
-- Your code passes all the test cases!!
+- Please refer to ECC 3rd homework.pdf
 
-If the results differ from the above, please modify the code.py.
+If the results differ from the above, please modify the finitefield.py
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit aligned double adjacent error correction.
