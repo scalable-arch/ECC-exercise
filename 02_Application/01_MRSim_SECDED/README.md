@@ -2,10 +2,10 @@
 
 # Author
 
-**Dongwhee Kim** 
+**Jungrae Kim** 
 
-- Email: xyz12347976@gmail.com
-- Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
+- Email: dale40@gmail.com
+- Google Scholar: https://scholar.google.com/citations?user=Jbpv5q0AAAAJ&hl=ko&oi=ao
 
 # Objectives
 - Writing a (72,64) Hsiao SEC-DED (Single-Error Correction) code
