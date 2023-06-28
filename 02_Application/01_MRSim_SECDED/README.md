@@ -132,14 +132,11 @@ If the results differ from the above, your code might be wrong.
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
-- Also, because Hsiao code is hardware friendly, consider ways to minimize the depth of the 'xor' tree.
 
 # Additional Information
 - CE: Correctable Error
 - DUE: Detectable but Uncorrectable Error
 - SDC: Silent-Data Corruption
-- In this problem, only 1-bit and 2-bit errors occur (each in 1000 iterations). Hence, 100% error correction/detection must be achieved.
-- If UE_cnt>0, something is wrong, so try changing the H-Matrix!
 
 # References
 - **[1]** Hsiao, Mu-Yue. "A class of optimal minimum odd-weight-column SEC-DED codes." IBM Journal of Research and Development 14.4 (1970): 395-401.
