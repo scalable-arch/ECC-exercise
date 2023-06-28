@@ -32,3 +32,4 @@ If the results differ from the above, please modify the finitefield.py
 # Hint
 - Modular-2 opeartion.
 - Galois Field example URL: https://asecuritysite.com/principles/gf
+- Finite Field URL: https://mathworld.wolfram.com/FiniteField.html
