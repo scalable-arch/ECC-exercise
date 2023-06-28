@@ -30,5 +30,5 @@
 - **[1-2]**
 
 # Reference
-- https://www.di-mgt.com.au/cgi-bin/matrix_stdform.cgi
-- [HILL86] Raymond Hill, A First Course In Coding Theory, OUP, 1986
+- **[1]** https://www.di-mgt.com.au/cgi-bin/matrix_stdform.cgi
+- **[2]** [HILL86] Raymond Hill, A First Course In Coding Theory, OUP, 1986
