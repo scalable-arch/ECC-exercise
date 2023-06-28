@@ -11,6 +11,7 @@
 - Understand the transformation process from H-Matrix to G-Matrix.
 - Both systematic and non-systematic code.
 - H-Matrix.txt as input and generates the corresponding G-Matrix.txt
+- I recommend outputting the entire process of H to G-Matrix conversion.
 
 
 # Overview
@@ -34,9 +35,6 @@
 - Hsiao SEC-DED code URL: https://people.eecs.berkeley.edu/~culler/cs252-s02/papers/hsiao70.pdf
 
 # Additional Information
-- CE: Correctable Error
-- DUE: Detectable but Uncorrectable Error
-- UCE: Un-Correctable Error
 - In the codeword, an error is indicated by 1.
 - Example) codeword: 0010000....00 => error occurred at the 3rd bit.
 - In this problem, only 1-bit and 2-bit errors occur (each in 1000 iterations). Hence, 100% error correction/detection must be achieved.
