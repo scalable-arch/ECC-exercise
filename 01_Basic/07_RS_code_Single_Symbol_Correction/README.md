@@ -45,6 +45,7 @@ The answer code is in the Solution folder.
 
 # Hint
 - Correction capability: SSC (Single Symbol Correction)
+- result_tyep_rs_code is a pointer (call-by-reference)
 - Section 2 of **[5]**
 
 # Additional Information
