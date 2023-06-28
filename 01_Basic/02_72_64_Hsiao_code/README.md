@@ -10,7 +10,7 @@
 # Objectives
 - Implement (72,64) Hsiao SEC-DED (Single-Error Correction) code **[1]**
 - Design an H-Matrix (Parity Check Matrix) with the corresponding correction capability
-- Design a hardware-friendly H-Matrix
+- Design a hardware-friendly H-Matrix (minimum xor gate)
 - Design a Systematic code. (Advantage: Simplicity, Efficiency)
 
 # Overview
