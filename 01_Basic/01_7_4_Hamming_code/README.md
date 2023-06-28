@@ -12,9 +12,7 @@
 - Design the H-Matrix (Parity Check Matrix) with the corresponding correction capability
 
 # Overview
-<p align="center">
-  <img src="https://github.com/xyz123479/ECC-exercise/assets/62287136/407147c3-8327-4e5f-85fd-db35835b276c">
-</p>
+![Hamming code](H)
 
 # To do
 - Construct H-Matrix.txt
