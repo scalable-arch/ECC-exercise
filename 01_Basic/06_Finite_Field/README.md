@@ -1,4 +1,4 @@
-# [10, 6] Systematic code
+# Finite Field (Galois field)
 
 # Author
 
