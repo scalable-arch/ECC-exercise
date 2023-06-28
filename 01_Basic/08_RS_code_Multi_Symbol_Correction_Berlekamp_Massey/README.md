@@ -10,7 +10,7 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Implement a [20, 16] systematic RS code **[1]** over GF(256).
+- Implement a [20, 16] systematic shortened RS code **[1]** over GF(256).
 - Understand the decoding method of RS code.
 - Implement the **Berlekamp-Massey Algorithm [2]**.
 - **The above method must be used for multi-symbol correction in RS codes**.
