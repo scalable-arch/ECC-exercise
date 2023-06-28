@@ -14,7 +14,7 @@
 # To do
 - Construct H-Matrix.txt
 
-# Usage
+# Getting Started
 - python Hamming_SEC.py
 
 # Answer
