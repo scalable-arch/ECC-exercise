@@ -17,6 +17,7 @@ The methods were applied in the following papers **[1-7]** (the code can be foun
 
 # 02_Application
 - Application for DRAM & sub-systems
+- ECC types: On-Die ECC, Rank-Level ECC
 - Target DRAM: DDR4, DDR5
 
 # Reference
