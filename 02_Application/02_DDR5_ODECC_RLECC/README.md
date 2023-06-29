@@ -64,8 +64,9 @@
 # To do
 - Fill in the **error_correction_oecc, error_correction_recc** function
 - You just need to fill in 2 parts labeled "Fill your code here!!"
-- You are free to modify the H_Matrix_OECC.txt and H_Matrix_RECC.txt files
-- If there's an error, decode it.
+- Function input: codeword (136bit for OD-ECC, 80bit for RL-ECC)
+- Function content: Execute ECC on the codeword to implement error detection or correction of the codeword
+- Function output: Return error information (NE/CE/DUE)
 
 # Getting Started
 - $ make clean
@@ -102,9 +103,8 @@ In such cases, employing the CRC code could be a beneficial method
 - CE: detected and corrected error
 - DUE: detected but uncorrected error
 - SDC: Silent Data Corruption
-- Only single chip correction is possible
-
-
+- You are free to modify the H_Matrix_OECC.txt and H_Matrix_RECC.txt files
+- Unity ECC **[5]** can correct all the error scenarios mentioned in this exercise using only RL-ECC, without the need for OD-ECC
 
 # References
 - **[1]** Hamming, Richard W. "Error detecting and error correcting codes." The Bell system technical journal 29.2 (1950): 147-160.
