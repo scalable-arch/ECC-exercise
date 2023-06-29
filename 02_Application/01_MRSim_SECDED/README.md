@@ -29,7 +29,7 @@
 - 8. **(End loop)** Record the results of Retire, DUE, and SDC, and go back to step 1 to repeat a certain number of times.
 - 9. This exercise is repeated 10,000 times. For actual experiments, it is recommended to do it more than 1,000,000 times to ensure reliability.
 
-# DIMM configuration (Config.hh)
+# DIMM configuration (main.cc, Config.hh)
 - DDR4 ECC-DIMM
 - Num of rank: 2
 - Beat length: 72 bit
