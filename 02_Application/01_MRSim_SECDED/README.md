@@ -19,7 +19,7 @@
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model.png)
 
 # Code flows (main.cc, Tester.cc)
-- 1. **(Start loop)** We calculate the future time point when the fault is expected to occur by inputting the FIT value [6] into the Poisson function. (Tester.cc -> TesterSystem::advance)
+- 1. **(Start loop)** Calculate the future time point when the fault is expected to occur by inputting the FIT value [6] into the Poisson function. (Tester.cc -> TesterSystem::advance)
 - 2. If the expected time point is after the interval used for reliability measurement, we bypass the fault-masking and return to step '1'.
 - 3. For instance, in this exercise, the reliability measurement period is 5 years. If the fault occurs 10 years later, we skip the fault-masking process.
 - 4. Scrub the soft error.
