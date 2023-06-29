@@ -7,7 +7,7 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Implement **On-Die ECC (OD-ECC) [2]** and **Rank-Level ECC (RL-ECC)** of DDR5 ECC-DIMM
+- Implement **On-Die ECC (OD-ECC) [1-2]** and **Rank-Level ECC (RL-ECC)** of DDR5 ECC-DIMM
 - Understand the ECC scheme to improve reliability
 - The above method has been used for several papers **[3-5]**
 - **I encourage you to implement the Rank-Level ECC (RL-ECC) freely**
