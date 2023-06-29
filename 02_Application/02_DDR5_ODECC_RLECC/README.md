@@ -7,38 +7,93 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Implement On-Die ECC (OD-ECC) and Rank-Level ECC (RL-ECC)
+- Implement **On-Die ECC (OD-ECC)** and **Rank-Level ECC (RL-ECC)** of DDR5 ECC-DIMM
 - Understand the ECC scheme to improve reliability.
+- The above method has been used for several papers **[3-5]**
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/02_DDR5_ODECC_RLECC/DDR5%20OD-ECC%20%26%20RL-ECC.png)
 
+# PREREQUIREMENTS
+- You need to read the Fault-sim (TACO'15) paper **[2]**
+- This exercise applied the **Fault-masking** method from this paper, and the code is written in a simpler manner
+
+# Code flows (Fault_sim.cpp)
+- 1. **(Start loop)** We calculate the future time point when the fault is expected to occur by inputting the FIT value [6] into the Poisson function. (Tester.cc -> TesterSystem::advance)
+- 2. If the expected time point is after the interval used for reliability measurement, we bypass the fault-masking and return to step '1'.
+- 3. For instance, in this exercise, the reliability measurement period is 5 years. If the fault occurs 10 years later, we skip the fault-masking process.
+- 4. Scrub the soft error.
+- 5. If the time point falls within the reliability measurement interval, we apply fault-masking and record that time. (Tester.cc -> hr += advance(dg->getFaultRate());)
+- 6. Generate a fault.
+- 7. Based on the fault, generate an error and proceed with decoding using Rank-Level ECC. (This is the part we need to handle)
+- 8. **(End loop)** Record the results of Retire, DUE, and SDC, and go back to step 1 to repeat a certain number of times.
+- 9. This exercise is repeated 10,000 times. For actual experiments, it is recommended to do it more than 1,000,000 times to ensure reliability.
+
+# DIMM configuration (per-sub channel)
+- DDR5 ECC-DIMM
+- Num of rank: 1
+- Beat length: 40 bit
+- Burst length: 16
+- Num of data chips: 8
+- Num of parity chips: 2
+- Num of DQ: 4 (x4 chip)
+
+# ECC configuration
+- OD-ECC: (136, 128) Hamming SEC code **[?]**
+- RL-ECC: (72,64) Hsiao SEC-DED code **[1]**
+
+# Error pattern configuration
+- **[??]**
+
 # To do
-- Construct H-Matrix.txt
+- Fill in the **hsiao.cc**
+- You just need to fill in 2 parts labeled "Fill your code here!!"
+- Generate H-matrix.
+- Determine whether there is an error ((H * cT) = 0 judgment).
+- If there's an error, decode it.
 
 # Getting Started
-- $ python Hsiao_SEC_DED.py
+- $ make clean
+- $ make
+- $ python run.py
 
-# Answer
-- CE_cnt : 1000
-- DUE_cnt : 1000
-- UCE_cnt: 0
+# Answer (010.4x18.SECDED.0.S)
 
-If the results differ from the above, please modify the H_Matrix.txt.
+If the results differ from the above, your code might be wrong.
+
 
 # Hint
-- Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
-- Also, because Hsiao code is hardware friendly, let's consider ways to minimize the depth of the 'xor' tree.
-- While it is possible to implement SEC-DED with Hamming code, the goal is to understand hardware-friendly H-Matrix by implementing it with Hsiao code.
-- ECC essentially begins with the design of the H-Matrix.
-- Once you construct the H-Matrix, you can derive the corresponding G-Matrix (Generator Matrix).
-- Hsiao SEC-DED code URL: https://people.eecs.berkeley.edu/~culler/cs252-s02/papers/hsiao70.pdf
+- Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection **[1]**.
 
 # Additional Information
-- CE: Correctable Error
-- DUE: Detectable but Uncorrectable Error
-- UCE: Un-Correctable Error
-- In the codeword, an error is indicated by 1.
-- Example) codeword: 0010000....00 => error occurred at the 3rd bit.
-- In this problem, only 1-bit and 2-bit errors occur (each in 1000 iterations). Hence, 100% error correction/detection must be achieved.
-- If UE_cnt>0, something is wrong, so try changing the H-Matrix!
+- NE: no error
+- CE: detected and corrected error
+- DUE: detected but uncorrected error
+- ME: detected but miscorrected error
+- UE: undetected error
+- SDC (Silent Data Corruption): ME + UE
+- Only single chip correction is possible
+>> Only SEC (Single Error Correction) within the chip is possible
+>> 
+>> There are 4 bits per chip
+>> 
+>> There are no errors if all are 0
+>> 
+>> Some erroneous values like 2, F, A are deliberately placed in some values
+>> 
+>> If it's 2 (0010), it's a 1 bit error and correction is possible
+>> 
+>> If it's A (1010), it's a 2 bit error and correction is not possible
+
+- The index is from the right end, 0, 1, 2 ... (same as Verilog)
+- If you output the burst, it's 7, 6, ... 0 from the top, a total of 8 (burst length)
+
+
+# References
+- **[1]** Hsiao, Mu-Yue. "A class of optimal minimum odd-weight-column SEC-DED codes." IBM Journal of Research and Development 14.4 (1970): 395-401.
+- **[2]** Nair, Prashant J., David A. Roberts, and Moinuddin K. Qureshi. "Faultsim: A fast, configurable memory-reliability simulator for conventional and 3d-stacked systems." ACM Transactions on Architecture and Code Optimization (TACO) 12.4 (2015): 1-24.
+- **[3]** Kim, Jungrae, Michael Sullivan, and Mattan Erez. "Bamboo ECC: Strong, safe, and flexible codes for reliable computer memory." 2015 IEEE 21st International Symposium on High Performance Computer Architecture (HPCA). IEEE, 2015.
+- **[4]** Gong, Seong-Lyong, et al. "Duo: Exposing on-chip redundancy to rank-level ecc for high reliability." 2018 IEEE International Symposium on High Performance Computer Architecture (HPCA). IEEE, 2018.
+- **[5]** Park, Sangjae, and Jungrae Kim. "On-Die Dynamic Remapping Cache: Strong and Independent Protection Against Intermittent Faults." IEEE Access 10 (2022): 78970-78982.
+- **[6]** Sridharan, Vilas, and Dean Liberty. "A study of DRAM failures in the field." SC'12: Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis. IEEE, 2012.
+
