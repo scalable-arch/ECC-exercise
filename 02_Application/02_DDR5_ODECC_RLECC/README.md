@@ -7,7 +7,7 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objectives
-- Implement **On-Die ECC (OD-ECC)** and **Rank-Level ECC (RL-ECC)** of DDR5 ECC-DIMM
+- Implement **On-Die ECC (OD-ECC) [2]** and **Rank-Level ECC (RL-ECC)** of DDR5 ECC-DIMM
 - Understand the ECC scheme to improve reliability.
 - The above method has been used for several papers **[3-5]**
 
@@ -40,7 +40,8 @@
 
 # ECC configuration
 - OD-ECC: (136, 128) Hamming SEC code **[1]**
-- RL-ECC: (80,64) ECC code **[1]**
+- RL-ECC: (80,64) ECC **(configure freely)**
+>> Ex) BCH (Bose–Chaudhuri–Hocquenghem) code, CRC code, RS (Reed-Solomon) code, Unity ECC (SC'23) **[5]** 
 
 # Error pattern configuration
 - **[??]**
@@ -91,9 +92,8 @@ If the results differ from the above, your code might be wrong.
 
 # References
 - **[1]** Hamming, Richard W. "Error detecting and error correcting codes." The Bell system technical journal 29.2 (1950): 147-160.
-- **[2]** Nair, Prashant J., David A. Roberts, and Moinuddin K. Qureshi. "Faultsim: A fast, configurable memory-reliability simulator for conventional and 3d-stacked systems." ACM Transactions on Architecture and Code Optimization (TACO) 12.4 (2015): 1-24.
-- **[3]** Kim, Jungrae, Michael Sullivan, and Mattan Erez. "Bamboo ECC: Strong, safe, and flexible codes for reliable computer memory." 2015 IEEE 21st International Symposium on High Performance Computer Architecture (HPCA). IEEE, 2015.
-- **[4]** Gong, Seong-Lyong, et al. "Duo: Exposing on-chip redundancy to rank-level ecc for high reliability." 2018 IEEE International Symposium on High Performance Computer Architecture (HPCA). IEEE, 2018.
-- **[5]** Park, Sangjae, and Jungrae Kim. "On-Die Dynamic Remapping Cache: Strong and Independent Protection Against Intermittent Faults." IEEE Access 10 (2022): 78970-78982.
-- **[6]** Sridharan, Vilas, and Dean Liberty. "A study of DRAM failures in the field." SC'12: Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis. IEEE, 2012.
+- **[2]** M. JEDEC. 2022. DDR5 SDRAM standard, JESD79-5B𝑣 1.20.
+- **[3]** Song, Yuseok, et al. "SEC-BADAEC: An Efficient ECC With No Vacancy for Strong Memory Protection." IEEE Access 10 (2022): 89769-89780.
+- **[4]** Kwon, Kiheon, et al. "EPA ECC: Error-Pattern-Aligned ECC for HBM2E." 2023 38th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC). IEEE, 2023.
+- **[5]** Kim, Dongwhee, et al. "Unity ECC: Unified Memory Protection for Bit and Chip Errors." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2023.
 
