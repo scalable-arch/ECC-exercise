@@ -1,4 +1,4 @@
-# Fault model & Rank-Level ECC of ECC-DIMM
+# Fault model & Rank-Level ECC of DDR4
 
 # Author
 
