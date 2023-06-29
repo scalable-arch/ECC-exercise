@@ -44,7 +44,9 @@
 >> Ex) BCH (Bose–Chaudhuri–Hocquenghem) code, CRC code, RS (Reed-Solomon) code, Unity ECC (SC'23) **[5]** 
 
 # Error pattern configuration
-- **[??]**
+- SE(SBE): per-chip Single Bit Error
+- DE(DBE): per-chip Double Bit Error
+- CHIPKILL(SCE): Single Chip Error (All Random)
 
 # To do
 - Fill in the **hsiao.cc**
@@ -59,13 +61,28 @@
 - $ python run.py
 
 # Answer (.S files)
-Runtime : 100000
-CE : 1.00000000000
+Runtime : 1000000
+CE : 0.02557000000
 DUE : 0.00000000000
-SDC : 0.00000000000
+SDC : 0.97443000000
 
-If the results differ from the above, your code might be wrong.
+The above answer serves as an example for OECC_OFF_RECC_OFF.S
 
+**Errors can be injected randomly, thus there may be slight discrepancies each time it is executed**
+
+The procedure involves injecting errors a million times to illustrate the probabilities of CE, DUE, and SDC occurrences
+
+A high CE and a low SDC are desirable
+
+Strive to achieve a CE of 1.000000000 (100% error correction) as exhibited in **OECC_ON_RECC_ON.S**
+
+However, if a CE of 100% is not attainable, the primary objective should be to reduce the SDC
+
+In such cases, employing the CRC code could be a beneficial method
+
+**I encourage you to implement the Rank-Level ECC (RL-ECC) freely**
+
+**This assignment is designed to be open-ended, so don't be afraid to be innovative and creative with your approach**
 
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection **[1]**.
@@ -74,9 +91,7 @@ If the results differ from the above, your code might be wrong.
 - NE: no error
 - CE: detected and corrected error
 - DUE: detected but uncorrected error
-- ME: detected but miscorrected error
-- UE: undetected error
-- SDC (Silent Data Corruption): ME + UE
+- SDC: Silent Data Corruption
 - Only single chip correction is possible
 >> Only SEC (Single Error Correction) within the chip is possible
 >> 
