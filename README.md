@@ -7,8 +7,10 @@
 - Email: xyz12347976@gmail.com
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
-I would like to express my gratitude to the people at SAL (Scalable Architecture Lab).
-This will greatly aid your studies on ECC (Error Correcting Code).
+I would like to express my gratitude to the people at SAL (Scalable Architecture Lab)
+
+This will greatly aid your studies on ECC (Error Correcting Code)
+
 The methods were applied in the following papers **[1-7]** (the code can be found in the SAL repo), so I encourage you to read through the issues, study the papers, examine the experimental code, and consider constructing experimental methodologies based on them.
 
 # 01_Basic
