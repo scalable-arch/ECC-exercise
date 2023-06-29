@@ -25,7 +25,7 @@
 - 4. Scrub the soft error.
 - 5. If the time point falls within the reliability measurement interval, we apply fault-masking and record that time. (Tester.cc -> hr += advance(dg->getFaultRate());)
 - 6. Generate a fault.
-- 7. Based on the fault, generate an error and proceed with decoding using Rank-Level ECC. (This is the part we need to handle)
+- 7. **(Fill in the code)** Based on the fault, generate an error and proceed with decoding using **Rank-Level ECC**.
 - 8. **(End loop)** Record the results of Retire, DUE, and SDC, and go back to step 1 to repeat a certain number of times.
 - 9. This exercise is repeated 10,000 times. For actual experiments, it is recommended to do it more than 1,000,000 times to ensure reliability.
 
