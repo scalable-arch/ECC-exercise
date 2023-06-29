@@ -58,7 +58,11 @@
 - $ make
 - $ python run.py
 
-# Answer (010.4x18.SECDED.0.S)
+# Answer (.S files)
+Runtime : 100000
+CE : 1.00000000000
+DUE : 0.00000000000
+SDC : 0.00000000000
 
 If the results differ from the above, your code might be wrong.
 
