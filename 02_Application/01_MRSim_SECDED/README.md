@@ -19,7 +19,7 @@
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model.png)
 
 # Code flows
-- 1. FIT
+- 1. Implement poisson function FIT
 - 2. Error injection (1 symbol error)
 - 3. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
 - 4. Update result_type_rs_code (classified into the following 3 types)
@@ -31,6 +31,8 @@
 # DIMM configuration (Config.hh)
 - DDR4 ECC-DIMM
 - Num of rank: 2
+- Beat length: 72 bit
+- Burst length: 8
 - Num of data chips: 16
 - Num of parity chips: 2
 - Chip capacity: 8Gb
@@ -148,9 +150,13 @@ If the results differ from the above, your code might be wrong.
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
 
 # Additional Information
-- CE: Correctable Error
-- DUE: Detectable but Uncorrectable Error
-- SDC: Silent-Data Corruption
+- NE: no error
+- CE: detected and corrected error
+- DUE: detected but uncorrected error
+- ME: detected but miscorrected error
+- UE: undetected error
+- SDC (Silent Data Corruption): ME + UE
+
 
 # References
 - **[1]** Hsiao, Mu-Yue. "A class of optimal minimum odd-weight-column SEC-DED codes." IBM Journal of Research and Development 14.4 (1970): 395-401.
