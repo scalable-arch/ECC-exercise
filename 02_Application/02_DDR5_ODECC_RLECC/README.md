@@ -49,9 +49,10 @@
 - CHIPKILL(SCE): Single Chip Error (All Random)
 
 # Error Scenario configuration
-- SE(SBE): per-chip Single Bit Error
-- DE(DBE): per-chip Double Bit Error
-- CHIPKILL(SCE): Single Chip Error (All Random)
+- SE(SBE): Among 10 chips, there's a single bit error (SE[Single Bit Error]) occurring in just one chip, with the remaining 9 chips having no errors
+- DE(DBE): Among 10 chips, there's a double bit error (DE[Double Bit Error]) occurring in just one chip, with the remaining 9 chips having no errors
+- CHIPKILL(SCE): Among 10 chips, there's a random error (SCE [Single Chip Error]) occurring in just one chip, with the remaining 9 chips having no errors. Errors can occur up to a maximum of 136 bits
+- SE(SBE)+SE(SBE): Among 10 chips, there's a single bit error (SE[Single Bit Error]) occurring in each of two chips, with the remaining 8 chips having no errors
 
 # To do
 - Fill in the **hsiao.cc**
