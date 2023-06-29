@@ -75,8 +75,11 @@
 
 # Answer (.S files)
 Runtime : 1000000
+
 CE : 0.02557000000
+
 DUE : 0.00000000000
+
 SDC : 0.97443000000
 
 The above answer serves as an example for OECC_OFF_RECC_OFF.S
