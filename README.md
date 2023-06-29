@@ -11,6 +11,14 @@ I would like to express my gratitude to the people at SAL (Scalable Architecture
 This will greatly aid your studies on ECC (Error Correcting Code).
 The methods were applied in the following papers **[1-7]** (the code can be found in the SAL repo), so I encourage you to read through the issues, study the papers, examine the experimental code, and consider constructing experimental methodologies based on them.
 
+# 01_Basic
+- Basic ECC (Error Correcting Codes)
+- Contents: Hamming code, Hsiao code, CRC (Cyclic Redundancy Check) code, RS (Reed-Solomon) code, etc
+
+# 02_Application
+- Application for DRAM & sub-systems
+- Target DRAM: DDR4, DDR5
+
 # Reference
 - **[1]** Kim, Jungrae, et al. "Frugal ecc: Efficient and versatile memory error protection through fine-grained compression." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2015.
 - **[2]** Kim, Jungrae, Michael Sullivan, and Mattan Erez. "Bamboo ECC: Strong, safe, and flexible codes for reliable computer memory." 2015 IEEE 21st International Symposium on High Performance Computer Architecture (HPCA). IEEE, 2015.
