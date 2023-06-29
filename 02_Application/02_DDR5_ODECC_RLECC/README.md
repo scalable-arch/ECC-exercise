@@ -62,10 +62,9 @@
 - SE(SBE)+SE(SBE): Among 10 chips, there's a single bit error (SE[Single Bit Error]) occurring in each of two chips, with the remaining 8 chips having no errors
 
 # To do
-- Fill in the **hsiao.cc**
+- Fill in the **error_correction_oecc, error_correction_recc** function
 - You just need to fill in 2 parts labeled "Fill your code here!!"
-- Generate H-matrix.
-- Determine whether there is an error ((H * cT) = 0 judgment).
+- You are free to modify the H_Matrix_OECC.txt and H_Matrix_RECC.txt files
 - If there's an error, decode it.
 
 # Getting Started
