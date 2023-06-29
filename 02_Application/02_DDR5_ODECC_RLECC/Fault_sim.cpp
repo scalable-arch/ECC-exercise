@@ -216,14 +216,13 @@ int main(int argc, char* argv[])
     }
     fclose(fp2);
 
-    // 2. 출력 파일 이름 설정 & oecc/fault(error)/recc type 설정. 
+    // 2. 출력 파일 이름 설정 & oecc/recc type 설정. 
     // main 함수의 argv parameter로 받는다.
 
     // 파일명 예시
-    // ex : OECC_ON_RECC_ON_SE -> OECC ON, RECC ON, ERROR는 10chip중에서 1개 chip에만 1bit error (SE[Single Error]) 가 발생하고 나머지 9개 chip에는 error가 발생하지 않는(NE[No Error]) 경우
-    // ex : OECC_ON_RECC_ON_SE_SE -> OECC ON, RECC ON, ERROR는 10chip중에서 2개 chip에 각각 1bit error (SE[Single Error]) 가 발생하고 나머지 8개 chip에는 error가 발생하지 않는(NE[No Error]) 경우
+    // ex : OECC_ON_RECC_ON -> OECC ON, RECC ON 인 경우
     string OECC="X", RECC="X"; // => 파일 이름 생성을 위한 변수들. 그 이후로는 안쓰인다.
-    int oecc_type, recc_type; // => on-die ECC, Rank-level ECC, fault_type 분류를 위해 쓰이는 변수. 뒤에서도 계속 사용된다.
+    int oecc_type, recc_type; // => on-die ECC, Rank-level ECC 분류를 위해 쓰이는 변수. 뒤에서도 계속 사용된다.
     oecc_recc_type_assignment(OECC, RECC, &oecc_type, &recc_type, atoi(argv[1]), atoi(argv[2]));
     
     string Result_file_name = OECC + "_" + RECC + ".S";
