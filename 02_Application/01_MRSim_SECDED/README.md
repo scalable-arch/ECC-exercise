@@ -14,6 +14,16 @@
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model.png)
 
+# Code flows
+- 1. Codeword setting: all zero (no error)
+- 2. Error injection (1 symbol error)
+- 3. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
+- 4. Update result_type_rs_code (classified into the following 3 types)
+>> 1. **NE**: If there is no error when checking the codeword
+>> 2. **CE**: If there is an error but it is correctable and the error has been corrected
+>> 3. **DUE**: If there is an error but it is not correctable
+- 5. I recommend updating the **error_symbol_position** and **Syndrome** variables as well. These could be useful depending on the ECC (Error Correction Code) scheme being used **[2-4]**.
+
 # DIMM configuration (Config.hh)
 - DDR4 ECC-DIMM
 - Num of rank: 2
