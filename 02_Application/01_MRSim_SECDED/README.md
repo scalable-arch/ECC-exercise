@@ -9,13 +9,17 @@
 # Objectives
 - Implement **Rank-Level ECC (RL-ECC)** of DDR4 ECC-DIMM
 - Understand the method of constructing fault model simulation **[2]**
-- The above method has been used for several papers **[3-5]**.
+- The above method has been used for several papers **[3-5]**
+
+# PREREQUIREMENTS
+- You need to read the Fault-sim (TACO'15) paper **[2]**
+- We applied the **Fault-masking** method from this paper, and the code is written in a simpler manner
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model.png)
 
 # Code flows
-- 1. Codeword setting: all zero (no error)
+- 1. FIT
 - 2. Error injection (1 symbol error)
 - 3. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
 - 4. Update result_type_rs_code (classified into the following 3 types)
