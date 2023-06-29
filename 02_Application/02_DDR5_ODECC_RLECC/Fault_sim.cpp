@@ -278,7 +278,7 @@ int main(int argc, char* argv[])
 
 
         // 4-3. OD-ECC
-        // SEC : 136개의 1-bit error syndrome에 대응하면 correction 진행.
+        // (136, 128) Hamming SEC code: 136개의 1-bit error syndrome에 대응하면 correction 진행.
         // 아닌 경우에는 correction을 진행하지 않는다.
         switch(oecc_type){
             case OECC_OFF:
@@ -298,7 +298,7 @@ int main(int argc, char* argv[])
 
         // 4-4. RL-ECC
         // Beat 2개를 묶어서 (80 bit) RL-ECC (Rank-level ECC) 실행
-        // RECC는 NE/CE/DUE 결과를 return 한다.
+        // RL-ECC는 NE/CE/DUE 결과를 return 한다.
         // NE (No-Error) => Syndrome이 all zero이기에 error가 없다고 판별하여 error correction을 진행하지 않는다.
         // CE (Correctable Error) // Syndrome이 0이 아니고, Correctable 하다고 판단하여 error correction을 진행한다.
         // DUE (Detectable but Uncorrectable Error) // Syndrome이 0이 아니고, Correctable 하지 않다고 판단하여 error correction을 진행하지 않는다.
