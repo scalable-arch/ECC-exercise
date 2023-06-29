@@ -17,15 +17,24 @@
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/02_DDR5_ODECC_RLECC/DDR5%20OD-ECC%20%26%20RL-ECC.png)
 
 # Code flows (Fault_sim.cpp)
-- 1. **(Start loop)** We calculate the future time point when the fault is expected to occur by inputting the FIT value [6] into the Poisson function. (Tester.cc -> TesterSystem::advance)
-- 2. If the expected time point is after the interval used for reliability measurement, we bypass the fault-masking and return to step '1'.
-- 3. For instance, in this exercise, the reliability measurement period is 5 years. If the fault occurs 10 years later, we skip the fault-masking process.
-- 4. Scrub the soft error.
-- 5. If the time point falls within the reliability measurement interval, we apply fault-masking and record that time. (Tester.cc -> hr += advance(dg->getFaultRate());)
-- 6. Generate a fault.
-- 7. Based on the fault, generate an error and proceed with decoding using Rank-Level ECC. (This is the part we need to handle)
-- 8. **(End loop)** Record the results of Retire, DUE, and SDC, and go back to step 1 to repeat a certain number of times.
-- 9. This exercise is repeated 10,000 times. For actual experiments, it is recommended to do it more than 1,000,000 times to ensure reliability.
+- 1. Reading OD-ECC, RL-ECC H-Matrix.txt: It's fine not to use RL-ECC H-Matrix.txt.
+- 2. Setting output function name: output.S file.
+- 3. **(Start loop)** DDR5 ECC-DIMM setup
+- 4-1. Initialize all data in 10 chips to 0: Each chip has 136 bits of data + redundancy.
+- 4-2. Error injection: Errors occur based on the following probabilities:
+>> SE: 40%, DE: 30%, SCE: 14%, SE+SE: 16%
+- 4-3. **(Fill in the code)** Apply OD-ECC: Implementation
+>> Apply the Hamming SEC code of (136, 128) to each chip.
+
+>> After running OD-ECC, the redundancy of OD-ECC does not come out of the chip (128bit data).
+- 4-4. **(Fill in the code)** Apply RL-ECC
+>> Run (80, 64) RL-ECC by bundling two beats.
+>> Please feel free to use any ECC code.
+>> 16 Burst Length (BL) creates one memory transfer block (64B cacheline + 16B redundancy).
+>> In DDR5 x4 DRAM, because of internal prefetching, only 64bit of data from each chip's 128bit data is actually transferred to the cache.
+>> For this, create two memory transfer blocks for 128-bit data and compare them.
+- 4-5. Report CE/DUE/SDC results.
+- 5. **(End loop)** Derive final results.
 
 # DIMM configuration (per-sub channel)
 - DDR5 ECC-DIMM
@@ -39,7 +48,7 @@
 # ECC configuration
 - OD-ECC: (136, 128) Hamming SEC code **[1]**
 - RL-ECC: (80,64) ECC **(configure freely)**
->> Ex) BCH (Bose–Chaudhuri–Hocquenghem) code, CRC code, RS (Reed-Solomon) code, Unity ECC (SC'23) **[5]** 
+>> Ex) CRC (Cyclic Redundancy Check) code, BCH (Bose–Chaudhuri–Hocquenghem) code, RS (Reed-Solomon) code, Unity ECC (SC'23) **[5]** 
 
 # Error pattern configuration
 - SE(SBE): per-chip Single Bit Error
