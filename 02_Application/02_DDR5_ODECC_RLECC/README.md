@@ -95,20 +95,7 @@ In such cases, employing the CRC code could be a beneficial method
 - DUE: detected but uncorrected error
 - SDC: Silent Data Corruption
 - Only single chip correction is possible
->> Only SEC (Single Error Correction) within the chip is possible
->> 
->> There are 4 bits per chip
->> 
->> There are no errors if all are 0
->> 
->> Some erroneous values like 2, F, A are deliberately placed in some values
->> 
->> If it's 2 (0010), it's a 1 bit error and correction is possible
->> 
->> If it's A (1010), it's a 2 bit error and correction is not possible
 
-- The index is from the right end, 0, 1, 2 ... (same as Verilog)
-- If you output the burst, it's 7, 6, ... 0 from the top, a total of 8 (burst length)
 
 
 # References
