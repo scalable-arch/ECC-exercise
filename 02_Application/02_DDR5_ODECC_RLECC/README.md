@@ -48,6 +48,11 @@
 - DE(DBE): per-chip Double Bit Error
 - CHIPKILL(SCE): Single Chip Error (All Random)
 
+# Error Scenario configuration
+- SE(SBE): per-chip Single Bit Error
+- DE(DBE): per-chip Double Bit Error
+- CHIPKILL(SCE): Single Chip Error (All Random)
+
 # To do
 - Fill in the **hsiao.cc**
 - You just need to fill in 2 parts labeled "Fill your code here!!"
