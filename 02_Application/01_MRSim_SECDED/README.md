@@ -19,14 +19,15 @@
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model.png)
 
 # Code flows (main.cc, Tester.cc)
-- 1. Implement poisson function FIT
-- 2. Error injection (1 symbol error)
-- 3. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
-- 4. Update result_type_rs_code (classified into the following 3 types)
->> 1. **NE**: If there is no error when checking the codeword
->> 2. **CE**: If there is an error but it is correctable and the error has been corrected
->> 3. **DUE**: If there is an error but it is not correctable
-- 5. I recommend updating the **error_symbol_position** and **Syndrome** variables as well. These could be useful depending on the ECC (Error Correction Code) scheme being used **[2-4]**.
+- 1. (Start loop) We calculate the future time point when the fault is expected to occur by inputting the FIT value [6] into the Poisson function. (Tester.cc -> TesterSystem::advance)
+- 2. If the expected time point is after the interval used for reliability measurement, we bypass the fault-masking and return to step '1'.
+- 3. For instance, in this exercise, the reliability measurement period is 5 years. If the fault occurs 10 years later, we skip the fault-masking process.
+- 4. Scrub the soft error.
+- 5. If the time point falls within the reliability measurement interval, we apply fault-masking and record that time. (Tester.cc -> hr += advance(dg->getFaultRate());)
+- 6. Generate a fault.
+- 7. Based on the fault, generate an error and proceed with decoding using Rank-Level ECC. (This is the part we need to handle)
+- 8. (End loop) Record the results of Retire, DUE, and SDC, and go back to step 1 to repeat a certain number of times.
+- 9. This exercise is repeated 10,000 times. For actual experiments, it is recommended to do it more than 1,000,000 times to ensure reliability.
 
 # DIMM configuration (Config.hh)
 - DDR4 ECC-DIMM
@@ -47,7 +48,7 @@
 # To do
 - Fill in the **hsiao.cc**
 - You just need to fill in 2 parts labeled "Fill your code here!!"
-- Generate G and H matrices.
+- Generate H-matrix.
 - Determine whether there is an error ((H * cT) = 0 judgment).
 - If there's an error, decode it.
 
