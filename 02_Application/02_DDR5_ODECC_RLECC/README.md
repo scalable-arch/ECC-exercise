@@ -39,8 +39,8 @@
 - Num of DQ: 4 (x4 chip)
 
 # ECC configuration
-- OD-ECC: (136, 128) Hamming SEC code **[?]**
-- RL-ECC: (72,64) Hsiao SEC-DED code **[1]**
+- OD-ECC: (136, 128) Hamming SEC code **[1]**
+- RL-ECC: (80,64) ECC code **[1]**
 
 # Error pattern configuration
 - **[??]**
@@ -90,7 +90,7 @@ If the results differ from the above, your code might be wrong.
 
 
 # References
-- **[1]** Hsiao, Mu-Yue. "A class of optimal minimum odd-weight-column SEC-DED codes." IBM Journal of Research and Development 14.4 (1970): 395-401.
+- **[1]** Hamming, Richard W. "Error detecting and error correcting codes." The Bell system technical journal 29.2 (1950): 147-160.
 - **[2]** Nair, Prashant J., David A. Roberts, and Moinuddin K. Qureshi. "Faultsim: A fast, configurable memory-reliability simulator for conventional and 3d-stacked systems." ACM Transactions on Architecture and Code Optimization (TACO) 12.4 (2015): 1-24.
 - **[3]** Kim, Jungrae, Michael Sullivan, and Mattan Erez. "Bamboo ECC: Strong, safe, and flexible codes for reliable computer memory." 2015 IEEE 21st International Symposium on High Performance Computer Architecture (HPCA). IEEE, 2015.
 - **[4]** Gong, Seong-Lyong, et al. "Duo: Exposing on-chip redundancy to rank-level ecc for high reliability." 2018 IEEE International Symposium on High Performance Computer Architecture (HPCA). IEEE, 2018.
