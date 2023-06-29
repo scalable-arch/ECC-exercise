@@ -8,8 +8,10 @@
 
 # Objectives
 - Implement **On-Die ECC (OD-ECC) [2]** and **Rank-Level ECC (RL-ECC)** of DDR5 ECC-DIMM
-- Understand the ECC scheme to improve reliability.
+- Understand the ECC scheme to improve reliability
 - The above method has been used for several papers **[3-5]**
+- **I encourage you to implement the Rank-Level ECC (RL-ECC) freely**
+- **This assignment is designed to be open-ended, so don't be afraid to be innovative and creative with your approach**
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/02_DDR5_ODECC_RLECC/DDR5%20OD-ECC%20%26%20RL-ECC.png)
@@ -86,13 +88,11 @@ However, if a CE of 100% is not attainable, the primary objective should be to r
 
 In such cases, employing the CRC code could be a beneficial method
 
-**I encourage you to implement the Rank-Level ECC (RL-ECC) freely**
-
-**This assignment is designed to be open-ended, so don't be afraid to be innovative and creative with your approach**
-
 # Hint
 - Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection **[1]**.
-
+- Shortened code
+- Ex) (255, 239) BCH DEC (Double Error Correcting) code -> (144, 128) BCH DEC code -> (80,64) BCH DEC code
+  
 # Additional Information
 - NE: no error
 - CE: detected and corrected error
