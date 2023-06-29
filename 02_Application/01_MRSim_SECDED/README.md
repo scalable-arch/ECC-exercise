@@ -18,7 +18,7 @@
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model.png)
 
-# Code flows
+# Code flows (main.cc, Tester.cc)
 - 1. Implement poisson function FIT
 - 2. Error injection (1 symbol error)
 - 3. Correct all 1 symbol errors in the codeword (based on 8-bit symbol)
@@ -47,6 +47,9 @@
 # To do
 - Fill in the **hsiao.cc**
 - You just need to fill in 2 parts labeled "Fill your code here!!"
+- Generate G and H matrices.
+- Determine whether there is an error ((H * cT) = 0 judgment).
+- If there's an error, decode it.
 
 # Getting Started
 - $ make clean
@@ -147,7 +150,7 @@ If the results differ from the above, your code might be wrong.
 0.06110000000 -> After 5 years
 
 # Hint
-- Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection.
+- Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection **[1]**.
 
 # Additional Information
 - NE: no error
@@ -156,6 +159,15 @@ If the results differ from the above, your code might be wrong.
 - ME: detected but miscorrected error
 - UE: undetected error
 - SDC (Silent Data Corruption): ME + UE
+- Only single chip correction is possible
+>> Only SEC (Single Error Correction) within the chip is possible
+>> There are 4 bits per chip
+>> There are no errors if all are 0
+>> Some erroneous values like 2, F, A are deliberately placed in some values
+>> If it's 2 (0010), it's a 1 bit error and correction is possible
+>> If it's A (1010), it's a 2 bit error and correction is not possible
+- The index is from the right end, 0, 1, 2 ... (same as Verilog)
+- If you output the burst, it's 7, 6, ... 0 from the top, a total of 8 (burst length)
 
 
 # References
