@@ -16,10 +16,6 @@
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/02_DDR5_ODECC_RLECC/DDR5%20OD-ECC%20%26%20RL-ECC.png)
 
-# PREREQUIREMENTS
-- You need to read the Fault-sim (TACO'15) paper **[2]**
-- This exercise applied the **Fault-masking** method from this paper, and the code is written in a simpler manner
-
 # Code flows (Fault_sim.cpp)
 - 1. **(Start loop)** We calculate the future time point when the fault is expected to occur by inputting the FIT value [6] into the Poisson function. (Tester.cc -> TesterSystem::advance)
 - 2. If the expected time point is after the interval used for reliability measurement, we bypass the fault-masking and return to step '1'.
