@@ -1,4 +1,4 @@
-# DDR5 On-Die ECC & Rank-Level ECC against
+# Error Scenario & On-Die ECC & Rank-Level ECC of DDR5
 
 # Author
 
