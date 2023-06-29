@@ -246,13 +246,13 @@ int main(int argc, char* argv[])
             fprintf(fp3,"\n===============\n");
 	    fflush(fp3);
         }
-        // 4-1. 10개 chip의 136b 전부를 0으로 초기화 (no-error)
+        // 4. 10개 chip의 136b 전부를 0으로 초기화 (no-error)
         // 이렇게 하면 굳이 encoding을 안해도 된다. no-error라면 syndrome이 0으로 나오기 때문!
         // Linear block code의 특성 활용
         for(int i=0; i<CHIP_NUM; i++)
             memset(Chip_array[i], 0, sizeof(unsigned int) * OECC_CW_LEN); 
 
-        // 4-2. Error injection
+        // 5. Error injection
         // [1] 서로 다른 2개의 chip을 선택 (Fault_Chip_position)
         vector<int> Fault_Chip_position;
         for (;;) {
@@ -277,7 +277,7 @@ int main(int argc, char* argv[])
         }
 
 
-        // 4-3. OD-ECC
+        // 6. OD-ECC
         // (136, 128) Hamming SEC code: 136개의 1-bit error syndrome에 대응하면 correction 진행.
         // 아닌 경우에는 correction을 진행하지 않는다.
         switch(oecc_type){
@@ -296,7 +296,7 @@ int main(int argc, char* argv[])
         }
 
 
-        // 4-4. RL-ECC
+        // 7. RL-ECC
         // Beat 2개를 묶어서 (80 bit) RL-ECC (Rank-level ECC) 실행
         // RL-ECC는 NE/CE/DUE 결과를 return 한다.
         // NE (No-Error) => Syndrome이 all zero이기에 error가 없다고 판별하여 error correction을 진행하지 않는다.
@@ -419,7 +419,7 @@ int main(int argc, char* argv[])
                 break;
         }
 
-        // 4-5. CE/DUE/SDC 체크
+        // 8. CE/DUE/SDC 체크
         // 최종 update (2개 memory transfer block 전부 고려)
         // CE, DUE, SDC 개수 세기
         CE_cnt   += (final_result==CE)  ? 1 : 0;
@@ -429,7 +429,7 @@ int main(int argc, char* argv[])
     }
     // for문 끝!!
 
-    // 최종 update
+    // 9. 최종 update
     fprintf(fp3,"\n===============\n");
     fprintf(fp3,"Runtime : %d\n",RUN_NUM);
     fprintf(fp3,"CE : %d\n",CE_cnt);
