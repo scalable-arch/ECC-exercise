@@ -13,7 +13,7 @@
 
 # PREREQUIREMENTS
 - You need to read the Fault-sim (TACO'15) paper **[2]**
-- We applied the **Fault-masking** method from this paper, and the code is written in a simpler manner
+- This exercise applied the **Fault-masking** method from this paper, and the code is written in a simpler manner
 
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model.png)
