@@ -13,8 +13,6 @@ This will greatly aid your studies on ECC (Error Correcting Code)
 
 The methods were applied in the following papers **[1-7]** (the code can be found in the SAL repo), so I encourage you to read through the issues, study the papers, examine the experimental code, and consider constructing experimental methodologies based on them.
 
-Related URL: https://en.lntwww.de/Category:Channel_Coding:_Exercises
-
 # 01_Basic
 - Basic ECC (Error Correcting Codes)
 - Contents: Hamming code, Hsiao code, CRC (Cyclic Redundancy Check) code, RS (Reed-Solomon) code, etc
@@ -23,6 +21,9 @@ Related URL: https://en.lntwww.de/Category:Channel_Coding:_Exercises
 - Application for DRAM & sub-systems
 - ECC types: On-Die ECC & Rank-Level ECC
 - Target DRAM: DDR4, DDR5
+
+# Other useful sites
+- https://en.lntwww.de/Category:Channel_Coding:_Exercises
 
 # Reference
 - **[1]** Kim, Jungrae, et al. "Frugal ecc: Efficient and versatile memory error protection through fine-grained compression." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2015.
