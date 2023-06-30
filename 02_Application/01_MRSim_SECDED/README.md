@@ -11,7 +11,7 @@
 - Understand the method of constructing fault model simulation **[2]**
 - The above method has been used for several papers **[3-5]**
 
-# PREREQUIREMENTS
+# Prerequisite
 - You need to read the Fault-sim (TACO'15) paper **[2]**
 - This exercise applied the **Fault-masking** method from this paper, and the code is written in a simpler manner
 
