@@ -22,7 +22,7 @@ def main():
 
         # Calculate Syndrome
         codeword_transpose = codeword.transpose()
-        Syndrome=np.matmul(H_Matrix, codeword_transpose)
+        Syndrome=(np.matmul(H_Matrix, codeword_transpose))%2
 
         # Error correction
         for error_index in range(codeword_length):
