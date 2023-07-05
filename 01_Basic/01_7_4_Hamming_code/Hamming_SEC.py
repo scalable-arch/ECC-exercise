@@ -8,7 +8,7 @@ def main():
     data_length=codeword_length-redundancy_len # 4
 
     cnt=0
-    iteration_num=10
+    iteration_num=1000
     CE_cnt=0
     UCE_cnt=0
     while cnt<iteration_num:
