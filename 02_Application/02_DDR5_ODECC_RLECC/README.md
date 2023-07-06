@@ -102,7 +102,7 @@ In such cases, employing the CRC code could be a beneficial method
 - Thus, **you only need to create a decoding function**; there's no need to encode
 - Reason: Because it's a Linear code, the same syndrome appears regardless of 1->0 or 0->1 error at the same location.
 - Shortened code
-- Ex) (255, 239) BCH DEC (Double Error Correcting) code -> (144, 128) BCH DEC code -> (80,64) BCH DEC code
+- Ex) (255, 253) RS SSC (Single Symbol Correcting) code over GF(256) -> (10,8) RS SSC code over GF(256)
   
 # Additional Information
 - NE: no error
