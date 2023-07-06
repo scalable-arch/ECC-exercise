@@ -97,7 +97,10 @@ However, if a CE of 100% is not attainable, the primary objective should be to r
 In such cases, employing the CRC code could be a beneficial method
 
 # Hint
-- Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection **[1]**.
+- Consider the conditions the H-Matrix must meet for 1-bit error correction and 2-bit error detection **[1]**
+- The codeword is in the default all-zero state (No-error state). In other words, the original message is all-zero
+- Thus, **you only need to create a decoding function**; there's no need to encode
+- Reason: Because it's a Linear code, the same syndrome appears regardless of 1->0 or 0->1 error at the same location.
 - Shortened code
 - Ex) (255, 239) BCH DEC (Double Error Correcting) code -> (144, 128) BCH DEC code -> (80,64) BCH DEC code
   
