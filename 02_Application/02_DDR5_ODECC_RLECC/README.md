@@ -107,6 +107,7 @@ In such cases, employing the CRC code could be a beneficial method
 - DUE: detected but uncorrected error
 - SDC: Silent Data Corruption
 - You are free to modify the H_Matrix_OECC.txt and H_Matrix_RECC.txt files
+- Solution file: Chipkill-correct ECC (using RS code)
 - Unity ECC **[5]** can correct all the error scenarios mentioned in this exercise using only RL-ECC, without the need for OD-ECC
 
 # References
