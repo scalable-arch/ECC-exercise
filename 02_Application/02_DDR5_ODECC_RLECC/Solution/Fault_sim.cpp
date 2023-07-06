@@ -211,6 +211,7 @@ void error_correction_oecc(unsigned int *codeword)
 }
 
 // RECC (80bit codeword, 64bit data, 16bit redundancy)
+// Chipkill-correct ECC (using Reed-Solomon code)
 int error_correction_recc(unsigned int *codeword)
 {
     // RECC의 return은 최대 3가지 경우가 있다.
