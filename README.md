@@ -22,6 +22,13 @@ The methods were applied in the following papers **[1-7]** (the code can be foun
 - ECC types: On-Die ECC & Rank-Level ECC
 - Target DRAM: DDR4, DDR5
 
+# Synthesis (Verilog)
+- See other repositories in SAL-github
+- **[4]**: (136, 128) SEC/SEC-BADAEC
+- **[6]**: (104, 96) SEC-DED, [39, 36] Reed-Solomon SSC-DSD code over GF(256)
+- **[7]**: [10, 8] Reed-Solomon SSC, [10, 8] Unity ECC over GF(256)
+- SQUID: Reed-Solomon code (Double Symbol Correction using Berlekamp–Massey algorithm)
+
 # Other useful sites
 - https://en.lntwww.de/Category:Channel_Coding:_Exercises
 
