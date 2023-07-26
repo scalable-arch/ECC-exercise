@@ -22,7 +22,7 @@ The methods were applied in the following papers **[1-7]** (the code can be foun
 - ECC types: On-Die ECC & Rank-Level ECC
 - Target DRAM: DDR4, DDR5
 
-# Synthesis (Verilog)
+# 03_Synthesis (Verilog)
 - 01_136_128_SEC: (136, 128) SEC code **[4]**
 - 02_104_06_SEC_DED: (104, 96) SEC-DED code **[6]**
 - 03_136_128_SEC_BADAEC: (136, 128) SEC-BADAEC code **[4]**
