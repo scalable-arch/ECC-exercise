@@ -28,7 +28,6 @@ The methods were applied in the following papers **[1-7]** (the code can be foun
 - 03_136_128_SEC_BADAEC: (136, 128) SEC-BADAEC code **[4]**
 - 04_10_8_RS_SSC: (10, 8) RS SSC (Single Symbol Correcting) code over GF(256) **[7]**
 - 05_39_36_RS_SSC_DSD: (39, 36) RS SSC-DSD (Singl Symbol Correcting Double Symbol Detecting) code over GF(256) **[6]**
-- SQUID: Reed-Solomon code (Double Symbol Correction using Berlekamp–Massey algorithm)
 
 # Other useful sites
 - https://en.lntwww.de/Category:Channel_Coding:_Exercises
