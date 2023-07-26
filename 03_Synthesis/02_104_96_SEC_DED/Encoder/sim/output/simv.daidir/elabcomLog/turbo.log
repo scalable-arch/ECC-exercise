@@ -1,0 +1,5 @@
+Command Line: /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/bin/elabcom -logdir simv.daidir/elabcomLog -simvdaidir simv.daidir -lib simv.daidir/work -saveLevel -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -topfile simv.daidir/.elabcomTopFile -pkgfile simv.daidir/.elabcomPkgFile -ssv -ssy -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
+uname(Linux exa01 5.4.0-125-generic #141~18.04.1-Ubuntu SMP Thu Aug 11 20:15:56 UTC 2022 x86_64)
+[INFO] error/warning message 'C00388' has been suppressed.
+[INFO] error/warning message 'C00389' has been suppressed.
+au time 0.052046 0.008121 0.024689 delta 94158848 94158848 total 206917632 206917632

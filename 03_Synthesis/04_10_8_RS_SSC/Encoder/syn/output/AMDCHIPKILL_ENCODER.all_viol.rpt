@@ -1,0 +1,157 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : AMDCHIPKILL_ENCODER
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr 19 15:04:40 2023
+****************************************
+
+
+    Net: codeword_out[0]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[1]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[2]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[3]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[4]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[5]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[6]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[7]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[8]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[9]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[10]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[11]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[12]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[13]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[14]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Net: codeword_out[15]
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Design: AMDCHIPKILL_ENCODER
+
+    max_area           0.0000000000
+  - Current Area       113.0639953613
+  ------------------------------
+    Slack              -113.0639953613  (VIOLATED)
+
+
+    Design: AMDCHIPKILL_ENCODER
+
+    max_leakage_power      0.0000000000
+  - Current Leakage Power  14181.3349609375
+  ----------------------------------
+    Slack                  -14181.3349609375  (VIOLATED)
+
+
+1

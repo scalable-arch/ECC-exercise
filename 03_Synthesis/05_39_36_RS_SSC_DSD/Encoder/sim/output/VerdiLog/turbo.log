@@ -1,0 +1,3 @@
+Command Line: /usr/synopsys/verdi/R-2020.12-SP1-1/platform/LINUXAMD64/bin/Novas -f /home/kkh/AIDC/sim/..//sim/decomp_total_tb/filelist.f -f /home/kkh/AIDC/sim/..//rtl/decomp_total_filelist.f -i simv
+uname(Linux SALserver01 5.4.0-125-generic #141~18.04.1-Ubuntu SMP Thu Aug 11 20:15:56 UTC 2022 x86_64)
+au time 433190.486428 35768.229138 3194.133392 delta 461664256 461664256 total 950562816 950562816

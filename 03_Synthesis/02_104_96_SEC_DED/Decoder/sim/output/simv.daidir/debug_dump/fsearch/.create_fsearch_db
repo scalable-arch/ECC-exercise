@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/usr/synopsys/vcs/R-2020.12-SP1-1/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib:/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/bin/vcsfind_create_index.exe  -z  "/home/xyz123479/verilog/HBM2E/SEC_DED/Decoder/sim/output/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" "/home/xyz123479/verilog/HBM2E/SEC_DED/Decoder/sim/output/simv.daidir/debug_dump/fsearch/./idents_OFNwjC.xml.gz" -o "/home/xyz123479/verilog/HBM2E/SEC_DED/Decoder/sim/output/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/xyz123479/verilog/HBM2E/SEC_DED/Decoder/sim/output/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/xyz123479/verilog/HBM2E/SEC_DED/Decoder/sim/output/simv.daidir/debug_dump/fsearch/fsearch.db"

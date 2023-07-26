@@ -1,0 +1,337 @@
+Warning: Design 'AIDC_TOP' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : hierarchy
+        -full
+Design : AIDC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec 22 16:52:14 2022
+****************************************
+
+Information: This design contains unmapped logic. (RPT-7)
+Warning: 3 unresolved references are not included in this report. (RPT-2)
+
+AIDC_TOP
+    ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__
+        *GEQ_UNS_OP_32_32_1
+            DW01_cmp2_width32
+                GTECH_NAND2                                                                                           gtech
+                GTECH_NOT                                                                                             gtech
+                GTECH_OR_NOT                                                                                          gtech
+                GTECH_XNOR2                                                                                           gtech
+                GTECH_XOR2                                                                                            gtech
+        *LT_UNS_OP_32_32_1
+            DW01_cmp2_width32
+                GTECH_NAND2                                                                                           gtech
+                GTECH_NOT                                                                                             gtech
+                GTECH_OR_NOT                                                                                          gtech
+                GTECH_XNOR2                                                                                           gtech
+                GTECH_XOR2                                                                                            gtech
+        GTECH_AND2                                                                                                    gtech
+        GTECH_BUF                                                                                                     gtech
+        GTECH_NOT                                                                                                     gtech
+        GTECH_OR2                                                                                                     gtech
+    DECOMP_TOP_I_decomp_engine_i_intf_STREAM_INTF__I_decomp_engine_o_intf_STREAM_INTF__
+        DECOMP_ENGINE
+            BPC_DECOMP
+                *ADD_UNS_OP_4_1_4
+                    DW01_inc_width4
+                        GTECH_ADD_AB                                                                                  gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_XOR2                                                                                    gtech
+                *ADD_UNS_OP_4_1_5
+                    DW01_inc_width5
+                        GTECH_ADD_AB                                                                                  gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_XOR2                                                                                    gtech
+                *ADD_UNS_OP_4_2_4
+                    DW01_add_width4
+                        GTECH_ADD_ABC                                                                                 gtech
+                *ADD_UNS_OP_4_2_5
+                    DW01_add_width5
+                        GTECH_ADD_ABC                                                                                 gtech
+                *ADD_UNS_OP_4_3_4
+                    DW01_add_width4
+                        GTECH_ADD_ABC                                                                                 gtech
+                *ADD_UNS_OP_5_1_5
+                    DW01_inc_width5
+                        GTECH_ADD_AB                                                                                  gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_XOR2                                                                                    gtech
+                *ADD_UNS_OP_7_6_7
+                    DW01_add_width7
+                        GTECH_ADD_ABC                                                                                 gtech
+                *ADD_UNS_OP_7_7_7
+                    DW01_add_width7
+                        GTECH_ADD_ABC                                                                                 gtech
+                *ADD_UNS_OP_16_16_16
+                    DW01_add_width16
+                        GTECH_ADD_ABC                                                                                 gtech
+                *ASH_UNS_UNS_OP_128_32_128
+                    DW01_ash_A_width128_SH_width32
+                        GTECH_AND2                                                                                    gtech
+                        GTECH_MUX2                                                                                    gtech
+                        GTECH_NAND2                                                                                   gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_OR2                                                                                     gtech
+                        GTECH_XOR2                                                                                    gtech
+                *LEQ_UNS_OP_4_4_1
+                    DW01_cmp2_width4
+                        GTECH_NAND2                                                                                   gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_OR_NOT                                                                                  gtech
+                        GTECH_XNOR2                                                                                   gtech
+                        GTECH_XOR2                                                                                    gtech
+                *LEQ_UNS_OP_5_3_1
+                    DW01_cmp2_width5
+                        GTECH_NAND2                                                                                   gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_OR_NOT                                                                                  gtech
+                        GTECH_XNOR2                                                                                   gtech
+                        GTECH_XOR2                                                                                    gtech
+                *LEQ_UNS_OP_7_7_1
+                    DW01_cmp2_width7
+                        GTECH_NAND2                                                                                   gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_OR_NOT                                                                                  gtech
+                        GTECH_XNOR2                                                                                   gtech
+                        GTECH_XOR2                                                                                    gtech
+                *SUB_UNS_OP_7_7_8
+                    DW01_sub_width8
+                        GTECH_ADD_ABC                                                                                 gtech
+                        GTECH_NOT                                                                                     gtech
+                DECODER_GROUP
+                    *ASH_UNS_UNS_OP_128_7_128
+                        DW01_ash_A_width128_SH_width7
+                            GTECH_AND2                                                                                gtech
+                            GTECH_MUX2                                                                                gtech
+                            GTECH_NAND2                                                                               gtech
+                            GTECH_NOT                                                                                 gtech
+                    *SUB_UNS_OP_7_7_7
+                        DW01_sub_width7
+                            GTECH_ADD_ABC                                                                             gtech
+                            GTECH_NOT                                                                                 gtech
+                    DECODER_0
+                        *ADD_UNS_OP_4_1_4
+                            DW01_inc_width4
+                                GTECH_ADD_AB                                                                          gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_XOR2                                                                            gtech
+                        *ADD_UNS_OP_6_1_7
+                            DW01_inc_width7
+                                GTECH_ADD_AB                                                                          gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_2_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_3_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_4_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_7_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *SUB_UNS_OP_4_1_4
+                            DW01_dec_width4
+                                GTECH_OR2                                                                             gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_ZERO                                                                            gtech
+                        GTECH_AND2                                                                                    gtech
+                        GTECH_BUF                                                                                     gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_OR2                                                                                     gtech
+                    DECODER_1
+                        *ADD_UNS_OP_4_1_4
+                            DW01_inc_width4
+                                GTECH_ADD_AB                                                                          gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_XOR2                                                                            gtech
+                        *ADD_UNS_OP_6_1_7
+                            DW01_inc_width7
+                                GTECH_ADD_AB                                                                          gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_2_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_3_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_4_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_7_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *SUB_UNS_OP_4_1_4
+                            DW01_dec_width4
+                                GTECH_OR2                                                                             gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_ZERO                                                                            gtech
+                        GTECH_AND2                                                                                    gtech
+                        GTECH_BUF                                                                                     gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_OR2                                                                                     gtech
+                    DECODER_2
+                        *ADD_UNS_OP_4_1_4
+                            DW01_inc_width4
+                                GTECH_ADD_AB                                                                          gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_XOR2                                                                            gtech
+                        *ADD_UNS_OP_6_1_7
+                            DW01_inc_width7
+                                GTECH_ADD_AB                                                                          gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_2_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_3_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_4_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_7_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *SUB_UNS_OP_4_1_4
+                            DW01_dec_width4
+                                GTECH_OR2                                                                             gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_ZERO                                                                            gtech
+                        GTECH_AND2                                                                                    gtech
+                        GTECH_BUF                                                                                     gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_OR2                                                                                     gtech
+                    DECODER_3
+                        *ADD_UNS_OP_4_1_4
+                            DW01_inc_width4
+                                GTECH_ADD_AB                                                                          gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_XOR2                                                                            gtech
+                        *ADD_UNS_OP_6_1_7
+                            DW01_inc_width7
+                                GTECH_ADD_AB                                                                          gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_2_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_3_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_4_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *GT_UNS_OP_7_7_1
+                            DW01_cmp2_width7
+                                GTECH_NAND2                                                                           gtech
+                                GTECH_NOT                                                                             gtech
+                                GTECH_OR_NOT                                                                          gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_XOR2                                                                            gtech
+                        *SUB_UNS_OP_4_1_4
+                            DW01_dec_width4
+                                GTECH_OR2                                                                             gtech
+                                GTECH_XNOR2                                                                           gtech
+                                GTECH_ZERO                                                                            gtech
+                        GTECH_AND2                                                                                    gtech
+                        GTECH_BUF                                                                                     gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_OR2                                                                                     gtech
+                GTECH_AND2                                                                                            gtech
+                GTECH_BUF                                                                                             gtech
+                GTECH_NOT                                                                                             gtech
+                GTECH_OR2                                                                                             gtech
+                GTECH_XOR2                                                                                            gtech
+            GTECH_AND2                                                                                                gtech
+            GTECH_BUF                                                                                                 gtech
+            GTECH_NOT                                                                                                 gtech
+            GTECH_OR2                                                                                                 gtech
+            SR_DECOMP
+                *ADD_UNS_OP_4_1_4
+                    DW01_inc_width4
+                        GTECH_ADD_AB                                                                                  gtech
+                        GTECH_NOT                                                                                     gtech
+                        GTECH_XOR2                                                                                    gtech
+                GTECH_AND2                                                                                            gtech
+                GTECH_BUF                                                                                             gtech
+                GTECH_NOT                                                                                             gtech
+                GTECH_OR2                                                                                             gtech
+        GTECH_BUF                                                                                                     gtech
+        GTECH_NOT                                                                                                     gtech
+    SOP_GEN_0
+        GTECH_AND2                                                                                                    gtech
+        GTECH_BUF                                                                                                     gtech
+        GTECH_NOT                                                                                                     gtech
+        GTECH_OR2                                                                                                     gtech
+    SOP_GEN_1
+        GTECH_AND2                                                                                                    gtech
+        GTECH_BUF                                                                                                     gtech
+        GTECH_NOT                                                                                                     gtech
+        GTECH_OR2                                                                                                     gtech
+1

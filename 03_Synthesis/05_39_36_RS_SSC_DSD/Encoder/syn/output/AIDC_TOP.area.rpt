@@ -1,0 +1,404 @@
+Warning: Design 'AIDC_TOP' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : AIDC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec 22 16:52:14 2022
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/gtech.db)
+
+Number of ports:                         9157
+Number of nets:                         41874
+Number of cells:                        20148
+Number of combinational cells:          17840
+Number of sequential cells:              1740
+Number of macros/black boxes:               0
+Number of buf/inv:                       1389
+Number of references:                       6
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+Information: This design contains black box (unknown) components. (RPT-8)
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------------------------------------------------------------------------------------
+AIDC_TOP                             0.0000      0.0    0.0000     0.0000  0.0000  AIDC_TOP
+u_addr_converter_comp                0.0000      0.0    0.0000     0.0000  0.0000  ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__
+u_addr_converter_comp/gte_81         0.0000      0.0    0.0000     0.0000  0.0000  *GEQ_UNS_OP_32_32_1
+u_addr_converter_comp/gte_81/*cell*343
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width32
+u_addr_converter_comp/gte_88         0.0000      0.0    0.0000     0.0000  0.0000  *GEQ_UNS_OP_32_32_1
+u_addr_converter_comp/gte_88/*cell*350
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width32
+u_addr_converter_comp/lt_81          0.0000      0.0    0.0000     0.0000  0.0000  *LT_UNS_OP_32_32_1
+u_addr_converter_comp/lt_81/*cell*347
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width32
+u_addr_converter_comp/lt_88          0.0000      0.0    0.0000     0.0000  0.0000  *LT_UNS_OP_32_32_1
+u_addr_converter_comp/lt_88/*cell*354
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width32
+u_decomp                             0.0000      0.0    0.0000     0.0000  0.0000  DECOMP_TOP_I_decomp_engine_i_intf_STREAM_INTF__I_decomp_engine_o_intf_STREAM_INTF__
+u_decomp/u_DECOMP_ENGINE             0.0000      0.0    0.0000     0.0000  0.0000  DECOMP_ENGINE
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE
+                                     0.0000      0.0    0.0000     0.0000  0.0000  BPC_DECOMP
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DECODER_GROUP
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DECODER_3
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/add_121
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_6_1_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/add_121/*cell*522
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/add_150
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/add_150/*cell*534
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_108
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_108/*cell*516
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_117
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_117/*cell*519
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_128
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_128/*cell*525
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_138
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_2_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_138/*cell*528
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_147
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_147/*cell*531
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_156
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_7_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_156/*cell*536
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_99
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/gt_99/*cell*513
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/sub_92
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[0].dec/sub_92/*cell*511
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_dec_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DECODER_2
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/add_121
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_6_1_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/add_121/*cell*609
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/add_150
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/add_150/*cell*621
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_108
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_108/*cell*603
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_117
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_117/*cell*606
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_128
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_128/*cell*612
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_138
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_2_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_138/*cell*615
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_147
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_147/*cell*618
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_156
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_7_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_156/*cell*623
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_99
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/gt_99/*cell*600
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/sub_92
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[1].dec/sub_92/*cell*598
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_dec_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DECODER_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/add_121
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_6_1_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/add_121/*cell*580
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/add_150
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/add_150/*cell*592
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_108
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_108/*cell*574
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_117
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_117/*cell*577
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_128
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_128/*cell*583
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_138
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_2_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_138/*cell*586
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_147
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_147/*cell*589
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_156
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_7_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_156/*cell*594
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_99
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/gt_99/*cell*571
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/sub_92
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[2].dec/sub_92/*cell*569
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_dec_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DECODER_0
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/add_121
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_6_1_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/add_121/*cell*551
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/add_150
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/add_150/*cell*563
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_108
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_108/*cell*545
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_117
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_117/*cell*548
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_128
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_128/*cell*554
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_138
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_2_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_138/*cell*557
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_147
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_147/*cell*560
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_156
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_7_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_156/*cell*565
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_99
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *GT_UNS_OP_7_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/gt_99/*cell*542
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/sub_92
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/decoders[3].dec/sub_92/*cell*540
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_dec_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sll_44
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ASH_UNS_UNS_OP_128_7_128
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sll_44/*cell*472
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_ash_A_width128_SH_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sll_44_G2
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ASH_UNS_UNS_OP_128_7_128
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sll_44_G2/*cell*482
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_ash_A_width128_SH_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sll_44_G3
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ASH_UNS_UNS_OP_128_7_128
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sll_44_G3/*cell*492
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_ash_A_width128_SH_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sll_44_G4
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ASH_UNS_UNS_OP_128_7_128
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sll_44_G4/*cell*502
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_ash_A_width128_SH_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sub_45
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_7_7_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sub_45/*cell*477
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_sub_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sub_45_G2
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_7_7_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sub_45_G2/*cell*487
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_sub_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sub_45_G3
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_7_7_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sub_45_G3/*cell*497
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_sub_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sub_45_G4
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_7_7_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/DEC_GRP/sub_45_G4/*cell*507
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_sub_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_125
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_7_6_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_125/*cell*388
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_129
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_7_7_7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_129/*cell*401
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_132
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_5_1_5
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_132/*cell*404
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width5
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_151
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_151/*cell*410
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_156
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_5
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_156/*cell*412
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width5
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_158
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_2_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_158/*cell*419
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_163
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_2_5
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_163/*cell*422
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width5
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_165
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_2_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_165/*cell*429
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_170
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_2_5
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_170/*cell*432
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width5
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_172
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_3_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_172/*cell*439
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_195
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_195/*cell*442
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_196
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_196/*cell*445
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_197
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_197/*cell*448
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_200
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_200/*cell*451
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_201
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_201/*cell*454
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_202_2
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_202_2/*cell*457
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_203_2
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_16_16_16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_203_2/*cell*460
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_add_width16
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_209
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/add_209/*cell*467
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_106
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *LEQ_UNS_OP_5_3_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_106/*cell*370
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width5
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_107
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *LEQ_UNS_OP_7_7_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_107/*cell*374
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width7
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_150
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *LEQ_UNS_OP_4_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_150/*cell*406
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_157
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *LEQ_UNS_OP_4_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_157/*cell*415
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_164
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *LEQ_UNS_OP_4_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_164/*cell*425
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_171
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *LEQ_UNS_OP_4_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_171/*cell*435
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_208
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *LEQ_UNS_OP_4_4_1
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/lte_208/*cell*463
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_cmp2_width4
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/sll_124
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ASH_UNS_UNS_OP_128_32_128
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/sll_124/*cell*383
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_ash_A_width128_SH_width32
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/sll_128
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ASH_UNS_UNS_OP_128_32_128
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/sll_128/*cell*396
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_ash_A_width128_SH_width32
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/sub_124
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_7_7_8
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/sub_124/*cell*378
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_sub_width8
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/sub_128
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *SUB_UNS_OP_7_7_8
+u_decomp/u_DECOMP_ENGINE/BPC_DECOMP_ENGINE/sub_128/*cell*391
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_sub_width8
+u_decomp/u_DECOMP_ENGINE/SR_DECOMP_ENGINE
+                                     0.0000      0.0    0.0000     0.0000  0.0000  SR_DECOMP
+u_decomp/u_DECOMP_ENGINE/SR_DECOMP_ENGINE/add_102
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/SR_DECOMP_ENGINE/add_102/*cell*361
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_decomp/u_DECOMP_ENGINE/SR_DECOMP_ENGINE/add_114
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/SR_DECOMP_ENGINE/add_114/*cell*363
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_decomp/u_DECOMP_ENGINE/SR_DECOMP_ENGINE/add_141
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/SR_DECOMP_ENGINE/add_141/*cell*365
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_decomp/u_DECOMP_ENGINE/SR_DECOMP_ENGINE/add_153
+                                     0.0000      0.0    0.0000     0.0000  0.0000  *ADD_UNS_OP_4_1_4
+u_decomp/u_DECOMP_ENGINE/SR_DECOMP_ENGINE/add_153/*cell*367
+                                     0.0000      0.0    0.0000     0.0000  0.0000  DW01_inc_width4
+u_sop_gen_comp                       0.0000      0.0    0.0000     0.0000  0.0000  SOP_GEN_1
+u_sop_gen_decomp                     0.0000      0.0    0.0000     0.0000  0.0000  SOP_GEN_0
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------------------------------------------------------------------------------------
+Total                                                   0.0000     0.0000  0.0000
+
+1

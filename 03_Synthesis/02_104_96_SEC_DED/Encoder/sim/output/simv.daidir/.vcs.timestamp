@@ -1,0 +1,106 @@
+0 
+34
++itf+/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcsdp_lite.tab
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/usr/synopsys/vcs/R-2020.12-SP1-1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -Wl,--no-as-needed -rdynamic
+-Mobjects= /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libvirsim.so /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/liberrorinf.so /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libsnpsmalloc.so /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libvfs.so
+-Mout=simv
+-Msaverestoreobj=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=/usr/synopsys/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/pli.a -ldl
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/usr/synopsys/vcs/R-2020.12-SP1-1/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-debug_access+all
+-f /home/xyz123479/verilog/HBM2E/SEC_DED/Encoder/sim/..//rtl/filelist.f
+-f /home/xyz123479/verilog/HBM2E/SEC_DED/Encoder/sim/..//sim/tb/filelist.f
+-fsdb
+-full64
+-gen_obj
+-kdb
+-picarchive
+/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/bin/vcs1
+/usr/synopsys/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/verdi.tab
+/home/xyz123479/verilog/HBM2E/SEC_DED/Encoder/sim/..//sim/tb/filelist.f
+/home/xyz123479/verilog/HBM2E/SEC_DED/Encoder/sim/..//rtl/filelist.f
+54
+_CE_M=
+_CE_CONDA=
+XDG_SESSION_ID=8080
+XDG_RUNTIME_DIR=/run/user/1015
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+VSCODE_IPC_HOOK_CLI=/run/user/1015/vscode-ipc-3e4a4c70-c249-4c65-bf98-6f7fd10991b3.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1015/vscode-git-7179101462.sock
+VSCODE_GIT_ASKPASS_NODE=/home/xyz123479/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/node
+VSCODE_GIT_ASKPASS_MAIN=/home/xyz123479/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VMR_MODE_FLAG=64
+VERDI_HOME=/usr/synopsys/verdi/R-2020.12-SP1-1
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_HOME=/usr/synopsys/vcs/R-2020.12-SP1-1
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+UNAME=/bin/uname
+TOOL_HOME=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64
+TERM_PROGRAM_VERSION=1.76.2
+TERM_PROGRAM=vscode
+SSH_CONNECTION=115.145.211.102 53770 115.145.211.247 8002
+SSH_CLIENT=115.145.211.102 53770 8002
+SPYGLASS_HOME=/usr/synopsys/spyglass/P-2019.06-SP2-17/SPYGLASS_HOME
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+ROOT_PATH=/home/xyz123479/verilog/HBM2E/SEC_DED/Encoder/sim/../
+OVA_UUM=0
+LESSOPEN=| /usr/bin/lesspipe %s
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_TIME=ko_KR.UTF-8
+LC_TELEPHONE=ko_KR.UTF-8
+LC_PAPER=ko_KR.UTF-8
+LC_NUMERIC=ko_KR.UTF-8
+LC_NAME=ko_KR.UTF-8
+LC_MONETARY=ko_KR.UTF-8
+LC_MEASUREMENT=ko_KR.UTF-8
+LC_IDENTIFICATION=ko_KR.UTF-8
+LC_ALL=C
+LC_ADDRESS=ko_KR.UTF-8
+GIT_ASKPASS=/home/xyz123479/.vscode-server/bin/ee2b180d582a7f601fa6ecfdad8d9fd269ab1884/extensions/git/dist/askpass.sh
+DC_HOME=/usr/synopsys/syn/Q-2019.12-SP5-5
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1015/bus
+CONDA_SHLVL=1
+CONDA_PYTHON_EXE=/compuworks/anaconda3/bin/python
+CONDA_PROMPT_MODIFIER=(base) 
+CONDA_PREFIX=/compuworks/anaconda3
+CONDA_EXE=/compuworks/anaconda3/bin/conda
+CONDA_DEFAULT_ENV=base
+COLORTERM=truecolor
+ARM_IP_LIBRARY_PATH=/media/1/ARM/PL401-BU-50000-r1p2-00rel1:/media/1/ARM/catalog/ip/SystemIP/Interconnect/NIC/NIC-400/r1p2
+ARMLMD_LICENSE_FILE=8224@semi-lic.skku.edu
+0
+6
+1679936591 /home/xyz123479/verilog/HBM2E/SEC_DED/Encoder/sim/..//rtl/SEC_DED_ENCODER.sv
+1679936637 /home/xyz123479/verilog/HBM2E/SEC_DED/Encoder/sim/..//sim/tb/TB_testbench.sv
+1679935108 /home/xyz123479/verilog/HBM2E/SEC_DED/Encoder/sim/..//rtl/filelist.f
+1679935002 /home/xyz123479/verilog/HBM2E/SEC_DED/Encoder/sim/..//sim/tb/filelist.f
+1618931515 /usr/synopsys/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/verdi.tab
+1618974649 /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcsdp_lite.tab
+4
+1618976102 /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libvirsim.so
+1618975343 /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/liberrorinf.so
+1618975120 /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libsnpsmalloc.so
+1618975339 /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libvfs.so
+1679936654 simv.daidir
+-1 partitionlib

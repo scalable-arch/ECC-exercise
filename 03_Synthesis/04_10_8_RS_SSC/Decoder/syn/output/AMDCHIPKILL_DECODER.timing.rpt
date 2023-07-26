@@ -1,0 +1,516 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : AMDCHIPKILL_DECODER
+Version: Q-2019.12-SP5-5
+Date   : Thu Apr  6 13:00:03 2023
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchllogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[63]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U470/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U471/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[63] (out)                                      0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[39]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U532/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U533/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[39] (out)                                      0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[31]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U513/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U514/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[31] (out)                                      0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[23]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U555/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U417/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[23] (out)                                      0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[15]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U519/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U520/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[15] (out)                                      0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[7]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U482/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U483/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[7] (out)                                       0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[63]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U470/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U471/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[63] (out)                                      0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[39]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U532/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U533/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[39] (out)                                      0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[23]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U555/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U417/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[23] (out)                                      0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+  Startpoint: codeword_in[36]
+              (input port clocked by vclk)
+  Endpoint: data_out[7]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  AMDCHIPKILL_DECODER
+                     ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  ERROR_INFORMATION  ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[36] (in)                                    0.00       0.00 r
+  U446/X (STQ_EN2_8)                                      0.04       0.04 f
+  U395/X (STQ_EN3_3)                                      0.05       0.09 f
+  U434/X (STQ_EO2_S_8)                                    0.04       0.13 r
+  U443/X (STQ_EO3_3)                                      0.03       0.16 f
+  error_information/Syndrome_in[3] (ERROR_INFORMATION)
+                                                          0.00       0.16 f
+  error_information/U62/X (STQ_NR2_6)                     0.01       0.18 r
+  error_information/U17/X (STQ_ND2_9)                     0.01       0.19 f
+  error_information/U37/X (STQ_NR2_8)                     0.01       0.21 r
+  error_information/U13/X (STQ_NR2_G_12)                  0.01       0.21 f
+  error_information/U68/X (STQ_AO2BB2_0P5)                0.02       0.23 r
+  error_information/Error_value_out[7] (ERROR_INFORMATION)
+                                                          0.00       0.23 r
+  U323/X (STQ_INV_1P5)                                    0.01       0.25 f
+  U401/X (STQ_NR2_G_4)                                    0.02       0.26 r
+  U482/X (STQ_ND2_S_0P8)                                  0.01       0.28 f
+  U483/X (STQ_EO2_S_0P5)                                  0.03       0.31 r
+  data_out[7] (out)                                       0.00       0.31 r
+  data arrival time                                                  0.31
+
+  clock vclk (rise edge)                                  0.25       0.25
+  clock network delay (ideal)                             0.00       0.25
+  output external delay                                   0.00       0.25
+  data required time                                                 0.25
+  --------------------------------------------------------------------------
+  data required time                                                 0.25
+  data arrival time                                                 -0.31
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.06
+
+
+1

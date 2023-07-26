@@ -1,0 +1,203 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version Q-2019.12-SP5-5 for linux64 - Mar 21, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+# ---------------------------------------
+# Step 1: Specify libraries
+# ---------------------------------------
+set link_library [list /media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchslogl35udl140f_tt1p0v85c.db ]
+/media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchslogl35udl140f_tt1p0v85c.db
+set target_library [list /media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchslogl35udl140f_tt1p0v85c.db ]
+/media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchslogl35udl140f_tt1p0v85c.db
+ 
+Error: unknown command ' ' (CMD-005)
+# ---------------------------------------
+# Step 2: Read designs
+# ---------------------------------------
+ 
+Error: unknown command ' ' (CMD-005)
+set design_name         rs_ssc_encoder
+rs_ssc_encoder
+elaborate $design_name
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+ 
+Error: unknown command ' ' (CMD-005)
+# connect all the library components and designs
+link
+Error: Current design is not defined. (UID-4)
+0
+ 
+Error: unknown command ' ' (CMD-005)
+# renames multiply references designs so that each
+# instance references a unique design
+uniquify
+Error: Current design is not defined. (UID-4)
+0
+ 
+Error: unknown command ' ' (CMD-005)
+# ---------------------------------------
+# Step 3: Define design environments
+# ---------------------------------------
+#
+# ---------------------------------------
+# Step 4: Set design constraints
+# ---------------------------------------
+# ---------------------------------------
+# Clock
+# ---------------------------------------
+set clk_name clk
+clk
+set clk_freq            200
+200
+ 
+Error: unknown command ' ' (CMD-005)
+# Reduce clock period to model wire delay (65% of original period)
+set clk_period [expr 1000 / double($clk_freq)]
+Error: can't read "clk_freq": no such variable
+	Use error_info for more info. (CMD-013)
+create_clock -period $clk_period $clk_name
+Error: can't read "clk_period": no such variable
+	Use error_info for more info. (CMD-013)
+set clk_uncertainty [expr $clk_period * 0.35]
+Error: can't read "clk_period": no such variable
+	Use error_info for more info. (CMD-013)
+set_clock_uncertainty -setup $clk_uncertainty $clk_name
+Error: can't read "clk_uncertainty": no such variable
+	Use error_info for more info. (CMD-013)
+ 
+Error: unknown command ' ' (CMD-005)
+# Set infinite drive strength
+set_drive 0 $clk_name
+Error: Current design is not defined. (UID-4)
+Error: Can't find port 'clk'. (UID-109)
+Error: Value for list 'port_list' must have 1 elements. (CMD-036)
+0
+set_ideal_network rst_n
+Error: Current design is not defined. (UID-4)
+Error: Can't find object 'rst_n'. (UID-109)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+0
+ 
+Error: unknown command ' ' (CMD-005)
+# ---------------------------------------
+# Input/Output
+# ---------------------------------------
+# Apply default timing constraints for modules
+set_input_delay  1.3 [all_inputs]  -clock $clk_name
+Error: Current design is not defined. (UID-4)
+Error: unknown command 'set_input_delay ' (CMD-005)
+set_output_delay 1.3 [all_outputs] -clock $clk_name
+Error: Current design is not defined. (UID-4)
+Error: Value for list 'port_pin_list' must have 1 elements. (CMD-036)
+Error: Current design is not defined. (UID-4)
+Error: Can't find clock 'clk'. (UID-109)
+Error: Value for list '-clock' must have 1 elements. (CMD-036)
+0
+ 
+Error: unknown command ' ' (CMD-005)
+# ---------------------------------------
+# Area
+# ---------------------------------------
+# If max_area is set 0, DesignCompiler will minimize the design as small as possible
+set_max_area 0
+Error: Current design is not defined. (UID-4)
+0
+ 
+Error: unknown command ' ' (CMD-005)
+# ---------------------------------------
+# Step 5: Synthesize and optimzie the design
+# ---------------------------------------
+compile_ultra
+Error: Current design is not defined. (UID-4)
+0
+#compile
+ 
+Error: unknown command ' ' (CMD-005)
+# ---------------------------------------
+# Step 6: Analyze and resolve design problems
+# ---------------------------------------
+check_design  > $design_name.check_design.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+ 
+Error: unknown command ' ' (CMD-005)
+report_constraint -all_violators -verbose -sig 10 > $design_name.all_viol.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+ 
+Error: unknown command ' ' (CMD-005)
+report_design                             > $design_name.design.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+report_area -physical -hierarchy          > $design_name.area.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+report_timing -nworst 10 -max_paths 10    > $design_name.timing.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+report_power -analysis_effort high        > $design_name.power.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+report_cell                               > $design_name.cell.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+report_qor                                > $design_name.qor.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+report_reference                          > $design_name.reference.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+report_resources                          > $design_name.resources.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+report_hierarchy -full                    > $design_name.hierarchy.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+report_threshold_voltage_group            > $design_name.vth.rpt
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+ 
+Error: unknown command ' ' (CMD-005)
+# ---------------------------------------
+# Step 7: Save the design database
+# ---------------------------------------
+write -hierarchy -format verilog -output  $design_name.netlist.v
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+write -hierarchy -format ddc     -output  $design_name.ddc
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+write_sdf -version 1.0                    $design_name.sdf
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+write_sdc                                 $design_name.sdc
+Error: can't read "design_name": no such variable
+	Use error_info for more info. (CMD-013)
+ 
+Error: unknown command ' ' (CMD-005)
+exit
+
+Memory usage for this session 53 Mbytes.
+Memory usage for this session including child processes 53 Mbytes.
+CPU usage for this session 2 seconds ( 0.00 hours ).
+Elapsed time for this session 3 seconds ( 0.00 hours ).
+
+Thank you...

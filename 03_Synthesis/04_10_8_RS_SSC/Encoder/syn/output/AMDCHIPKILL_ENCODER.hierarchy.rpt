@@ -1,0 +1,22 @@
+ 
+****************************************
+Report : hierarchy
+        -full
+Design : AMDCHIPKILL_ENCODER
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr 19 15:04:40 2023
+****************************************
+
+AMDCHIPKILL_ENCODER
+    STQ_AO2BB2_0P5         um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_AO2BB2_1           um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN2_S_2            um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN3_1              um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_1              um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_S_0P5          um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_S_2            um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO3_0P5            um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO3_1              um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_S_0P65         um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_OA2BB2_1           um28nchllogl35hsl140f_ssgwc0p9v125c
+1

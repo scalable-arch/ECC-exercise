@@ -1,0 +1,178 @@
+ 
+****************************************
+Report : cell
+Design : AMDCHIPKILL_ENCODER
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr 19 15:04:40 2023
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U82                       STQ_INV_S_0P65  um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          0.336000  
+U83                       STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U84                       STQ_EO2_S_0P5   um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U85                       STQ_AO2BB2_1    um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.008000  
+U86                       STQ_EO2_S_0P5   um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U87                       STQ_EN2_S_2     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.680000  
+U88                       STQ_EO2_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U89                       STQ_EO2_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U90                       STQ_AO2BB2_1    um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.008000  
+U91                       STQ_EO2_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U92                       STQ_EO2_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U93                       STQ_EO2_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U94                       STQ_INV_S_0P65  um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          0.336000  
+U95                       STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U96                       STQ_INV_S_0P65  um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          0.336000  
+U97                       STQ_EO3_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          2.184000  
+U98                       STQ_INV_S_0P65  um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          0.336000  
+U99                       STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U100                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U101                      STQ_EO2_S_2     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U102                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U103                      STQ_EO2_S_2     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U104                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U105                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U106                      STQ_EN3_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          2.184000  
+U107                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U108                      STQ_EO2_S_2     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U109                      STQ_EO3_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          2.184000  
+U110                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U111                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U112                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U113                      STQ_EO2_S_0P5   um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U114                      STQ_EO2_S_2     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U115                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U116                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U117                      STQ_EO2_S_0P5   um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U118                      STQ_EO3_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          2.184000  
+U119                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U120                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U121                      STQ_EO2_S_0P5   um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U122                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U123                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U124                      STQ_AO2BB2_0P5  um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.008000  
+U125                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U126                      STQ_EO2_S_0P5   um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U127                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U128                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U129                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U130                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U131                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U132                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U133                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U134                      STQ_OA2BB2_1    um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.008000  
+U135                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U136                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U137                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U138                      STQ_OA2BB2_1    um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.008000  
+U139                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U140                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U141                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U142                      STQ_OA2BB2_1    um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.008000  
+U143                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U144                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U145                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U146                      STQ_OA2BB2_1    um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.008000  
+U147                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U148                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U149                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U150                      STQ_OA2BB2_1    um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.008000  
+U151                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U152                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U153                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U154                      STQ_OA2BB2_1    um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.008000  
+U155                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U156                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U157                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U158                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U159                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+U160                      STQ_EO3_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                                          1.512000  
+--------------------------------------------------------------------------------
+Total 79 cells                                            113.063998
+1

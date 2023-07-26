@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : AMDCHIPKILL_DECODER
+Version: Q-2019.12-SP5-5
+Date   : Thu Apr  6 13:00:03 2023
+****************************************
+
+
+  Timing Path Group 'vclk'
+  -----------------------------------
+  Levels of Logic:              13.00
+  Critical Path Length:          0.31
+  Critical Path Slack:          -0.06
+  Critical Path Clk Period:      0.25
+  Total Negative Slack:         -3.74
+  No. of Violating Paths:       64.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:         30
+  Leaf Cell Count:               1192
+  Buf/Inv Cell Count:             215
+  Buf Cell Count:                   6
+  Inv Cell Count:                 209
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      1176
+  Sequential Cell Count:           16
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     1163.231989
+  Noncombinational Area:    21.504000
+  Buf/Inv Area:             89.543999
+  Total Buffer Area:             3.02
+  Total Inverter Area:          86.52
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:              1184.735988
+  Design Area:            1184.735988
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          1270
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: exa01
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    3.99
+  Logic Optimization:                  5.14
+  Mapping Optimization:               61.03
+  -----------------------------------------
+  Overall Compile Time:               91.55
+  Overall Compile Wall Clock Time:    92.38
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.06  TNS: 3.74  Number of Violating Paths: 64
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

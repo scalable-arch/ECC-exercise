@@ -1,0 +1,316 @@
+Warning: Design 'AIDC_TOP' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : AIDC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec 22 16:52:14 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ssp_1p350v_m40c   Library: bcd1340hp_sc_10t_pmk_rvt_c400l130_ssp_wst_none_1p350v_m40c
+Wire Load Model Mode: top
+
+  Startpoint: u_addr_converter_comp/State_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: icnt_aw_intf.aready
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_addr_converter_comp/State_reg[1]/clocked_on (**SEQGEN**)
+                                                          0.00 #     0.00 r
+  u_addr_converter_comp/State_reg[1]/Q (**SEQGEN**)       0.00       0.00 r
+  u_addr_converter_comp/C13/Z (GTECH_AND2)                0.00       0.00 r
+  u_addr_converter_comp/B_9/Z (GTECH_BUF)                 0.00       0.00 r
+  u_addr_converter_comp/C548/Z_0 (*SELECT_OP_4.1_4.1_1)
+                                                          0.00       0.00 r
+  u_addr_converter_comp/origin_a_intf.aready (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  icnt_aw_intf.aready (inout)                             0.00       0.00 r
+  data arrival time                                                  0.00
+
+  clock clk (rise edge)                                   0.60       0.60
+  clock network delay (ideal)                             0.00       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: mc_aw_intf.asize[2]
+              (input port clocked by clk)
+  Endpoint: icnt_aw_intf.asize[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  mc_aw_intf.asize[2] (inout)                             0.00       0.00 r
+  u_addr_converter_comp/convert_a_intf.asize[2] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  u_addr_converter_comp/origin_a_intf.asize[2] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  icnt_aw_intf.asize[2] (inout)                           0.00       0.00 r
+  data arrival time                                                  0.00
+
+  clock clk (rise edge)                                   0.60       0.60
+  clock network delay (ideal)                             0.00       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: mc_aw_intf.asize[1]
+              (input port clocked by clk)
+  Endpoint: icnt_aw_intf.asize[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  mc_aw_intf.asize[1] (inout)                             0.00       0.00 r
+  u_addr_converter_comp/convert_a_intf.asize[1] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  u_addr_converter_comp/origin_a_intf.asize[1] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  icnt_aw_intf.asize[1] (inout)                           0.00       0.00 r
+  data arrival time                                                  0.00
+
+  clock clk (rise edge)                                   0.60       0.60
+  clock network delay (ideal)                             0.00       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: mc_aw_intf.asize[0]
+              (input port clocked by clk)
+  Endpoint: icnt_aw_intf.asize[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  mc_aw_intf.asize[0] (inout)                             0.00       0.00 r
+  u_addr_converter_comp/convert_a_intf.asize[0] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  u_addr_converter_comp/origin_a_intf.asize[0] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  icnt_aw_intf.asize[0] (inout)                           0.00       0.00 r
+  data arrival time                                                  0.00
+
+  clock clk (rise edge)                                   0.60       0.60
+  clock network delay (ideal)                             0.00       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: mc_aw_intf.aburst[1]
+              (input port clocked by clk)
+  Endpoint: icnt_aw_intf.aburst[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  mc_aw_intf.aburst[1] (inout)                            0.00       0.00 r
+  u_addr_converter_comp/convert_a_intf.aburst[1] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  u_addr_converter_comp/origin_a_intf.aburst[1] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  icnt_aw_intf.aburst[1] (inout)                          0.00       0.00 r
+  data arrival time                                                  0.00
+
+  clock clk (rise edge)                                   0.60       0.60
+  clock network delay (ideal)                             0.00       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: mc_aw_intf.aburst[0]
+              (input port clocked by clk)
+  Endpoint: icnt_aw_intf.aburst[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  mc_aw_intf.aburst[0] (inout)                            0.00       0.00 r
+  u_addr_converter_comp/convert_a_intf.aburst[0] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  u_addr_converter_comp/origin_a_intf.aburst[0] (ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__)
+                                                          0.00       0.00 r
+  icnt_aw_intf.aburst[0] (inout)                          0.00       0.00 r
+  data arrival time                                                  0.00
+
+  clock clk (rise edge)                                   0.60       0.60
+  clock network delay (ideal)                             0.00       0.60
+  output external delay                                   0.00       0.60
+  data required time                                                 0.60
+  --------------------------------------------------------------------------
+  data required time                                                 0.60
+  data arrival time                                                  0.00
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.60
+
+
+  Startpoint: mc_b_intf.bid[3]
+              (input port clocked by clk)
+  Endpoint: icnt_b_intf.bid[3]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  mc_b_intf.bid[3] (inout)                 0.00       0.00 r
+  icnt_b_intf.bid[3] (inout)               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.60       0.60
+  clock network delay (ideal)              0.00       0.60
+  output external delay                    0.00       0.60
+  data required time                                  0.60
+  -----------------------------------------------------------
+  data required time                                  0.60
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: mc_b_intf.bid[2]
+              (input port clocked by clk)
+  Endpoint: icnt_b_intf.bid[2]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  mc_b_intf.bid[2] (inout)                 0.00       0.00 r
+  icnt_b_intf.bid[2] (inout)               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.60       0.60
+  clock network delay (ideal)              0.00       0.60
+  output external delay                    0.00       0.60
+  data required time                                  0.60
+  -----------------------------------------------------------
+  data required time                                  0.60
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: mc_b_intf.bid[1]
+              (input port clocked by clk)
+  Endpoint: icnt_b_intf.bid[1]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  mc_b_intf.bid[1] (inout)                 0.00       0.00 r
+  icnt_b_intf.bid[1] (inout)               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.60       0.60
+  clock network delay (ideal)              0.00       0.60
+  output external delay                    0.00       0.60
+  data required time                                  0.60
+  -----------------------------------------------------------
+  data required time                                  0.60
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: mc_b_intf.bid[0]
+              (input port clocked by clk)
+  Endpoint: icnt_b_intf.bid[0]
+            (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  mc_b_intf.bid[0] (inout)                 0.00       0.00 r
+  icnt_b_intf.bid[0] (inout)               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                    0.60       0.60
+  clock network delay (ideal)              0.00       0.60
+  output external delay                    0.00       0.60
+  data required time                                  0.60
+  -----------------------------------------------------------
+  data required time                                  0.60
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+1

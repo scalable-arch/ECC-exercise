@@ -1,0 +1,33 @@
+Warning: Design 'AIDC_TOP' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : reference
+Design : AIDC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec 22 16:52:14 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+ADDR_CONVERTER_ADDR_WIDTH32_ADDR_LEN4_ID_WIDTH4_I_origin_a_intf_AXI_A_INTF__I_convert_a_intf_AXI_A_INTF__
+                                  0.000000       1      0.000000  h, n, u
+ADDR_CONVERTER_DECOMP             0.000000       1      0.000000  b
+COMP_TOP                          0.000000       1      0.000000  b
+DECOMP_TOP_I_decomp_engine_i_intf_STREAM_INTF__I_decomp_engine_o_intf_STREAM_INTF__
+                                  0.000000       1      0.000000  b, h, n, u
+SOP_GEN_0                         0.000000       1      0.000000  h, u
+SOP_GEN_1                         0.000000       1      0.000000  h, n, u
+-----------------------------------------------------------------------------
+Total 6 references                                      0.000000
+1

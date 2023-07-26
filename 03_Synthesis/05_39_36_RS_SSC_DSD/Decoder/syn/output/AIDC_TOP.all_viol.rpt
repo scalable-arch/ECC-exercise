@@ -1,0 +1,16 @@
+Warning: Design 'AIDC_TOP' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+Warning: Design 'AIDC_TOP' contains 4 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : AIDC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec 22 16:52:13 2022
+****************************************
+
+This design has no violated constraints.
+
+1

@@ -1,0 +1,177 @@
+Magic 271485
+Revision Verdi_R-2020.12-SP1-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 25 1701 962 219 217
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/home/kkh/AIDC/sim/output/inter.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 0.000000 5392137.500000
+cursor 160000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 72
+; marker line index
+markerPos 0
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "ADDR_CONVERTER"
+activeDirFile "" "/home/kkh/AIDC/sim/output/inter.fsdb"
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/clk
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/rst_n
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/GLOBAL_CTRL
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/fa_comp_flag
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/fa_addr_id_out[3:0]
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/fa_req_o
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/fa_ack_i
+addSubGroup "convert_a_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/convert_a_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/convert_a_intf/rst_n
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/convert_a_intf/avalid
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/convert_a_intf/aready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/convert_a_intf/aid[3:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/convert_a_intf/aaddr[31:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/convert_a_intf/alen[3:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/convert_a_intf/asize[2:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/convert_a_intf/aburst[1:0]
+endSubGroup "convert_a_intf(None)"
+addSubGroup "origin_a_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/origin_a_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/origin_a_intf/rst_n
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/origin_a_intf/avalid
+addSignal -h 15 /tbench_top/DUT/u_addr_converter_decomp/origin_a_intf/aready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/origin_a_intf/aid[3:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/origin_a_intf/aaddr[31:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/origin_a_intf/alen[3:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/origin_a_intf/asize[2:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_addr_converter_decomp/origin_a_intf/aburst[1:0]
+endSubGroup "origin_a_intf(None)"
+addGroup "DECOMP_FIFOS" -e FALSE
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/rst_n
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/push_req
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/push_ack
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp_flag_fifos/push_id[3:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/push_data
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/pop_req
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/pop_ack
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp_flag_fifos/pop_id[3:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/pop_data
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/pop_data_valid
+addSubGroup "icnt_r_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/icnt_r_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/icnt_r_intf/rst_n
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/icnt_r_intf/rvalid
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/icnt_r_intf/rready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp_flag_fifos/icnt_r_intf/rid[3:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp_flag_fifos/icnt_r_intf/rdata[63:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp_flag_fifos/icnt_r_intf/rresp[1:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/icnt_r_intf/rlast
+endSubGroup "icnt_r_intf(None)"
+addSubGroup "decomp_r_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/decomp_r_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/decomp_r_intf/rst_n
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/decomp_r_intf/rvalid
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/decomp_r_intf/rready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp_flag_fifos/decomp_r_intf/rid[3:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp_flag_fifos/decomp_r_intf/rdata[63:0]
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp_flag_fifos/decomp_r_intf/rresp[1:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp_flag_fifos/decomp_r_intf/rlast
+endSubGroup "decomp_r_intf(None)"
+addGroup "DECOMP"
+addSignal -h 15 /tbench_top/DUT/u_decomp/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp/rst_n
+addSignal -h 15 /tbench_top/DUT/u_decomp/flag_data_i
+addSignal -h 15 /tbench_top/DUT/u_decomp/flag_valid_i
+addSignal -h 15 /tbench_top/DUT/u_decomp/flag_pop_ack
+addSignal -h 15 /tbench_top/DUT/u_decomp/flag_pop_req
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/flag_id_o[3:0]
+addSubGroup "icnt_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_decomp/icnt_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp/icnt_intf/valid
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/icnt_intf/data[63:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp/icnt_intf/sop
+addSignal -h 15 /tbench_top/DUT/u_decomp/icnt_intf/eop
+addSignal -h 15 /tbench_top/DUT/u_decomp/icnt_intf/ready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/icnt_intf/id[3:0]
+endSubGroup "icnt_intf(None)"
+addSubGroup "mc_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_decomp/mc_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp/mc_intf/valid
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/mc_intf/data[63:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp/mc_intf/sop
+addSignal -h 15 /tbench_top/DUT/u_decomp/mc_intf/eop
+addSignal -h 15 /tbench_top/DUT/u_decomp/mc_intf/ready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/mc_intf/id[3:0]
+endSubGroup "mc_intf(None)"
+addSubGroup "decomp_engine_o_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_o_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_o_intf/valid
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_o_intf/data[63:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_o_intf/sop
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_o_intf/eop
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_o_intf/ready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_o_intf/id[3:0]
+endSubGroup "decomp_engine_o_intf(None)"
+addSubGroup "decomp_engine_i_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_i_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_i_intf/valid
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_i_intf/data[63:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_i_intf/sop
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_i_intf/eop
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_i_intf/ready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/decomp_engine_i_intf/id[3:0]
+endSubGroup "decomp_engine_i_intf(None)"
+addSubGroup "un_decomp_o_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_o_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_o_intf/valid
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_o_intf/data[63:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_o_intf/sop
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_o_intf/eop
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_o_intf/ready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_o_intf/id[3:0]
+endSubGroup "un_decomp_o_intf(None)"
+addSubGroup "un_decomp_i_intf(None)"
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_i_intf/clk
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_i_intf/valid
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_i_intf/data[63:0]
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_i_intf/sop
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_i_intf/eop
+addSignal -h 15 /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_i_intf/ready
+addSignal -h 15 -UNSIGNED -HEX /tbench_top/DUT/u_decomp/u_DECOMP_NONCOMP_MUX/un_decomp_i_intf/id[3:0]
+endSubGroup "un_decomp_i_intf(None)"
+addGroup "G4"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+

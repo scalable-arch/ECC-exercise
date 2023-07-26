@@ -1,0 +1,8 @@
+/home/xyz123479/verilog/AMDCHIPKILL/Decoder/sim/..//rtl/AMDCHIPKILL_DECODER.sv
+/home/xyz123479/verilog/AMDCHIPKILL/Decoder/sim/..//rtl/ERROR_INFORMATION.sv
+/home/xyz123479/verilog/AMDCHIPKILL/Decoder/sim/..//rtl/ERROR_LOCATION.sv
+/home/xyz123479/verilog/AMDCHIPKILL/Decoder/sim/..//rtl/GFDIV.sv
+/home/xyz123479/verilog/AMDCHIPKILL/Decoder/sim/..//rtl/GFEXP.sv
+/home/xyz123479/verilog/AMDCHIPKILL/Decoder/sim/..//rtl/GFMULT.sv
+/home/xyz123479/verilog/AMDCHIPKILL/Decoder/sim/..//rtl/SYNDROME_GENERATOR.sv
+/home/xyz123479/verilog/AMDCHIPKILL/Decoder/sim/..//sim/tb/TB_testbench.sv

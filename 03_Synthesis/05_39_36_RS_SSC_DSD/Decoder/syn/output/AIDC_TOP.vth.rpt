@@ -1,0 +1,24 @@
+Warning: Design 'AIDC_TOP' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : threshold voltage group
+Design : AIDC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec 22 16:52:16 2022
+****************************************
+
+********************************************************************************
+                        Threshold Voltage Group Report                         
+
+Vth Group                All                Blackbox           Non-blackbox
+Name                    cells                cells                cells
+********************************************************************************
+undefined           18348 (100.00%)          3 (100.00%)      18345 (100.00%)   
+********************************************************************************
+
+Vth Group                All                Blackbox           Non-blackbox
+Name                  cell area            cell area            cell area
+********************************************************************************
+undefined            0.00   (0.00%)       0.00   (0.00%)       0.00   (0.00%)   
+********************************************************************************
+1

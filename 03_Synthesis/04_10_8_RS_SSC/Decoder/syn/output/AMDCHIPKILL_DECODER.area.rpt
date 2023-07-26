@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : area
+Design : AMDCHIPKILL_DECODER
+Version: Q-2019.12-SP5-5
+Date   : Thu Apr  6 13:00:03 2023
+****************************************
+
+Library(s) Used:
+
+    um28nchllogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                          180
+Number of nets:                          1300
+Number of cells:                         1193
+Number of combinational cells:           1176
+Number of sequential cells:                16
+Number of macros/black boxes:               0
+Number of buf/inv:                        215
+Number of references:                      47
+
+Combinational area:               1163.231989
+Buf/Inv area:                       89.543999
+Noncombinational area:              21.504000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  1184.735988
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------
+AMDCHIPKILL_DECODER               1184.7360    100.0   569.3520     0.0000  0.0000  AMDCHIPKILL_DECODER
+error_information                  615.3840     51.9   593.8800    21.5040  0.0000  ERROR_INFORMATION
+--------------------------------  ---------  -------  ---------  ---------  ------  -----------------
+Total                                                 1163.2320    21.5040  0.0000
+
+1

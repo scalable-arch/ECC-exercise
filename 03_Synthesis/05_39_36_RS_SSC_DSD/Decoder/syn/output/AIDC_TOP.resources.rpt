@@ -1,0 +1,14 @@
+Warning: Design 'AIDC_TOP' has '3' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : resources
+Design : AIDC_TOP
+Version: Q-2019.12-SP5-5
+Date   : Thu Dec 22 16:52:14 2022
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+1

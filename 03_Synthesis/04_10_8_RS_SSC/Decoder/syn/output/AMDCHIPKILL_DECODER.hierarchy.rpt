@@ -1,0 +1,127 @@
+ 
+****************************************
+Report : hierarchy
+        -full
+Design : AMDCHIPKILL_DECODER
+Version: Q-2019.12-SP5-5
+Date   : Thu Apr  6 13:00:03 2023
+****************************************
+
+Attributes:
+    r - licensed design
+
+AMDCHIPKILL_DECODER
+    ERROR_INFORMATION                       r
+        STQ_ADDF_V1_0P5           um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AN2_1                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AN2_2                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AN2_S_0P5             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AN3B_0P5              um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AN4B_0P5              um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AO2BB2_0P5            um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AO2BB2_V3_1           um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AO211_1               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AOAI211_0P75          um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AOI21_0P75            um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AOI22_0P75            um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AOI31_0P5             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_AOI211_0P75           um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_BUF_1                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_EN2_S_1               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_EO2_S_0P5             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_INV_1P5               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_INV_3                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_INV_S_0P65            um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_INV_S_1               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_LDPQ_1                um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_MAJI3_1               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_MUX2_1                um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_MUXI2_MG_0P75         um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND2B_MM_1             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND2_9                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND2_G_2               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND2_G_4               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND2_S_0P8             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND2_S_2               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND2_S_10              um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND3B_0P5              um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND3_0P5               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND3_2                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND4B_1                um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND4_MM_1              um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_ND4_MM_8              um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2B_1                um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_2                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_3                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_6                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_8                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_G_0P5             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_G_2P5             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_G_3P5             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_G_4               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_G_5               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR2_G_12              um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR3B_MG_0P75          um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR3_G_0P65            um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR3_G_1               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR4B_1                um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_NR4_0P5               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OAI21_0P5             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OAI21_2               um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OAI22_0P5             um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OAI22_0P75            um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OAI31_G_0P5           um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OAI211_0P5            um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OAOI211_0P5           um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OR2_1                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OR3B_1                um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OR3B_2                um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OR3_1                 um28nchllogl35hsl140f_ssgwc0p9v125c
+        STQ_OR4B_1                um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_BUF_U_1                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN2_4                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN2_6                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN2_8                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN2_S_2                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN3_1                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN3_2                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN3_3                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EN3_6                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_1                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_2                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_3                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_S_0P5                 um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_S_2                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_S_8                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO3_1                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO3_2                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO3_3                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_1P5                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_2                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_3                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_3P5                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_4                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_6P5                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_7P5                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_S_0P65                um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_S_1                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_S_5                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_INV_S_24                  um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2B_6                    um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2B_MM_8                 um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2_G_2                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2_S_0P8                 um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2_S_1P5                 um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2_S_2                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2_S_3                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2_S_5                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2_S_10                  um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_ND2_S_16                  um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_NR2B_V1DG_4               um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_NR2_6                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_NR2_8                     um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_NR2_G_4                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_NR2_G_5                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_NR2_G_6                   um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_OR2_4                     um28nchllogl35hsl140f_ssgwc0p9v125c
+1

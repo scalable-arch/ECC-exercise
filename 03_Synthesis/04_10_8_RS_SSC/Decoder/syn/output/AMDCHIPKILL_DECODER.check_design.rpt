@@ -1,0 +1,22 @@
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP5-5
+Date:        Thu Apr  6 13:00:03 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      8
+    Unconnected ports (LINT-28)                                     8
+--------------------------------------------------------------------------------
+
+Warning: In design 'AMDCHIPKILL_DECODER', port 'codeword_in[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'AMDCHIPKILL_DECODER', port 'codeword_in[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'AMDCHIPKILL_DECODER', port 'codeword_in[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'AMDCHIPKILL_DECODER', port 'codeword_in[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'AMDCHIPKILL_DECODER', port 'codeword_in[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'AMDCHIPKILL_DECODER', port 'codeword_in[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'AMDCHIPKILL_DECODER', port 'codeword_in[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'AMDCHIPKILL_DECODER', port 'codeword_in[0]' is not connected to any nets. (LINT-28)
+1

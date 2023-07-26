@@ -1,0 +1,7 @@
+/home/xyz123479/verilog/HBM2E/SSC_DSD/Decoder/rtl/ERROR_INFORMATION.sv
+/home/xyz123479/verilog/HBM2E/SSC_DSD/Decoder/rtl/ERROR_LOCATION.sv
+/home/xyz123479/verilog/HBM2E/SSC_DSD/Decoder/rtl/GFEXP.sv
+/home/xyz123479/verilog/HBM2E/SSC_DSD/Decoder/rtl/GFMULT.sv
+/home/xyz123479/verilog/HBM2E/SSC_DSD/Decoder/rtl/RS_SSC_DSD_DECODER.sv
+/home/xyz123479/verilog/HBM2E/SSC_DSD/Decoder/rtl/SYNDROME_GENERATOR.sv
+/home/xyz123479/verilog/HBM2E/SSC_DSD/Decoder/sim/tb/TB_testbench.sv

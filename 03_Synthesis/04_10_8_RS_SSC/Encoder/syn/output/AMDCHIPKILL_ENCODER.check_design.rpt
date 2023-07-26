@@ -1,0 +1,78 @@
+ 
+****************************************
+check_design summary:
+Version:     Q-2019.12-SP5-5
+Date:        Wed Apr 19 15:04:40 2023
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     64
+    Feedthrough (LINT-29)                                          64
+--------------------------------------------------------------------------------
+
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[63]' is connected directly to output port 'codeword_out[79]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[62]' is connected directly to output port 'codeword_out[78]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[61]' is connected directly to output port 'codeword_out[77]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[60]' is connected directly to output port 'codeword_out[76]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[59]' is connected directly to output port 'codeword_out[75]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[58]' is connected directly to output port 'codeword_out[74]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[57]' is connected directly to output port 'codeword_out[73]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[56]' is connected directly to output port 'codeword_out[72]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[55]' is connected directly to output port 'codeword_out[71]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[54]' is connected directly to output port 'codeword_out[70]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[53]' is connected directly to output port 'codeword_out[69]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[52]' is connected directly to output port 'codeword_out[68]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[51]' is connected directly to output port 'codeword_out[67]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[50]' is connected directly to output port 'codeword_out[66]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[49]' is connected directly to output port 'codeword_out[65]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[48]' is connected directly to output port 'codeword_out[64]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[47]' is connected directly to output port 'codeword_out[63]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[46]' is connected directly to output port 'codeword_out[62]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[45]' is connected directly to output port 'codeword_out[61]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[44]' is connected directly to output port 'codeword_out[60]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[43]' is connected directly to output port 'codeword_out[59]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[42]' is connected directly to output port 'codeword_out[58]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[41]' is connected directly to output port 'codeword_out[57]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[40]' is connected directly to output port 'codeword_out[56]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[39]' is connected directly to output port 'codeword_out[55]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[38]' is connected directly to output port 'codeword_out[54]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[37]' is connected directly to output port 'codeword_out[53]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[36]' is connected directly to output port 'codeword_out[52]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[35]' is connected directly to output port 'codeword_out[51]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[34]' is connected directly to output port 'codeword_out[50]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[33]' is connected directly to output port 'codeword_out[49]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[32]' is connected directly to output port 'codeword_out[48]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[31]' is connected directly to output port 'codeword_out[47]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[30]' is connected directly to output port 'codeword_out[46]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[29]' is connected directly to output port 'codeword_out[45]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[28]' is connected directly to output port 'codeword_out[44]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[27]' is connected directly to output port 'codeword_out[43]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[26]' is connected directly to output port 'codeword_out[42]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[25]' is connected directly to output port 'codeword_out[41]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[24]' is connected directly to output port 'codeword_out[40]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[23]' is connected directly to output port 'codeword_out[39]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[22]' is connected directly to output port 'codeword_out[38]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[21]' is connected directly to output port 'codeword_out[37]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[20]' is connected directly to output port 'codeword_out[36]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[19]' is connected directly to output port 'codeword_out[35]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[18]' is connected directly to output port 'codeword_out[34]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[17]' is connected directly to output port 'codeword_out[33]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[16]' is connected directly to output port 'codeword_out[32]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[15]' is connected directly to output port 'codeword_out[31]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[14]' is connected directly to output port 'codeword_out[30]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[13]' is connected directly to output port 'codeword_out[29]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[12]' is connected directly to output port 'codeword_out[28]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[11]' is connected directly to output port 'codeword_out[27]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[10]' is connected directly to output port 'codeword_out[26]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[9]' is connected directly to output port 'codeword_out[25]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[8]' is connected directly to output port 'codeword_out[24]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[7]' is connected directly to output port 'codeword_out[23]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[6]' is connected directly to output port 'codeword_out[22]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[5]' is connected directly to output port 'codeword_out[21]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[4]' is connected directly to output port 'codeword_out[20]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[3]' is connected directly to output port 'codeword_out[19]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[2]' is connected directly to output port 'codeword_out[18]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[1]' is connected directly to output port 'codeword_out[17]'. (LINT-29)
+Warning: In design 'AMDCHIPKILL_ENCODER', input port 'data_in[0]' is connected directly to output port 'codeword_out[16]'. (LINT-29)
+1
