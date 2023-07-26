@@ -1,0 +1,95 @@
+#!/bin/bash
+
+source ../../common.sh
+
+SAVE_PATH=./lib_container.tcl
+UMC28_PATH=$LIB_PATH/UMC/28nm
+GATE_LENGTH=35
+
+# Choose library type
+read -p "Library type? [ultra_high_density/high_density/high_speed]: " LIB_TYPE
+if [ $LIB_TYPE = "ultra_high_density" ]
+then
+	LIB_TYPE=uhd
+elif [ $LIB_TYPE = "high_density" ]
+then
+	LIB_TYPE=hd
+elif [ $LIB_TYPE = "high_speed" ]
+then
+	LIB_TYPE=hs
+fi
+
+# Choose threshold voltage
+read -p "MultiThreshold Design? [yes/no]: " MVT
+if [ $MVT = "no" ]
+then
+	read -p "Standard cell type? [uhvt/hvt/svt/lvt/ulvt]: " CELL_TYPE
+	LIB_PATH=$UMC28_PATH/$GATE_LENGTH$LIB_TYPE/*/$CELL_TYPE/latest/liberty/
+
+elif [ $MVT = "yes" ]
+then
+	LIB_PATH=$UMC28_PATH/$GATE_LENGTH$LIB_TYPE/*/*/latest/liberty/
+fi
+
+# Choose characteriation corner
+read -p "VDD Corner? [low/high]: " VDD
+if [ $CORNER='high' ]
+then
+	LIB_LIST_FF=$LIB_PATH/logic_synth/*ff*1p05v*.db
+	LIB_LIST_TT=$LIB_PATH/logic_synth/*tt*1p0v*.db
+	LIB_LIST_SS=$LIB_PATH/logic_synth/*ss*0p9v*.db
+elif [ $CORNER='low' ]
+then
+	LIB_LIST_FF=$LIB_PATH/logic_synth/*ff*0p99v*.db
+	LIB_LIST_TT=$LIB_PATH/logic_synth/*tt*0p9v*.db
+	LIB_LIST_SS=$LIB_PATH/logic_synth/*ss*0p81v*.db
+fi
+
+# Save link_library
+printf "%s\n" "set link_library \\" > $SAVE_PATH
+printf "[list * " >> $SAVE_PATH
+for LIB in $LIB_LIST_FF
+do
+	printf "%s " "$LIB" >> $SAVE_PATH
+done
+for LIB in $LIB_LIST_TT
+do
+	printf "%s " "$LIB" >> $SAVE_PATH
+done
+for LIB in $LIB_LIST_SS
+do
+	printf "%s " "$LIB" >> $SAVE_PATH
+done
+printf "]\n" >> $SAVE_PATH
+
+# Choose PVT corner
+# and Save target_library
+read -p "PVT Corner? [ff/tt/ss]: " PVT
+if [ $PVT='ff' ]
+then
+	TARGET_LIST=$(ls $LIB_LIST_FF)
+elif [ $PVT='tt' ]
+then
+	TARGET_LIST=$(ls $LIB_LIST_TT)
+elif [ $PVT='ss' ]
+then
+	TARGET_LIST=$(ls $LIB_LIST_SS)
+fi
+printf "%s\n" "set target_library \\" >> $SAVE_PATH
+printf "[list " >> $SAVE_PATH
+for LIB in $TARGET_LIST
+do
+	printf "%s " "$LIB" >> $SAVE_PATH
+done
+printf "]\n" >> $SAVE_PATH
+
+# Save symbol_library
+printf "%s\n" "set symbol_library \\" >> $SAVE_PATH
+printf "[list " >> $SAVE_PATH
+for LIB in $LIB_PATH/symbol/*.sdb
+do
+	printf "%s " "$LIB" >> $SAVE_PATH
+done
+printf "]\n" >> $SAVE_PATH
+
+

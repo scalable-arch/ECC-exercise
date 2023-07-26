@@ -1,0 +1,742 @@
+debImport "-f" \
+          "/home/song/OLD/bchverilog-master/TEC_15_5/RTL/sim/..//sim/tb/filelist.f" \
+          "-f" \
+          "/home/song/OLD/bchverilog-master/TEC_15_5/RTL/sim/..//rtl/filelist.f" \
+          "-i" "simv"
+srcTBInvokeSim
+schCreateWindow -delim "." -win $_nSchema1 -scope "encoder_tb"
+srcHBSelect "decoder_tb" -win $_nTrace1
+srcHBSelect "decoder_tb" -win $_nTrace1
+schCreateWindow -delim "." -win $_nSchema1 -scope "encoder_tb"
+verdiDockWidgetMaximize -dock windowDock_nSchema_4
+schSelect -win $_nSchema4 -inst "encoder"
+schPushViewIn -win $_nSchema4
+schZoomIn -win $_nSchema4 -pos 19560 23498
+schZoomIn -win $_nSchema4 -pos 19077 23631
+schSetOptions -win $_nSchema4 -detailRTL on
+schSetOptions -win $_nSchema4 -localNetName on
+schSetOptions -win $_nSchema4 -pinName on
+schZoomIn -win $_nSchema4 -pos 7907 34266
+schZoomIn -win $_nSchema4 -pos 7820 34311
+schZoomIn -win $_nSchema4 -pos 7819 34311
+schZoomIn -win $_nSchema4 -pos 7819 34210
+schZoomIn -win $_nSchema4 -pos 7818 34210
+schZoomOut -win $_nSchema4 -pos 9889 37735
+schZoomOut -win $_nSchema4 -pos 9802 37735
+schZoomOut -win $_nSchema4 -pos 11039 41488
+schLastView -win $_nSchema4
+schPopViewUp -win $_nSchema4
+schZoomOut -win $_nSchema4 -pos 5268 2032
+schZoomOut -win $_nSchema4 -pos 5261 2032
+schCloseWindow -win $_nSchema4
+srcHBSelect "decoder_tb" -win $_nTrace1
+srcSetScope "decoder_tb" -delim "." -win $_nTrace1
+srcHBSelect "decoder_tb" -win $_nTrace1
+schCreateWindow -delim "." -win $_nSchema1 -scope "decoder_tb"
+verdiDockWidgetMaximize -dock windowDock_nSchema_5
+schSelect -win $_nSchema5 -inst "decoder"
+schPushViewIn -win $_nSchema5
+schSetOptions -win $_nSchema5 -localNetName on
+schSetOptions -win $_nSchema5 -pinName on
+schSelect -win $_nSchema5 -inst "detector"
+schSelect -win $_nSchema5 -inst "corrector"
+schSelect -win $_nSchema5 -inst "detector"
+schZoomIn -win $_nSchema5 -pos 7155 6108
+schZoomIn -win $_nSchema5 -pos 7155 6146
+schZoomIn -win $_nSchema5 -pos 7154 6183
+schZoomOut -win $_nSchema5 -pos 7230 6342
+schZoomOut -win $_nSchema5 -pos 7230 6289
+schSelect -win $_nSchema5 -inst "detector"
+schPushViewIn -win $_nSchema5
+schZoomOut -win $_nSchema5 -pos 6297 4387
+schZoomOut -win $_nSchema5 -pos 6284 4362
+schZoomIn -win $_nSchema5 -pos 22181 2912
+schZoomIn -win $_nSchema5 -pos 22014 2888
+schZoomOut -win $_nSchema5 -pos 15361 3676
+schSetOptions -win $_nSchema5 -detailRTL on
+schZoomOut -win $_nSchema5 -pos 19571 8711
+schZoomIn -win $_nSchema5 -pos 22319 5963
+schSelect -win $_nSchema5 -port "syndrome5\[3:0\]"
+schSelect -win $_nSchema5 -port "syndrome1\[3:0\]"
+schDeselectAll -win $_nSchema5
+schSelect -win $_nSchema5 -port "syndrome2\[3:0\]"
+schZoomIn -win $_nSchema5 -pos 12012 10373
+schZoomIn -win $_nSchema5 -pos 12011 10389
+schZoomIn -win $_nSchema5 -pos 12011 10401
+schZoomIn -win $_nSchema5 -pos 12011 10401
+schZoomOut -win $_nSchema5 -pos 11873 10036
+schZoomOut -win $_nSchema5 -pos 11864 10062
+schZoomOut -win $_nSchema5 -pos 11701 9996
+schZoomOut -win $_nSchema5 -pos 11674 10475
+schZoomOut -win $_nSchema5 -pos 12368 6898
+schZoomIn -win $_nSchema5 -pos 12347 6919
+schZoomOut -win $_nSchema5 -pos 12236 7015
+schSelect -win $_nSchema5 -port "received\[14:0\]"
+schSelect -win $_nSchema5 -inst "syndromes"
+schPushViewIn -win $_nSchema5
+schZoomIn -win $_nSchema5 -pos 57523 162908
+schZoomIn -win $_nSchema5 -pos 57523 163844
+schZoomIn -win $_nSchema5 -pos 57523 164195
+schZoomIn -win $_nSchema5 -pos 57523 164195
+schZoomIn -win $_nSchema5 -pos 57523 164196
+schZoomIn -win $_nSchema5 -pos 57522 164195
+schZoomIn -win $_nSchema5 -pos 62309 163083
+schZoomIn -win $_nSchema5 -pos 62309 163082
+schZoomOut -win $_nSchema5 -pos 57759 164146
+schZoomOut -win $_nSchema5 -pos 57759 164145
+schZoomOut -win $_nSchema5 -pos 57760 163900
+schZoomOut -win $_nSchema5 -pos 87195 176444
+schZoomOut -win $_nSchema5 -pos 85985 176672
+schZoomOut -win $_nSchema5 -pos 82491 176863
+schZoomOut -win $_nSchema5 -pos 78122 176744
+schZoomIn -win $_nSchema5 -pos 65431 71861
+schZoomIn -win $_nSchema5 -pos 67313 71861
+schZoomOut -win $_nSchema5 -pos 17011 84441
+schZoomOut -win $_nSchema5 -pos 17011 84441
+schZoomOut -win $_nSchema5 -pos 17011 84440
+schZoomOut -win $_nSchema5 -pos 17011 84276
+schSelect -win $_nSchema5 -port "received\[14:0\]"
+schZoomIn -win $_nSchema5 -pos -417 176270
+schZoomIn -win $_nSchema5 -pos -417 176270
+schZoomIn -win $_nSchema5 -pos -418 176269
+schZoomIn -win $_nSchema5 -pos -418 176269
+schZoomIn -win $_nSchema5 -pos 544 175686
+schZoomIn -win $_nSchema5 -pos 544 175686
+schZoomIn -win $_nSchema5 -pos 543 175685
+schZoomIn -win $_nSchema5 -pos 543 175685
+schZoomIn -win $_nSchema5 -pos 542 175685
+schZoomOut -win $_nSchema5 -pos 2277 175454
+schZoomOut -win $_nSchema5 -pos 2277 175454
+schZoomOut -win $_nSchema5 -pos 2277 175453
+schZoomOut -win $_nSchema5 -pos 2336 175303
+schZoomOut -win $_nSchema5 -pos 2373 175527
+schZoomOut -win $_nSchema5 -pos 2373 175527
+schZoomOut -win $_nSchema5 -pos 4173 175644
+schZoomOut -win $_nSchema5 -pos 4318 175643
+schZoomOut -win $_nSchema5 -pos 20913 173719
+schZoomIn -win $_nSchema5 -pos 33836 175686
+schZoomIn -win $_nSchema5 -pos 29925 178004
+schZoomIn -win $_nSchema5 -pos 29095 178262
+schZoomIn -win $_nSchema5 -pos 19674 177489
+schZoomIn -win $_nSchema5 -pos 18238 177489
+schZoomIn -win $_nSchema5 -pos 15709 177272
+schZoomOut -win $_nSchema5 -pos 6589 176334
+schSelect -win $_nSchema5 -signal \
+          "received\[14\],received\[14\],received\[14\],received\[14\]"
+schZoomOut -win $_nSchema5 -pos 4471 178678
+schZoomOut -win $_nSchema5 -pos 4471 178678
+schZoomOut -win $_nSchema5 -pos 4472 178678
+schZoomOut -win $_nSchema5 -pos 4768 178329
+schZoomOut -win $_nSchema5 -pos 4769 178329
+schZoomOut -win $_nSchema5 -pos 4769 178329
+schZoomIn -win $_nSchema5 -pos 64123 187951
+schZoomIn -win $_nSchema5 -pos 64122 188169
+schZoomIn -win $_nSchema5 -pos 63473 188443
+schZoomIn -win $_nSchema5 -pos 63269 188524
+schZoomIn -win $_nSchema5 -pos 61777 188462
+schZoomIn -win $_nSchema5 -pos 61503 188508
+schZoomOut -win $_nSchema5 -pos 55732 189943
+schZoomOut -win $_nSchema5 -pos 55668 189942
+schZoomOut -win $_nSchema5 -pos 55026 190321
+schZoomOut -win $_nSchema5 -pos 54859 189949
+schZoomOut -win $_nSchema5 -pos 54609 188892
+schZoomOut -win $_nSchema5 -pos 54452 188417
+schZoomIn -win $_nSchema5 -pos 41519 190528
+schZoomIn -win $_nSchema5 -pos 41470 190479
+schZoomIn -win $_nSchema5 -pos 41432 190479
+schZoomIn -win $_nSchema5 -pos 41432 190479
+schZoomIn -win $_nSchema5 -pos 41431 190479
+schZoomOut -win $_nSchema5 -pos 41353 190400
+schZoomOut -win $_nSchema5 -pos 41334 190360
+schZoomOut -win $_nSchema5 -pos 41334 190262
+schZoomOut -win $_nSchema5 -pos 41304 190109
+schZoomOut -win $_nSchema5 -pos 41002 189688
+schZoomOut -win $_nSchema5 -pos 41003 189687
+schZoomOut -win $_nSchema5 -pos 41299 188910
+schZoomOut -win $_nSchema5 -pos 40930 187491
+schZoomOut -win $_nSchema5 -pos 40838 187490
+schZoomOut -win $_nSchema5 -pos 40607 187257
+schZoomOut -win $_nSchema5 -pos 40608 187257
+schZoomIn -win $_nSchema5 -pos 58063 189809
+schZoomIn -win $_nSchema5 -pos 56980 188989
+schZoomIn -win $_nSchema5 -pos 56980 188988
+schZoomOut -win $_nSchema5 -pos 37189 191756
+schZoomIn -win $_nSchema5 -pos 51651 193872
+schZoomIn -win $_nSchema5 -pos 51864 194087
+schZoomIn -win $_nSchema5 -pos 51971 194358
+schZoomIn -win $_nSchema5 -pos 53777 193587
+schZoomIn -win $_nSchema5 -pos 53776 193587
+schZoomIn -win $_nSchema5 -pos 53798 193587
+schZoomOut -win $_nSchema5 -pos 52257 193980
+schZoomIn -win $_nSchema5 -pos 54669 191841
+schZoomIn -win $_nSchema5 -pos 54669 191840
+schZoomIn -win $_nSchema5 -pos 54657 191876
+schZoomOut -win $_nSchema5 -pos 53594 190171
+schZoomOut -win $_nSchema5 -pos 53516 190215
+schZoomOut -win $_nSchema5 -pos 53516 190215
+schZoomOut -win $_nSchema5 -pos 53516 190232
+schZoomOut -win $_nSchema5 -pos 53843 190804
+schZoomOut -win $_nSchema5 -pos 52398 190969
+schZoomOut -win $_nSchema5 -pos 50865 191142
+schZoomOut -win $_nSchema5 -pos 47331 190023
+schZoomOut -win $_nSchema5 -pos 44244 192388
+schZoomOut -win $_nSchema5 -pos 46835 189027
+schZoomOut -win $_nSchema5 -pos 50909 188523
+schZoomOut -win $_nSchema5 -pos 53819 188417
+schZoomIn -win $_nSchema5 -pos 53949 187630
+schZoomIn -win $_nSchema5 -pos 54046 187630
+schZoomIn -win $_nSchema5 -pos 54264 187926
+schZoomIn -win $_nSchema5 -pos 54429 188147
+schZoomIn -win $_nSchema5 -pos 54511 188271
+schZoomIn -win $_nSchema5 -pos 54172 188957
+schZoomIn -win $_nSchema5 -pos 54148 188980
+schZoomOut -win $_nSchema5 -pos 54374 164173
+schZoomOut -win $_nSchema5 -pos 54373 164172
+schZoomOut -win $_nSchema5 -pos 54482 163734
+schZoomOut -win $_nSchema5 -pos 54278 163528
+schZoomOut -win $_nSchema5 -pos 54024 163186
+schZoomOut -win $_nSchema5 -pos 54024 163186
+schZoomOut -win $_nSchema5 -pos 53892 163186
+schZoomOut -win $_nSchema5 -pos 53891 163185
+schZoomOut -win $_nSchema5 -pos 48618 165378
+schZoomOut -win $_nSchema5 -pos 48359 164595
+schZoomOut -win $_nSchema5 -pos 48359 162310
+schZoomOut -win $_nSchema5 -pos 48358 161493
+schZoomIn -win $_nSchema5 -pos 59715 69505
+schZoomIn -win $_nSchema5 -pos 59905 69505
+schZoomIn -win $_nSchema5 -pos 60046 71943
+schZoomIn -win $_nSchema5 -pos 56107 70867
+schZoomIn -win $_nSchema5 -pos 55307 71189
+schZoomIn -win $_nSchema5 -pos 53750 71976
+schZoomOut -win $_nSchema5 -pos 51054 74381
+schZoomOut -win $_nSchema5 -pos 51054 74381
+schZoomOut -win $_nSchema5 -pos 51053 74382
+schZoomOut -win $_nSchema5 -pos 51053 73939
+schZoomOut -win $_nSchema5 -pos 51272 73273
+schZoomIn -win $_nSchema5 -pos 54150 197987
+schZoomIn -win $_nSchema5 -pos 54150 198091
+schZoomIn -win $_nSchema5 -pos 54150 198168
+schZoomIn -win $_nSchema5 -pos 54150 198168
+schZoomIn -win $_nSchema5 -pos 53933 198124
+schZoomOut -win $_nSchema5 -pos 52013 199340
+schZoomOut -win $_nSchema5 -pos 52013 199339
+schZoomOut -win $_nSchema5 -pos 51962 199338
+schZoomOut -win $_nSchema5 -pos 51453 199852
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "bch_detector:Always0#SigOp0:11:11:Or"
+schDeselectAll -win $_nSchema5
+schSelect -win $_nSchema5 -port "syndrome5\[3:0\]"
+schPopViewUp -win $_nSchema5
+schZoomOut -win $_nSchema5 -pos 9128 7077
+schZoomOut -win $_nSchema5 -pos 9196 7090
+schZoomOut -win $_nSchema5 -pos 9505 6933
+schSelect -win $_nSchema5 -inst "corrector"
+schSelect -win $_nSchema5 -inst "corrector"
+schPushViewIn -win $_nSchema5
+schSelect -win $_nSchema5 -inst "ibm"
+schPushViewIn -win $_nSchema5
+schZoomIn -win $_nSchema5 -pos 23602 42631
+schZoomIn -win $_nSchema5 -pos 20474 43953
+schZoomIn -win $_nSchema5 -pos 19001 44669
+schZoomIn -win $_nSchema5 -pos 16710 45330
+schZoomIn -win $_nSchema5 -pos 16494 45423
+schZoomIn -win $_nSchema5 -pos 16195 45331
+schZoomOut -win $_nSchema5 -pos 16178 45348
+schZoomOut -win $_nSchema5 -pos 16177 45347
+schZoomOut -win $_nSchema5 -pos 16178 45347
+schZoomOut -win $_nSchema5 -pos 16178 45346
+schZoomOut -win $_nSchema5 -pos 8257 56873
+schZoomOut -win $_nSchema5 -pos 8257 56873
+schZoomIn -win $_nSchema5 -pos 7270 55343
+schZoomIn -win $_nSchema5 -pos 7122 55642
+schZoomIn -win $_nSchema5 -pos 7047 55679
+schZoomIn -win $_nSchema5 -pos 7047 55678
+schZoomIn -win $_nSchema5 -pos 7046 55677
+schZoomIn -win $_nSchema5 -pos 7015 55630
+schZoomIn -win $_nSchema5 -pos 7015 55629
+schZoomOut -win $_nSchema5 -pos 7015 55557
+schZoomOut -win $_nSchema5 -pos 7015 55557
+schZoomOut -win $_nSchema5 -pos 7016 55557
+schZoomOut -win $_nSchema5 -pos 6982 55661
+schZoomOut -win $_nSchema5 -pos 6983 55660
+schZoomOut -win $_nSchema5 -pos 6982 55660
+schZoomOut -win $_nSchema5 -pos 6983 55661
+schZoomOut -win $_nSchema5 -pos 6983 55660
+schZoomOut -win $_nSchema5 -pos 6983 55660
+schZoomIn -win $_nSchema5 -pos -2116 57048
+schZoomIn -win $_nSchema5 -pos -2018 57097
+schZoomIn -win $_nSchema5 -pos -1982 57209
+schZoomIn -win $_nSchema5 -pos -1982 57210
+schZoomIn -win $_nSchema5 -pos -1983 57210
+schZoomIn -win $_nSchema5 -pos -1984 57210
+schZoomOut -win $_nSchema5 -pos 2548 57209
+schZoomOut -win $_nSchema5 -pos 2548 57208
+schZoomOut -win $_nSchema5 -pos 2438 56878
+schZoomOut -win $_nSchema5 -pos 2439 56855
+schZoomOut -win $_nSchema5 -pos 2439 56855
+schZoomOut -win $_nSchema5 -pos 2439 56855
+schZoomIn -win $_nSchema5 -pos 21192 52724
+schZoomIn -win $_nSchema5 -pos 21124 52892
+schZoomIn -win $_nSchema5 -pos 21099 52892
+schZoomOut -win $_nSchema5 -pos 14649 54236
+schZoomOut -win $_nSchema5 -pos 14297 54117
+schZoomOut -win $_nSchema5 -pos 14150 53496
+schZoomOut -win $_nSchema5 -pos 13857 53421
+schSelect -win $_nSchema5 -inst "gfm_nu0_0_x_syndrome1"
+schPushViewIn -win $_nSchema5
+schZoomIn -win $_nSchema5 -pos 8173 26296
+schZoomIn -win $_nSchema5 -pos 8136 26296
+schZoomIn -win $_nSchema5 -pos 8135 26296
+schZoomIn -win $_nSchema5 -pos 8135 26296
+schZoomOut -win $_nSchema5 -pos 7888 26561
+schZoomOut -win $_nSchema5 -pos 7888 26560
+schZoomOut -win $_nSchema5 -pos 7888 26560
+schZoomOut -win $_nSchema5 -pos 7827 26346
+schZoomOut -win $_nSchema5 -pos 6548 27220
+schZoomOut -win $_nSchema5 -pos 6219 26744
+schZoomOut -win $_nSchema5 -pos 5924 26329
+schZoomIn -win $_nSchema5 -pos -11868 27962
+schZoomIn -win $_nSchema5 -pos -12033 28297
+schZoomIn -win $_nSchema5 -pos -12447 28840
+schPopViewUp -win $_nSchema5
+schZoomIn -win $_nSchema5 -pos 6469 54471
+schZoomIn -win $_nSchema5 -pos 6434 54470
+schZoomOut -win $_nSchema5 -pos 6357 54862
+schZoomOut -win $_nSchema5 -pos 6389 54698
+schZoomOut -win $_nSchema5 -pos 6470 54534
+schZoomOut -win $_nSchema5 -pos 7026 55351
+schZoomOut -win $_nSchema5 -pos 8164 54840
+schZoomOut -win $_nSchema5 -pos 14326 54360
+schZoomOut -win $_nSchema5 -pos 14721 58351
+schZoomIn -win $_nSchema5 -pos 120128 30417
+schZoomIn -win $_nSchema5 -pos 120220 30604
+schZoomIn -win $_nSchema5 -pos 120290 30604
+schZoomIn -win $_nSchema5 -pos 105554 32024
+schZoomIn -win $_nSchema5 -pos 105554 32024
+schZoomIn -win $_nSchema5 -pos 104353 32911
+schZoomIn -win $_nSchema5 -pos 104133 32778
+schZoomIn -win $_nSchema5 -pos 104067 32711
+schZoomOut -win $_nSchema5 -pos 102683 32736
+schZoomOut -win $_nSchema5 -pos 102390 32751
+schZoomOut -win $_nSchema5 -pos 101849 32732
+schZoomOut -win $_nSchema5 -pos 93570 34462
+schZoomOut -win $_nSchema5 -pos 90735 34431
+schZoomOut -win $_nSchema5 -pos 79385 36489
+schZoomOut -win $_nSchema5 -pos 79384 36489
+schZoomOut -win $_nSchema5 -pos 79444 36488
+schZoomOut -win $_nSchema5 -pos 80918 35520
+schDeselectAll -win $_nSchema5
+schZoomIn -win $_nSchema5 -pos 5682 37749
+schZoomIn -win $_nSchema5 -pos 5682 37749
+schZoomIn -win $_nSchema5 -pos 5681 37749
+schZoomIn -win $_nSchema5 -pos 5681 37748
+schZoomIn -win $_nSchema5 -pos 5681 37748
+schZoomIn -win $_nSchema5 -pos 5681 37748
+schZoomIn -win $_nSchema5 -pos 5680 37748
+schZoomOut -win $_nSchema5 -pos 5680 37748
+schZoomOut -win $_nSchema5 -pos 5680 37840
+schZoomOut -win $_nSchema5 -pos 5680 37879
+schZoomOut -win $_nSchema5 -pos 5680 37878
+schZoomOut -win $_nSchema5 -pos 5680 37878
+schZoomOut -win $_nSchema5 -pos 8755 37423
+schZoomOut -win $_nSchema5 -pos 8708 37422
+schZoomOut -win $_nSchema5 -pos 8709 37422
+schZoomOut -win $_nSchema5 -pos 8342 37348
+schZoomIn -win $_nSchema5 -pos 6969 38643
+schZoomIn -win $_nSchema5 -pos 6968 38643
+schZoomIn -win $_nSchema5 -pos 6967 38643
+schZoomIn -win $_nSchema5 -pos 6967 38642
+schZoomOut -win $_nSchema5 -pos 6590 39666
+schZoomOut -win $_nSchema5 -pos 6591 39666
+schZoomOut -win $_nSchema5 -pos 6591 39665
+schZoomOut -win $_nSchema5 -pos 6591 39666
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "ibm"
+schPushViewIn -win $_nSchema5
+schPopViewUp -win $_nSchema5
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "detector"
+schPushViewIn -win $_nSchema5
+schZoomOut -win $_nSchema5 -pos 15434 11013
+schZoomOut -win $_nSchema5 -pos 15433 11012
+schZoomIn -win $_nSchema5 -pos 13398 10595
+schZoomIn -win $_nSchema5 -pos 13398 10619
+schZoomOut -win $_nSchema5 -pos 13327 10438
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "detector"
+schPushViewIn -win $_nSchema5
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "detector"
+schSelect -win $_nSchema5 -inst "corrector"
+schPushViewIn -win $_nSchema5
+schSelect -win $_nSchema5 -inst "ibm"
+schSelect -win $_nSchema5 -inst "ibm"
+schPushViewIn -win $_nSchema5
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "chien"
+schSelect -win $_nSchema5 -inst "chien"
+schPushViewIn -win $_nSchema5
+schZoomIn -win $_nSchema5 -pos 35294 150460
+schZoomIn -win $_nSchema5 -pos 35294 150461
+schZoomIn -win $_nSchema5 -pos 35293 150460
+schZoomIn -win $_nSchema5 -pos 35293 150460
+schZoomIn -win $_nSchema5 -pos 37543 149323
+schZoomIn -win $_nSchema5 -pos 37731 149418
+schZoomIn -win $_nSchema5 -pos 37801 149488
+schZoomIn -win $_nSchema5 -pos 37010 149381
+schZoomIn -win $_nSchema5 -pos 37009 149381
+schZoomIn -win $_nSchema5 -pos 37009 149381
+schZoomIn -win $_nSchema5 -pos 37008 149381
+schZoomOut -win $_nSchema5 -pos 37009 149380
+schZoomOut -win $_nSchema5 -pos 37008 149380
+schZoomOut -win $_nSchema5 -pos 37008 149380
+schZoomOut -win $_nSchema5 -pos 37008 149379
+schZoomOut -win $_nSchema5 -pos 37007 149378
+schZoomIn -win $_nSchema5 -pos 37007 149378
+schZoomIn -win $_nSchema5 -pos 37007 149378
+schZoomIn -win $_nSchema5 -pos 37007 149378
+schZoomIn -win $_nSchema5 -pos 37006 149378
+schZoomIn -win $_nSchema5 -pos 37006 149377
+schZoomIn -win $_nSchema5 -pos 37005 149377
+schZoomIn -win $_nSchema5 -pos 37005 149376
+schZoomOut -win $_nSchema5 -pos 37005 149376
+schZoomOut -win $_nSchema5 -pos 37004 149376
+schZoomOut -win $_nSchema5 -pos 37005 149376
+schZoomOut -win $_nSchema5 -pos 37004 149375
+schZoomOut -win $_nSchema5 -pos 37004 149374
+schZoomOut -win $_nSchema5 -pos 37003 149374
+schZoomOut -win $_nSchema5 -pos 37003 149374
+schZoomOut -win $_nSchema5 -pos 37004 149374
+schZoomOut -win $_nSchema5 -pos 25619 149701
+schZoomOut -win $_nSchema5 -pos 25619 149701
+schZoomIn -win $_nSchema5 -pos 44039 148230
+schZoomIn -win $_nSchema5 -pos 44039 148230
+schZoomIn -win $_nSchema5 -pos 44038 148229
+schZoomOut -win $_nSchema5 -pos 44038 148229
+schZoomOut -win $_nSchema5 -pos 44039 148229
+schZoomOut -win $_nSchema5 -pos 44038 148229
+schZoomOut -win $_nSchema5 -pos 44038 148229
+schZoomOut -win $_nSchema5 -pos 44038 148229
+schZoomOut -win $_nSchema5 -pos 76065 149135
+schZoomOut -win $_nSchema5 -pos 74740 148929
+schZoomOut -win $_nSchema5 -pos 72448 148800
+schZoomOut -win $_nSchema5 -pos 59236 150408
+schZoomOut -win $_nSchema5 -pos 56053 150809
+schZoomIn -win $_nSchema5 -pos 48095 148799
+schZoomIn -win $_nSchema5 -pos 48094 148799
+schZoomIn -win $_nSchema5 -pos 48095 148799
+schZoomIn -win $_nSchema5 -pos 48095 148798
+schZoomIn -win $_nSchema5 -pos 48095 148798
+schZoomIn -win $_nSchema5 -pos 48094 148798
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "ibm"
+schPushViewIn -win $_nSchema5
+schZoomIn -win $_nSchema5 -pos 27596 43487
+schZoomIn -win $_nSchema5 -pos 27596 43487
+schZoomIn -win $_nSchema5 -pos 27596 43486
+schZoomOut -win $_nSchema5 -pos 27596 43486
+schZoomOut -win $_nSchema5 -pos 27596 43487
+schZoomOut -win $_nSchema5 -pos 27596 43486
+schZoomOut -win $_nSchema5 -pos 27596 43487
+schZoomOut -win $_nSchema5 -pos 27596 43486
+schZoomOut -win $_nSchema5 -pos 27596 43485
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "ibm"
+schPushViewIn -win $_nSchema5
+schZoomIn -win $_nSchema5 -pos 33035 32545
+schZoomIn -win $_nSchema5 -pos 31997 32545
+schZoomIn -win $_nSchema5 -pos 31997 32545
+schZoomIn -win $_nSchema5 -pos 31996 32544
+schZoomIn -win $_nSchema5 -pos 31996 32544
+schZoomIn -win $_nSchema5 -pos 31996 32544
+schZoomOut -win $_nSchema5 -pos 28959 40108
+schZoomOut -win $_nSchema5 -pos 28958 40108
+schZoomOut -win $_nSchema5 -pos 28958 40108
+schZoomOut -win $_nSchema5 -pos 28959 40107
+schZoomOut -win $_nSchema5 -pos 24351 40867
+schZoomOut -win $_nSchema5 -pos 23913 41056
+schZoomIn -win $_nSchema5 -pos 7245 55287
+schZoomIn -win $_nSchema5 -pos 7245 55286
+schZoomOut -win $_nSchema5 -pos 71819 49638
+schZoomOut -win $_nSchema5 -pos 71817 49638
+schZoomOut -win $_nSchema5 -pos 71817 49638
+schZoomOut -win $_nSchema5 -pos 71815 49464
+schZoomOut -win $_nSchema5 -pos 71815 48921
+schZoomOut -win $_nSchema5 -pos 71276 48243
+schZoomIn -win $_nSchema5 -pos 106872 31108
+schZoomIn -win $_nSchema5 -pos 106621 31108
+schZoomIn -win $_nSchema5 -pos 105960 31108
+schZoomIn -win $_nSchema5 -pos 104897 31251
+schZoomIn -win $_nSchema5 -pos 103409 31412
+schZoomIn -win $_nSchema5 -pos 103410 31412
+schZoomOut -win $_nSchema5 -pos 102274 31412
+schZoomOut -win $_nSchema5 -pos 101639 31487
+schZoomOut -win $_nSchema5 -pos 100983 31534
+schZoomOut -win $_nSchema5 -pos 98940 31593
+schZoomIn -win $_nSchema5 -pos 3126 41176
+schZoomOut -win $_nSchema5 -pos 19049 42116
+schZoomOut -win $_nSchema5 -pos 20622 41909
+schZoomOut -win $_nSchema5 -pos 28060 40699
+schZoomOut -win $_nSchema5 -pos 36610 40159
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "chien"
+schSelect -win $_nSchema5 -inst "ibm"
+schPushViewIn -win $_nSchema5
+schZoomIn -win $_nSchema5 -pos 148166 43424
+schZoomIn -win $_nSchema5 -pos 148167 43424
+schZoomIn -win $_nSchema5 -pos 148166 43424
+schZoomIn -win $_nSchema5 -pos 148223 43424
+schZoomIn -win $_nSchema5 -pos 148223 43424
+schZoomOut -win $_nSchema5 -pos 148223 43456
+schZoomIn -win $_nSchema5 -pos 121662 62731
+schZoomIn -win $_nSchema5 -pos 121661 62731
+schZoomIn -win $_nSchema5 -pos 121661 62730
+schZoomIn -win $_nSchema5 -pos 121661 62730
+schZoomIn -win $_nSchema5 -pos 121661 62730
+schZoomOut -win $_nSchema5 -pos 123273 62348
+schZoomOut -win $_nSchema5 -pos 123273 62253
+schZoomOut -win $_nSchema5 -pos 123272 62163
+schZoomOut -win $_nSchema5 -pos 123272 62126
+schZoomOut -win $_nSchema5 -pos 123249 62079
+schZoomIn -win $_nSchema5 -pos 121897 60743
+schZoomIn -win $_nSchema5 -pos 121832 60721
+schZoomIn -win $_nSchema5 -pos 121783 60704
+schZoomIn -win $_nSchema5 -pos 121783 60704
+schZoomIn -win $_nSchema5 -pos 121782 60704
+schSelect -win $_nSchema5 -instpin "bch_ibm:Always32#SigOp32:143:143:Assignment" \
+          "OH_kappa6_0\[3:0\]"
+schDeselectAll -win $_nSchema5
+schSetOptions -win $_nSchema5 -instName on
+schZoomOut -win $_nSchema5 -pos 119155 61958
+schZoomOut -win $_nSchema5 -pos 119146 61846
+schSetOptions -win $_nSchema5 -completeName on
+schZoomOut -win $_nSchema5 -pos 121907 60154
+schZoomOut -win $_nSchema5 -pos 120761 60289
+schZoomIn -win $_nSchema5 -pos 124342 58959
+schZoomOut -win $_nSchema5 -pos 120370 60057
+schZoomOut -win $_nSchema5 -pos 120369 60057
+schZoomOut -win $_nSchema5 -pos 120370 60056
+schZoomOut -win $_nSchema5 -pos 120369 60056
+schZoomOut -win $_nSchema5 -pos 120034 60056
+schZoomIn -win $_nSchema5 -pos 115611 60248
+schZoomIn -win $_nSchema5 -pos 115611 60249
+schZoomIn -win $_nSchema5 -pos 115611 60249
+schZoomOut -win $_nSchema5 -pos 104823 62377
+schZoomOut -win $_nSchema5 -pos 104823 62133
+schZoomOut -win $_nSchema5 -pos 103189 61396
+schZoomOut -win $_nSchema5 -pos 99734 61237
+schZoomOut -win $_nSchema5 -pos 99498 61197
+schZoomIn -win $_nSchema5 -pos 9240 54156
+schZoomIn -win $_nSchema5 -pos 9239 54155
+schZoomIn -win $_nSchema5 -pos 9239 54154
+schZoomIn -win $_nSchema5 -pos 9239 54154
+schZoomIn -win $_nSchema5 -pos 9238 54154
+schZoomIn -win $_nSchema5 -pos 9237 54153
+schZoomOut -win $_nSchema5 -pos 9063 54356
+schZoomOut -win $_nSchema5 -pos 9062 54356
+schZoomOut -win $_nSchema5 -pos 9062 54355
+schZoomOut -win $_nSchema5 -pos 8670 53638
+schZoomOut -win $_nSchema5 -pos 8669 53638
+schZoomOut -win $_nSchema5 -pos 8669 53639
+schZoomOut -win $_nSchema5 -pos 8670 53638
+schZoomOut -win $_nSchema5 -pos 8670 53638
+schPopViewUp -win $_nSchema5
+schDeselectAll -win $_nSchema5
+schPopViewUp -win $_nSchema5
+schSelect -win $_nSchema5 -inst "detector"
+schPushViewIn -win $_nSchema5
+schSelect -win $_nSchema5 -inst "syndromes"
+schPushViewIn -win $_nSchema5
+schSelect -win $_nSchema5 -signal \
+          "received\[0\],received\[0\],received\[0\],received\[0\]"
+schZoomIn -win $_nSchema5 -pos 51429 131506
+schZoomIn -win $_nSchema5 -pos 51429 131506
+schZoomIn -win $_nSchema5 -pos 51428 131506
+schZoomIn -win $_nSchema5 -pos 51427 131505
+schZoomIn -win $_nSchema5 -pos 52789 131199
+schZoomIn -win $_nSchema5 -pos 52808 131199
+schZoomIn -win $_nSchema5 -pos 52808 131199
+schZoomIn -win $_nSchema5 -pos 52807 131198
+schZoomOut -win $_nSchema5 -pos 47957 131440
+schSelect -win $_nSchema5 -inst "bch_syndromes:Always49#SigOp3:12:12:And"
+schSelect -win $_nSchema5 -instpin "bch_syndromes:Always49#SigOp3:12:12:And" \
+          "IH_received\[0\],received\[0\],received\[0\],received\[0\]"
+schSelect -win $_nSchema5 -signal \
+          "received\[0\],received\[0\],received\[0\],received\[0\]"
+schZoomOut -win $_nSchema5 -pos 52364 131520
+schZoomOut -win $_nSchema5 -pos 52326 131520
+schZoomOut -win $_nSchema5 -pos 52295 131441
+schZoomOut -win $_nSchema5 -pos 52257 131381
+schZoomOut -win $_nSchema5 -pos 50139 132069
+schZoomOut -win $_nSchema5 -pos 49592 131946
+schZoomOut -win $_nSchema5 -pos 48298 130179
+schZoomOut -win $_nSchema5 -pos 39885 129266
+schZoomOut -win $_nSchema5 -pos 39885 129265
+schZoomOut -win $_nSchema5 -pos 39885 129265
+schZoomOut -win $_nSchema5 -pos 39700 129171
+schZoomOut -win $_nSchema5 -pos 34130 123660
+schZoomOut -win $_nSchema5 -pos 34130 123660
+schZoomOut -win $_nSchema5 -pos 34130 123659
+schZoomIn -win $_nSchema5 -pos 2171 191074
+schZoomIn -win $_nSchema5 -pos -549 185062
+schZoomIn -win $_nSchema5 -pos -1824 180940
+schZoomIn -win $_nSchema5 -pos 1522 179684
+schZoomIn -win $_nSchema5 -pos 1522 179684
+schZoomIn -win $_nSchema5 -pos 1629 179521
+schZoomIn -win $_nSchema5 -pos 1710 179276
+schZoomOut -win $_nSchema5 -pos 6430 177044
+schZoomOut -win $_nSchema5 -pos 6431 177044
+schZoomOut -win $_nSchema5 -pos 6431 177044
+schZoomOut -win $_nSchema5 -pos 6372 177044
+schZoomOut -win $_nSchema5 -pos 25946 179581
+schZoomOut -win $_nSchema5 -pos 28254 179021
+schZoomIn -win $_nSchema5 -pos 48681 87185
+schZoomIn -win $_nSchema5 -pos 48681 87185
+schZoomIn -win $_nSchema5 -pos 48680 87184
+schZoomIn -win $_nSchema5 -pos 48680 87184
+schZoomIn -win $_nSchema5 -pos 48680 87183
+schZoomIn -win $_nSchema5 -pos 48680 87183
+schZoomIn -win $_nSchema5 -pos 48679 87183
+schZoomIn -win $_nSchema5 -pos 47585 87650
+schZoomIn -win $_nSchema5 -pos 47585 87649
+schSelect -win $_nSchema5 -signal \
+          "received\[0\],received\[0\],received\[0\],received\[0\]"
+schZoomOut -win $_nSchema5 -pos 46370 88393
+schZoomOut -win $_nSchema5 -pos 46187 88492
+schZoomOut -win $_nSchema5 -pos 45902 88601
+schZoomOut -win $_nSchema5 -pos 45648 88755
+schZoomOut -win $_nSchema5 -pos 43807 89375
+schZoomOut -win $_nSchema5 -pos 42907 89428
+schZoomOut -win $_nSchema5 -pos 42114 89428
+schZoomOut -win $_nSchema5 -pos 37939 93144
+schZoomOut -win $_nSchema5 -pos 37940 93144
+schZoomOut -win $_nSchema5 -pos 37940 93144
+schZoomOut -win $_nSchema5 -pos 37941 93143
+schZoomOut -win $_nSchema5 -pos 38345 91207
+schZoomOut -win $_nSchema5 -pos 33804 92226
+schZoomOut -win $_nSchema5 -pos 30493 92544
+schZoomIn -win $_nSchema5 -pos 10983 173494
+schZoomIn -win $_nSchema5 -pos 10243 173494
+schZoomIn -win $_nSchema5 -pos 9246 172822
+schZoomIn -win $_nSchema5 -pos 8497 172402
+schZoomIn -win $_nSchema5 -pos 4443 173157
+schZoomIn -win $_nSchema5 -pos 4443 173157
+schSelect -win $_nSchema5 -signal \
+          "received\[14\],received\[14\],received\[14\],received\[14\]"
+schZoomOut -win $_nSchema5 -pos 6583 179747
+schZoomOut -win $_nSchema5 -pos 6583 179747
+schZoomOut -win $_nSchema5 -pos 6583 179746
+schZoomOut -win $_nSchema5 -pos 6583 179746
+schZoomIn -win $_nSchema5 -pos 53250 191944
+schZoomIn -win $_nSchema5 -pos 52479 191944
+schZoomIn -win $_nSchema5 -pos 52431 191944
+schZoomIn -win $_nSchema5 -pos 52250 191797
+schZoomIn -win $_nSchema5 -pos 52250 191797
+schZoomIn -win $_nSchema5 -pos 52250 191797
+schZoomIn -win $_nSchema5 -pos 52280 191827
+schZoomOut -win $_nSchema5 -pos 49010 191423
+schZoomOut -win $_nSchema5 -pos 49010 191422
+schZoomOut -win $_nSchema5 -pos 45010 189907
+schZoomOut -win $_nSchema5 -pos 45010 189884
+schZoomOut -win $_nSchema5 -pos 45010 189883
+schZoomOut -win $_nSchema5 -pos 45010 189883
+schZoomOut -win $_nSchema5 -pos 45010 189883
+schZoomOut -win $_nSchema5 -pos 45064 189497
+schZoomOut -win $_nSchema5 -pos 45132 189359
+schZoomIn -win $_nSchema5 -pos 10773 173616
+schZoomIn -win $_nSchema5 -pos 10772 173616
+schZoomIn -win $_nSchema5 -pos 10772 173616
+schZoomIn -win $_nSchema5 -pos 10736 173724
+schZoomIn -win $_nSchema5 -pos 5482 175140
+schSelect -win $_nSchema5 -signal \
+          "received\[13\],received\[13\],received\[13\],received\[13\]"
+schSelect -win $_nSchema5 -signal \
+          "received\[12\],received\[12\],received\[12\],received\[12\]"
+schSelect -win $_nSchema5 -signal \
+          "received\[11\],received\[11\],received\[11\],received\[11\]"
+schZoomOut -win $_nSchema5 -pos 13504 177835
+schZoomOut -win $_nSchema5 -pos 13503 177834
+schZoomOut -win $_nSchema5 -pos 13408 177769
+schZoomOut -win $_nSchema5 -pos 13052 177091
+schZoomOut -win $_nSchema5 -pos 52886 205827
+schZoomOut -win $_nSchema5 -pos 52885 205826
+schZoomOut -win $_nSchema5 -pos 52885 205826
+schZoomIn -win $_nSchema5 -pos 55680 203489
+schZoomIn -win $_nSchema5 -pos 55680 203416
+schZoomIn -win $_nSchema5 -pos 55518 203525
+schZoomIn -win $_nSchema5 -pos 55233 203607
+schZoomIn -win $_nSchema5 -pos 55111 203576
+schZoomIn -win $_nSchema5 -pos 54951 203529
+schZoomIn -win $_nSchema5 -pos 54797 203460
+schZoomIn -win $_nSchema5 -pos 54771 203447
+schZoomOut -win $_nSchema5 -pos 53227 202950
+schZoomOut -win $_nSchema5 -pos 53227 202950
+schZoomOut -win $_nSchema5 -pos 53226 202950
+schZoomOut -win $_nSchema5 -pos 53225 202931
+schZoomOut -win $_nSchema5 -pos 53037 203050
+schZoomOut -win $_nSchema5 -pos 53037 203050
+schZoomOut -win $_nSchema5 -pos 53037 203049
+schZoomOut -win $_nSchema5 -pos 53036 203049
+schZoomOut -win $_nSchema5 -pos 53036 203049
+schZoomIn -win $_nSchema5 -pos 60655 133615
+schZoomIn -win $_nSchema5 -pos 60655 133615
+schZoomIn -win $_nSchema5 -pos 60655 133614
+schZoomIn -win $_nSchema5 -pos 60655 133614
+schZoomIn -win $_nSchema5 -pos 60656 133614
+schZoomIn -win $_nSchema5 -pos 60656 133614
+schZoomIn -win $_nSchema5 -pos 60655 133613
+schSelect -win $_nSchema5 -signal "received\[14:0\]"
+schZoomOut -win $_nSchema5 -pos 52864 137023
+schZoomOut -win $_nSchema5 -pos 52863 137023
+schZoomOut -win $_nSchema5 -pos 52864 137022
+schZoomOut -win $_nSchema5 -pos 52864 137022
+schZoomOut -win $_nSchema5 -pos 52864 137022
+schZoomOut -win $_nSchema5 -pos 52864 137021
+schZoomIn -win $_nSchema5 -pos 53815 200155
+schZoomIn -win $_nSchema5 -pos 53594 200239
+schZoomIn -win $_nSchema5 -pos 53553 200238
+schZoomIn -win $_nSchema5 -pos 53553 200238
+schZoomOut -win $_nSchema5 -pos 53819 201641
+schZoomOut -win $_nSchema5 -pos 53820 201641
+schZoomOut -win $_nSchema5 -pos 53820 201605
+schZoomOut -win $_nSchema5 -pos 53820 201216
+schZoomIn -win $_nSchema5 -pos 53000 211654
+schZoomIn -win $_nSchema5 -pos 53000 211654
+schZoomIn -win $_nSchema5 -pos 52920 211622
+schZoomOut -win $_nSchema5 -pos 52884 211573
+schZoomOut -win $_nSchema5 -pos 52884 211574
+schZoomOut -win $_nSchema5 -pos 52884 211573
+schZoomOut -win $_nSchema5 -pos 52884 211574
+schZoomOut -win $_nSchema5 -pos 52971 212162
+schZoomOut -win $_nSchema5 -pos 52934 212014
+schZoomOut -win $_nSchema5 -pos 52934 211738
+schZoomOut -win $_nSchema5 -pos 52878 211566
+schZoomIn -win $_nSchema5 -pos 72422 224608
+schZoomIn -win $_nSchema5 -pos 71889 224500
+schZoomIn -win $_nSchema5 -pos 71729 224217
+schZoomIn -win $_nSchema5 -pos 71579 223884
+schZoomIn -win $_nSchema5 -pos 71399 224020
+schZoomIn -win $_nSchema5 -pos 71382 224037
+schZoomIn -win $_nSchema5 -pos 71381 224037
+schZoomIn -win $_nSchema5 -pos 71381 224037
+schZoomOut -win $_nSchema5 -pos 71195 224065
+schZoomOut -win $_nSchema5 -pos 71196 224065
+schZoomOut -win $_nSchema5 -pos 71196 224064
+schZoomOut -win $_nSchema5 -pos 71195 224064
+schZoomOut -win $_nSchema5 -pos 70935 223817
+schZoomOut -win $_nSchema5 -pos 70522 223663
+schZoomOut -win $_nSchema5 -pos 67998 224761
+schZoomOut -win $_nSchema5 -pos 63078 221148
+schZoomOut -win $_nSchema5 -pos 63078 221147
+schZoomIn -win $_nSchema5 -pos 53588 222861
+schZoomIn -win $_nSchema5 -pos 53389 222901
+schZoomIn -win $_nSchema5 -pos 53389 222901
+schZoomIn -win $_nSchema5 -pos 53365 222901
+schZoomIn -win $_nSchema5 -pos 53348 222849
+schZoomOut -win $_nSchema5 -pos 54682 222760
+schZoomOut -win $_nSchema5 -pos 54682 222760
+schZoomOut -win $_nSchema5 -pos 54682 222760
+schZoomOut -win $_nSchema5 -pos 54682 222759
+schZoomOut -win $_nSchema5 -pos 54682 222665
+schZoomOut -win $_nSchema5 -pos 54682 222239
+schZoomOut -win $_nSchema5 -pos 54682 221947

@@ -1,0 +1,20 @@
+{
+    "encoder_tb": [
+        "encoder_tb",
+        "VUnig",
+        "module",
+        1
+    ],
+    "decoder_tb": [
+        "decoder_tb",
+        "dqGQe",
+        "module",
+        2
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}
