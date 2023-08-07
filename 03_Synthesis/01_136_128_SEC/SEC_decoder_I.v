@@ -1,4 +1,4 @@
-module SEC_decoder_I(input [135:0] codeword, output [135:0] message);
+module SEC_decoder_I(input [135:0] codeword, output [127:0] message);
 
 	wire[7:0] syndrome;
 	reg[135:0] decoded;
