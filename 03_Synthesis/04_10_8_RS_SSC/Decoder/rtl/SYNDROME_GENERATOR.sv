@@ -23,19 +23,19 @@ module SYNDROME_GENERATOR(input [79:0] codeword_in,
   */
 
 
-  wire [7:0] parity [8:0]; // front [7:0] => each element is a size of 8bits, backward [8:0] => nine elements
-  GFMULT gmult_00(codeword_in[79:72],8'b0000_0001, parity[8]); // data[79:72] x a^0 = parity[7] (8bit)
-  GFMULT gmult_01(codeword_in[71:64],8'b0000_0010, parity[7]); // data[71:64] x a^0 = parity[6] (8bit)
-  GFMULT gmult_02(codeword_in[63:56],8'b0000_0100, parity[6]); // data[63:56] x a^0 = parity[5] (8bit)
-  GFMULT gmult_03(codeword_in[55:48],8'b0000_1000, parity[5]); // data[55:48] x a^0 = parity[4] (8bit)
-  GFMULT gmult_04(codeword_in[47:40],8'b0001_0000, parity[4]); // data[47:40] x a^0 = parity[3] (8bit)
-  GFMULT gmult_05(codeword_in[39:32],8'b0010_0000, parity[3]); // data[39:32] x a^0 = parity[2] (8bit)
-  GFMULT gmult_06(codeword_in[31:24],8'b0100_0000, parity[2]); // data[31:24] x a^0 = parity[1] (8bit)
-  GFMULT gmult_07(codeword_in[23:16],8'b1000_0000, parity[1]); // data[23:16] x a^0 = parity[0] (8bit)
-  GFMULT gmult_08(codeword_in[7:0]  ,8'b0000_0001, parity[0]); // data[23:16] x a^0 = parity[0] (8bit)
+  wire [7:0] parity [7:0]; // front [7:0] => each element is a size of 8bits, backward [7:0] => eight elements
+  GFMULT gmult_00(codeword_in[79:72],8'b0000_0001, parity[7]); // data[79:72] x a^0 = parity[7] (8bit)
+  GFMULT gmult_01(codeword_in[71:64],8'b0000_0010, parity[6]); // data[71:64] x a^1 = parity[6] (8bit)
+  GFMULT gmult_02(codeword_in[63:56],8'b0000_0100, parity[5]); // data[63:56] x a^2 = parity[5] (8bit)
+  GFMULT gmult_03(codeword_in[55:48],8'b0000_1000, parity[4]); // data[55:48] x a^3 = parity[4] (8bit)
+  GFMULT gmult_04(codeword_in[47:40],8'b0001_0000, parity[3]); // data[47:40] x a^4 = parity[3] (8bit)
+  GFMULT gmult_05(codeword_in[39:32],8'b0010_0000, parity[2]); // data[39:32] x a^5 = parity[2] (8bit)
+  GFMULT gmult_06(codeword_in[31:24],8'b0100_0000, parity[1]); // data[31:24] x a^6 = parity[1] (8bit)
+  GFMULT gmult_07(codeword_in[23:16],8'b1000_0000, parity[0]); // data[23:16] x a^7 = parity[0] (8bit)
+  // GFMULT gmult_08(codeword_in[7:0]  ,8'b0000_0001, parity[0]); // data[23:16] x a^0 = parity[0] (8bit)
 
   assign syndrome_out[15:8] = codeword_in[79:72] ^ codeword_in[71:64] ^ codeword_in[63:56] ^ codeword_in[55:48] ^ codeword_in[47:40] ^ codeword_in[39:32] ^ codeword_in[31:24] ^ codeword_in[23:16] ^ codeword_in[15:8];
-  assign syndrome_out[7:0] = parity[8] ^ parity[7] ^ parity[6] ^ parity[5] ^ parity[4] ^ parity[3] ^ parity[2] ^ parity[1] ^ parity[0] ^ codeword_in[7:0];
+  assign syndrome_out[7:0] = parity[7] ^ parity[6] ^ parity[5] ^ parity[4] ^ parity[3] ^ parity[2] ^ parity[1] ^ parity[0] ^ codeword_in[7:0];
 
 endmodule
 
