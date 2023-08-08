@@ -1,0 +1,84 @@
+#!/bin/bash
+
+source ../../common.sh
+
+SAVE_PATH=./lib_container.tcl
+SAED32_PATH=$LIB_PATH/SAED32_EDK/lib
+
+# Choose threshold voltage
+read -p "MultiThreshold Design? [yes/no]: " MVT
+if [[ $MVT = "no" ]]; then
+    read -p "Define Standard Cell Type? [hvt/rvt/lvt]: " CELL_TYPE
+    read -p "Enter DB [ccs/nldm]: " DB
+    read -p "Choose Characterization Corner [typ middle low]: " CORNER
+	LIB_PATH=$SAED32_PATH/stdcell_$CELL_TYPE/db_$DB/
+  if [[ $CORNER == "typ" ]]; then
+    lib_list_ff=$LIB_PATH/*vt_ff*16*db
+    lib_list_ss=$LIB_PATH/*vt_ss*95*db
+    lib_list_tt=$LIB_PATH/*vt_tt*05*db
+  elif [[ $CORNER == "middle" ]]; then
+    lib_list_ff=$LIB_PATH/*vt_ff*95*db
+    lib_list_ss=$LIB_PATH/*vt_ss*75*db
+    lib_list_tt=$LIB_PATH/*vt_tt*85*db
+  elif [[ $CORNER == "low" ]]; then
+    lib_list_ff=$LIB_PATH/*vt_ff*85*db
+    lib_list_ss=$LIB_PATH/*vt_ss*7v*db
+    lib_list_tt=$LIB_PATH/*vt_tt*78*db
+  fi
+
+elif [[ $MVT = "yes" ]]; then
+  read -p "Enter DB [ccs/nldm]: " DB
+  read -p "Choose Characterization Corner [typ middle low]: " CORNER
+  if [[ $CORNER == "typ" ]]; then
+	  lib_list_ff="$SAED32_PATH/stdcell_lvt/db_$DB/*vt_ff*16*db $SAED32_PATH/stdcell_hvt/db_$DB/*vt_ff*16*db"
+    lib_list_ss="$SAED32_PATH/stdcell_lvt/db_$DB/*vt_ss*95*db $SAED32_PATH/stdcell_hvt/db_$DB/*vt_ss*95*db"
+    lib_list_tt="$SAED32_PATH/stdcell_lvt/db_$DB/*vt_tt*05*db $SAED32_PATH/stdcell_hvt/db_$DB/*vt_tt*05*db"
+  elif [[ $CORNER == "middle" ]]; then
+	  lib_list_ff="$SAED32_PATH/stdcell_lvt/db_$DB/*vt_ff*95*db $SAED32_PATH/stdcell_hvt/db_$DB/*vt_ff*95*db"
+    lib_list_ss="$SAED32_PATH/stdcell_lvt/db_$DB/*vt_ss*75*db $SAED32_PATH/stdcell_hvt/db_$DB/*vt_ss*75*db"
+    lib_list_tt="$SAED32_PATH/stdcell_lvt/db_$DB/*vt_tt*85*db $SAED32_PATH/stdcell_hvt/db_$DB/*vt_tt*85*db"
+  elif [[ $CORNER == "low" ]]; then
+	  lib_list_ff="$SAED32_PATH/stdcell_lvt/db_$DB/*vt_ff*85*db $SAED32_PATH/stdcell_hvt/db_$DB/*vt_ff*85*db"
+    lib_list_ss="$SAED32_PATH/stdcell_lvt/db_$DB/*vt_ss*7v*db $SAED32_PATH/stdcell_hvt/db_$DB/*vt_ss*7v*db"
+    lib_list_tt="$SAED32_PATH/stdcell_lvt/db_$DB/*vt_tt*78*db $SAED32_PATH/stdcell_hvt/db_$DB/*vt_tt*78*db"
+  fi
+fi
+
+# Save link_library
+printf "%s\n" "set link_library \\" > $SAVE_PATH
+printf "[list * " >> $SAVE_PATH
+for LIB in $lib_list_ff
+do
+	printf "%s " "$LIB" >> $SAVE_PATH
+done
+for LIB in $lib_list_tt
+do
+	printf "%s " "$LIB" >> $SAVE_PATH
+done
+for LIB in $lib_list_ss
+do
+	printf "%s " "$LIB" >> $SAVE_PATH
+done
+printf "]\n" >> $SAVE_PATH
+
+# Choose PVT corner
+# and Save target_library
+read -p "PVT Corner? [ff/tt/ss]: " PVT
+if [ $PVT == 'ff' ]
+then
+	TARGET_LIST=$(ls $lib_list_ff)
+elif [ $PVT == 'tt' ]
+then
+	TARGET_LIST=$(ls $lib_list_tt)
+elif [ $PVT == 'ss' ]
+then
+	TARGET_LIST=$(ls $lib_list_ss)
+fi
+printf "%s\n" "set target_library \\" >> $SAVE_PATH
+printf "[list " >> $SAVE_PATH
+for LIB in $TARGET_LIST
+do
+	printf "%s " "$LIB" >> $SAVE_PATH
+done
+printf "]\n" >> $SAVE_PATH
+

@@ -1,0 +1,10 @@
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_chien.v
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_corrector.v
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_decoder.v
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_decoder_tb.v
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_detector.v
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_encoder.v
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_encoder_tb.v
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_gfmult.v
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_ibm.v
+/home/song/SMARTECC/BCH/DEC_15_7/RTL/rtl/bch_syndromes.v

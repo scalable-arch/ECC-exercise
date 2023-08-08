@@ -1,0 +1,291 @@
+#######################################################################################
+# log primitive debug message of FSDB dumping                                         #
+# This is for R&D to analyze when there are issues happening when FSDB dump           #
+#######################################################################################
+ANF: vcsd_get_serial_mode_status('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vcsd_get_serial_mode_status')
+ANF: vcsd_enable_sva_success_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vcsd_enable_sva_success_callback')
+ANF: vcsd_disable_sva_success_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vcsd_disable_sva_success_callback')
+ANF: vcsd_get_power_scope_name('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vcsd_get_power_scope_name')
+ANF: vcsd_begin_no_value_var_info('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vcsd_begin_no_value_var_info')
+ANF: vcsd_end_no_value_var_info('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vcsd_end_no_value_var_info')
+ANF: vcsd_remove_xprop_merge_mode_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vcsd_remove_xprop_merge_mode_callback')
+ANF: vhpi_get_cb_info('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhpi_get_cb_info')
+ANF: vhpi_free_handle('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhpi_free_handle')
+ANF: vhpi_fetch_vcsd_handle('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhpi_fetch_vcsd_handle')
+ANF: vhpi_fetch_vpi_handle('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhpi_fetch_vpi_handle')
+ANF: vhpi_has_verilog_parent('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhpi_has_verilog_parent')
+ANF: vhpi_is_verilog_scope('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhpi_is_verilog_scope')
+ANF: scsd_xprop_is_enabled('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: scsd_thread_get_info('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_thread_get_info')
+ANF: scsd_thread_vc_init('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_thread_vc_init')
+ANF: scsd_master_set_delta_sync_cbk('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_master_set_delta_sync_cbk')
+ANF: scsd_fgp_get_fsdb_cores('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: scsd_fgp_get_fsdb_cores')
+ANF: vhdi_dt_get_type('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_get_variable_info_by_vhpi('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_def_get_variable_info_by_vhpi')
+ANF: vhdi_def_free('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_cbk_set_force_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_cbk_set_force_callback')
+ANF: vhdi_trigger_init_force('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_trigger_init_force')
+ANF: vhdi_ist_check_scsd_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+ANF: vdi_ist_convert_by_vhdi('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vdi_ist_convert_by_vhdi')
+ANF: vhdi_ist_get_module_id('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_ist_get_module_id')
+ANF: vhdi_refine_foreign_scope_type('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_refine_foreign_scope_type')
+ANF: vhdi_flush_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_flush_callback')
+ANF: vhdi_set_orig_name('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_set_orig_name')
+ANF: vhdi_set_dump_pt('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_set_dump_pt')
+ANF: vhdi_get_fsdb_option('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_get_fsdb_option')
+ANF: vhdi_fgp_get_mode('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_fgp_get_mode')
+ANF: vhdi_node_register_composite_var('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_node_register_composite_var')
+ANF: vhdi_node_analysis('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_node_analysis')
+ANF: vhdi_node_id('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_node_id')
+ANF: vhdi_node_ist_check_scsd_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_node_ist_check_scsd_callback')
+ANF: vhdi_node_ist_add_scsd_callback('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_node_ist_add_scsd_callback')
+ANF: vhdi_node_ist_get_value_addr('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_node_ist_get_value_addr')
+ANF: vhdi_enc_def_traverse_module('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_enc_def_traverse_module')
+ANF: vhdi_enc_def_traverse_scope('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_enc_def_traverse_scope')
+ANF: vhdi_enc_def_traverse_variable('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_enc_def_traverse_variable')
+ANF: vhdi_enc_ist_traverse_scope('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_enc_ist_traverse_scope')
+ANF: vhdi_enc_ist_traverse_variable('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_enc_ist_traverse_variable')
+ANF: vhdi_enc_ist_get_module_id('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_enc_ist_get_module_id')
+ANF: vhdi_enc_def_get_handle_by_module_id('/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv: undefined symbol: vhdi_enc_def_get_handle_by_module_id')
+VCS compile option:
+ option[0]: /home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv
+ option[1]: -sml=verdi
+ option[2]: +fsdb+gate=off
+ option[3]: -ucli2Proc
+ option[4]: -ucli
+ option[5]: -l
+ option[6]: /home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/VerdiLog/sim.log
+ option[7]: /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/bin/vcs1
+ option[8]: -Mcc=gcc
+ option[9]: -Mcplusplus=g++
+ option[10]: -Masflags=
+ option[11]: -Mcfl= -pipe -fPIC -O -I/usr/synopsys/vcs/R-2020.12-SP1-1/include 
+ option[12]: -Mxllcflags=
+ option[13]: -Mxcflags= -pipe -fPIC -I/usr/synopsys/vcs/R-2020.12-SP1-1/include
+ option[14]: -Mldflags= -Wl,--no-as-needed -rdynamic 
+ option[15]: -Mout=simv
+ option[16]: -Mamsrun=
+ option[17]: -Mvcsaceobjs=
+ option[18]: -Mobjects= /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libvirsim.so /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/liberrorinf.so /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libsnpsmalloc.so /usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/libvfs.so 
+ option[19]: -Mexternalobj=
+ option[20]: -Msaverestoreobj=/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcs_save_restore_new.o
+ option[21]: -Mcrt0=
+ option[22]: -Mcrtn=
+ option[23]: -Mcsrc=
+ option[24]: -Msyslibs=/usr/synopsys/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/pli.a -ldl 
+ option[25]: -full64
+ option[26]: -debug_access+all
+ option[27]: +vpi
+ option[28]: +vcsd1
+ option[29]: +itf+/usr/synopsys/vcs/R-2020.12-SP1-1/linux64/lib/vcsdp_lite.tab
+ option[30]: -kdb
+ option[31]: -Xufe=2steps
+ option[32]: -picarchive
+ option[33]: -P
+ option[34]: /usr/synopsys/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/verdi.tab
+ option[35]: -fsdb
+ option[36]: -gen_obj
+ option[37]: -f
+ option[38]: /home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/..//sim/tb/filelist.f
+ option[39]: -f
+ option[40]: /home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/..//rtl/filelist.f
+ option[41]: -load
+ option[42]: /usr/synopsys/verdi/R-2020.12-SP1-1/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+Chronologic Simulation VCS Release R-2020.12-SP1-1_Full64
+Linux 5.4.0-124-generic #140~18.04.1-Ubuntu SMP Fri Aug 5 11:43:34 UTC 2022 x86_64
+CPU cores: 40
+Limit information:
+======================================
+cputime		unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize		0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		1048576
+memorylocked		65536 kbytes
+maxproc		2058331
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+CONDA_SHLVL=1
+LC_ALL=C
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:
+CONDA_EXE=/compuworks/anaconda3/bin/conda
+LC_MEASUREMENT=ko_KR.UTF-8
+SYS_INST_DIR=/usr/synopsys/verdi/R-2020.12-SP1-1
+SSH_CONNECTION=115.145.211.105 53340 115.145.211.247 8002
+LESSCLOSE=/usr/bin/lesspipe %s %s
+LC_PAPER=ko_KR.UTF-8
+LC_MONETARY=ko_KR.UTF-8
+LANG=C
+DISPLAY=localhost:12.0
+OLDPWD=/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim
+SNPSLMD_LICENSE_FILE=27000@semi-lic.skku.edu
+CONDA_PREFIX=/compuworks/anaconda3
+_CE_M=
+LC_NAME=ko_KR.UTF-8
+XDG_SESSION_ID=682
+NOVAS_SYNC_MOTIF_DISP=
+USER=song
+DC_HOME=/usr/synopsys/syn/Q-2019.12-SP5-5
+ROOT_PATH=/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/../
+PWD=/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output
+HOME=/home/song
+CONDA_PYTHON_EXE=/compuworks/anaconda3/bin/python
+SSH_CLIENT=115.145.211.105 53340 8002
+XNLSPATH=/usr/synopsys/verdi/R-2020.12-SP1-1/etc/access/nls
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+_CE_CONDA=
+LC_ADDRESS=ko_KR.UTF-8
+LC_NUMERIC=ko_KR.UTF-8
+SPS_XFONT_PATH=/usr/synopsys/verdi/R-2020.12-SP1-1/XFont
+CONDA_PROMPT_MODIFIER=(base) 
+SSH_TTY=/dev/pts/21
+MAIL=/var/mail/song
+LD_NOVERSION=1
+QT_PLUGIN_PATH=/usr/synopsys/verdi/R-2020.12-SP1-1/platform/LINUXAMD64/lib/Qt/plugins
+TERM=xterm
+SHELL=/bin/bash
+XMODIFIERS=@im=none
+VERDI_HOME=/usr/synopsys/verdi/R-2020.12-SP1-1
+SHLVL=2
+SPS_FONT_PATH=/usr/synopsys/verdi/R-2020.12-SP1-1/font
+LC_TELEPHONE=ko_KR.UTF-8
+VERDI_ORIGNAL_LD_LIBRARY_PATH=/usr/local/cuda-10.2/lib64:
+LOGNAME=song
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1003/bus
+SPS_RGB_PATH=/usr/synopsys/verdi/R-2020.12-SP1-1/etc/rgb
+XDG_RUNTIME_DIR=/run/user/1003
+MALLOC_ARENA_MAX=1
+PATH=/bin:/home/song/.local/bin:/compuworks/anaconda3/bin:/compuworks/anaconda3/condabin:/usr/synopsys/vcs/R-2020.12-SP1-1/bin:/usr/synopsys/verdi/R-2020.12-SP1-1/bin:/usr/synopsys/syn/Q-2019.12-SP5-5/bin:/usr/synopsys/spyglass/P-2019.06-SP2-17/SPYGLASS_HOME/bin:/usr/synopsys/installer/5.2:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+LC_IDENTIFICATION=ko_KR.UTF-8
+VCS_HOME=/usr/synopsys/vcs/R-2020.12-SP1-1
+CONDA_DEFAULT_ENV=base
+SYS_PROG_NAME=Verdi
+SPYGLASS_HOME=/usr/synopsys/spyglass/P-2019.06-SP2-17/SPYGLASS_HOME
+NOVASHLPPATH=/usr/synopsys/verdi/R-2020.12-SP1-1/doc
+LESSOPEN=| /usr/bin/lesspipe %s
+LC_TIME=ko_KR.UTF-8
+PS_HWPC=OFF
+NOVAS_LC_ALL=C
+NOVAS_SIGNAL_BASE_EXTRACTION=1
+SIGNAL_BASE_EXTRACTION=1
+NOVAS_VERDI_SVTB_BETA=1
+VERDI_SVTB_BETA=1
+NOVAS_VERDI_SVTB_ALPHA=1
+VERDI_SVTB_ALPHA=1
+NOVAS_VERDI_TB_HT=1
+VERDI_TB_HT=1
+NOVAS_WAVE_REDRAW_ALLVC=1
+WAVE_REDRAW_ALLVC=1
+NOVAS_TCL_LIBRARY=/usr/synopsys/verdi/R-2020.12-SP1-1/etc/access/tcl86_library
+TCL_LIBRARY=/usr/synopsys/verdi/R-2020.12-SP1-1/etc/access/tcl86_library
+XKEYSYMDB=/usr/synopsys/verdi/R-2020.12-SP1-1/etc/access/XKeysymDB2.1
+XLOCALEDIR=/usr/synopsys/verdi/R-2020.12-SP1-1/etc/access/locale
+NOVAS_SIGNAL_BASED_BA=0
+SIGNAL_BASED_BA=0
+SNPS_SIM_DEFAULT_GUI=verdi
+FSDB_FILE=/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/inter.fsdb
+VCS_UCLI_STDIN_BLOCKING=1
+FSDB_VHDL_PROTECTED=1
+FSDB_RD_IR_ENABLE=1
+FSDB_SVA_STATUS=1
+VCS_PATHMAP_PRELOAD_DONE=1
+VCS_STACK_EXEC=true
+VCS_EXEC_DONE=1
+VCS_STOP_SAFE=1
+DVE_SIM_SELECT_LOOP=on
+FLEXLM_BORROWFILE=/home/song/.SALserver01-borrow.txt
+Runtime command line arguments:
+argv[0]=/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv
+argv[1]=-sml=verdi
+argv[2]=+fsdb+gate=off
+argv[3]=-ucli2Proc
+argv[4]=-ucli
+argv[5]=-l
+argv[6]=/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/VerdiLog/sim.log
+243 profile - 100
+          CPU/Mem usage: 0.000 sys,  0.070 user,  264.04M mem
+244 Elapsed time:    0:00:01    Wed Aug 31 18:29:53 2022
+245 pliAppInit
+246 ndpGetenv(FSDB_FILE): /home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/inter.fsdb
+247 ndpGetenv(FSDB_SVA_STATUS): 1
+248 ndpGetenv(FSDB_VHDL_PROTECTED): 1
+249 [SC]Init: MemoryConsumed=0.00MB ElapsedTime=0hour 0min. 0sec.
+250 FSDB_GATE & FSDB_RTL is disabled.
+251 FSDB_FIELDTYPE is set.
+252 FSDB_ALIAS_ARRAY_ELEM is set to 4294967295.
+253 Enable Parallel Dumping.
+254 pliAppMiscSet: New Sim Round
+255 pliEntryInit
+256 LIBSSCORE=found /usr/synopsys/verdi/R-2020.12-SP1-1/share/PLI/lib/LINUXAMD64/libsscore_vcs202012.so through $NOVAS_HOME setting.
+257 FSDB Dumper for VCS, Release Verdi_R-2020.12-SP1-1, Linux x86_64/64bit, 04/20/2021
+258 (C) 1996 - 2021 by Synopsys, Inc.
+259 sps_tcl_fsdbDumpfile_main at 0
+260 argv[0]: /home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/inter.fsdb
+261 *Verdi* : Create FSDB file '/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/inter.fsdb'
+262 [spi_vcs_vd_ppi_create_root]: no upf option
+263 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+264 compile option from '/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/simv.daidir/vcs_rebuild'.
+265   "vcs '-full64' '-debug_access+all' '-kdb' '-LDFLAGS' '-Wl,--no-as-needed' '-f' '/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/..//sim/tb/filelist.f' '-f' '/home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/..//rtl/filelist.f' 2>&1"
+266 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+267 *Verdi* : Flush all FSDB Files at 0 s.
+268 sps_tcl_fsdbDumpflush_vd_main at 0 : N/A(0)
+269 *Verdi* : Flush all FSDB Files at 0 s.
+270 End of simulation at 0
+271 Memory usage: 376.226 M
+272 Elapsed time:    2:45:09    Wed Aug 31 21:15:01 2022
+273 Begin FSDB profile info:
+274 FSDB Writer : bc1(0) bcn(0) mtf/stf(0/2)
+FSDB Writer elapsed time : flush(0.034849) io wait(0.000000) theadpool wait(0.000000)
+FSDB Writer cpu time : MT Compression : 0
+275 End FSDB profile info
+276 FSDB closed. Name: /home/song/SMARTECC/BCH/DEC_15_7/RTL/sim/output/inter.fsdb Size: 8165
+277 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+278                      - BlockUsed:1 Acquire:0 BufferUsed:0
+279                      - Flush:4 Expand:0 ProducerWait:0 ConsumerWait:0
+280                      - MainProducerTime:0.179478628 TotalConsumerTime:0.000000000
+281                      - ElapsedTime:9908.477304000
+282 Producer   0 profile - BlockUsed:1 Acquire:0 BufferUsed:0
+283 Consumer   0 profile - Affinity:-1 CPUTime:0.000000000 LifeTime:0.000000000 (-nan%)
+284                      - BlockUsed:1 Acquire:0 BufferUsed:0
+285 SimExit
+286 Elapsed time:    2:45:09    Wed Aug 31 21:15:01 2022
+287 Sim process exit

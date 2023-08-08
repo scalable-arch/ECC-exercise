@@ -1,0 +1,4 @@
+Command Line: /usr/synopsys/verdi/R-2020.12-SP1-1/platform/LINUXAMD64/bin/Novas -SX -f /home/song/OLD/bchverilog-master/TEC_15_5/RTL/sim/..//sim/tb/filelist.f -f /home/song/OLD/bchverilog-master/TEC_15_5/RTL/sim/..//rtl/filelist.f -i simv
+uname(Linux SALserver01 5.4.0-124-generic #140~18.04.1-Ubuntu SMP Fri Aug 5 11:43:34 UTC 2022 x86_64)
+[ERROR] Could not checkout VERDI-SX license. Use Verdi-SX -licdebug for more information.
+au time 6.070078 1.053881 0.104802 delta 97075200 97075200 total 585977856 585977856
