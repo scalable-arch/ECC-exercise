@@ -29,6 +29,7 @@ The methods were applied in the following papers **[1-7]** (the code can be foun
 - 04_10_8_RS_SSC: (10, 8) RS SSC (Single Symbol Correcting) code over GF(256) **[7]**
 - 05_39_36_RS_SSC_DSD: (39, 36) RS SSC-DSD (Singl Symbol Correcting Double Symbol Detecting) code over GF(256) **[6]**
 - 06_15_7_BCH_DEC: (15, 7) BCH DEC (Double Error Correcting) code
+- 07_542_512_BCH_TEC: (542, 512) BCH TEC (Triple Error Correcting) code
 
 # Other useful sites
 - https://en.lntwww.de/Category:Channel_Coding:_Exercises
