@@ -45,7 +45,7 @@
 # Fault model configuration (FaultRateInfo.hh)
 - **[6]** DDR2 Jaguar system
 ![DRAM fault types and rates (FIT/device) used in the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model%20Table.png)
-- Future works: DDR3 **[7]**, DDR4 **[8]** 
+- **Future works: DDR3 [7], DDR4 [8]**
 
 # To do
 - Fill in the **hsiao.cc**
