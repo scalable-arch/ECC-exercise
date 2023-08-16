@@ -31,7 +31,7 @@ The methods were applied in the following papers **[1-7]** (the code can be foun
 - 06_15_7_BCH_DEC: (15, 7) BCH DEC (Double Error Correcting) code
 - 07_542_512_BCH_TEC: (542, 512) BCH TEC (Triple Error Correcting) code
 
-# [AMD'13] DRAM Fault
+# [AMD'13] DRAM Fault.pdf
 - Background of DRAM Fault handling
 - Architecture & micro-architectural approaches to reliability
 - Focuses on fault modeling in DRAM
