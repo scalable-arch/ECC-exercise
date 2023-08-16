@@ -31,7 +31,7 @@ The methods were applied in the following papers **[1-7]** (the code can be foun
 - 06_15_7_BCH_DEC: (15, 7) BCH DEC (Double Error Correcting) code
 - 07_542_512_BCH_TEC: (542, 512) BCH TEC (Triple Error Correcting) code
 
-# [AMD'13] DRAM Fault.pdf
+# [AMD'13] DRAM Fault.pdf **[8]**
 - Background of DRAM Fault handling
 - Architecture & micro-architectural approaches to reliability
 - Focuses on fault modeling in DRAM
@@ -47,4 +47,4 @@ The methods were applied in the following papers **[1-7]** (the code can be foun
 - **[5]** Park, Sangjae, and Jungrae Kim. "On-Die Dynamic Remapping Cache: Strong and Independent Protection Against Intermittent Faults." IEEE Access 10 (2022): 78970-78982.
 - **[6]** Kwon, Kiheon, et al. "EPA ECC: Error-Pattern-Aligned ECC for HBM2E." 2023 38th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC). IEEE, 2023.
 - **[7]** Kim, Dongwhee, et al. "Unity ECC: Unified Memory Protection Against Bit and Chip Errors." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2023.
-
+- **[8]** SRIDHARAN, VILAS. "DRAM Faults: Data from the Field." (2013).
