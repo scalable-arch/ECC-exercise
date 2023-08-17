@@ -15,6 +15,8 @@
 - Implement the **Berlekamp-Massey Algorithm [2]**.
 - **The above method must be used for multi-symbol correction in RS codes [3-4]**.
 
+# In the figure below, the codeword length is 160bit, not 80bit.
+
 # Overview
 ![An Overview of the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/01_Basic/08_RS_code_Multi_Symbol_Correction_Berlekamp_Massey/RS%20code%20-%20DSC.png)
 
