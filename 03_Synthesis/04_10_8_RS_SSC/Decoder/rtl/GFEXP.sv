@@ -12,7 +12,7 @@ module GFEXP(a, b);
   reg [7:0] binv;
   always_comb
       case (a)
-        8'b0000_0000:  binv = 8'd0; // a=a^0 => 0
+        8'b0000_0001:  binv = 8'd0; // a=a^0 => 0
         8'b0000_0010:  binv = 8'd1; // a=a^1 => 1
         8'b0000_0100:  binv = 8'd2; // a=a^2 => 2
         8'b0000_1000:  binv = 8'd3; 
