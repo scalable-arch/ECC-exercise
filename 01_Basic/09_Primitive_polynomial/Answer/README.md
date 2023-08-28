@@ -8,7 +8,7 @@
 - Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
 
 # Objective
-- Find primitive polynomial of GF(2<sup>m<\sup>)
+- Find primitive polynomial of GF(2<sup>m)
 
 # Getting Started
 - Use **Matlab** ('or' **Matlab Online**)
