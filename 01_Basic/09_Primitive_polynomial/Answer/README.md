@@ -1,0 +1,2 @@
+# Primitive polynomial (Generator polynomial)
+
