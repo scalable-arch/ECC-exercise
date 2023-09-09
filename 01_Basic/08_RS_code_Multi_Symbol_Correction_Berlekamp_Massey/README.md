@@ -6,8 +6,9 @@
 # Author
 
 **Dongwhee Kim** 
-- Email: xyz12347976@gmail.com
-- Google Scholar: https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao
+- [```Google Scholar```](https://scholar.google.com/citations?user=8xzqA8YAAAAJ&hl=ko&oi=ao)
+- [```ORCiD```](https://orcid.org/0009-0007-1673-1931?fbclid=PAAabkpwNHesKweJ6F2eGZDnFa2sch2211hf6ZY825YKuli5V7lcN7VIfT0CA)
+- [```LinkdIn```](https://www.linkedin.com/in/dongwhee-kim-5753a8290)
 
 # Objectives
 - Implement a [20, 16] systematic shortened RS code **[1]** over GF(256).
