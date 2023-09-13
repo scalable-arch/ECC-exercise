@@ -1,5 +1,7 @@
 # ECC-exercise
 
+# This project is licensed under the terms of the CERN-OHL-S-2.0
+
 ## Author
 
 **Dongwhee Kim** 
