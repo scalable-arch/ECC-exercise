@@ -7,6 +7,29 @@
 - [```ORCiD```](https://orcid.org/0009-0007-1673-1931?fbclid=PAAabkpwNHesKweJ6F2eGZDnFa2sch2211hf6ZY825YKuli5V7lcN7VIfT0CA)
 - [```LinkedIn```](https://www.linkedin.com/in/dongwhee-kim-5753a8290)
 
+If you use this code in your work, please use the following citation:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="code-container">
+        <pre><code id="codeToCopy">@inproceedings{kim2023unity,
+          title={Unity ECC: Unified Memory Protection Against Bit and Chip Errors},
+          author={Kim, Dongwhee and Lee, Jaeyoon and Jung, Wonyeong and Sullivan, Michael B and Kim, Jungrae},
+          booktitle={SC23: International Conference for High Performance Computing, Networking, Storage and Analysis},
+          pages={1--16},
+          year={2023},
+          organization={IEEE}
+          }
+        </code></pre>
+    </div>
+</body>
+</html>
+
 # Objectives
 - Implement **On-Die ECC (OD-ECC) [1-2]** and **Rank-Level ECC (RL-ECC)** of DDR5 ECC-DIMM
 - Understand the ECC scheme to improve reliability

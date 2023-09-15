@@ -3,8 +3,29 @@
 # Author
 
 **Jungrae Kim** 
-- Email: dale40@gmail.com
-- Google Scholar: https://scholar.google.com/citations?user=Jbpv5q0AAAAJ&hl=ko&oi=ao
+
+If you use MRSim code in your work, please use the following citation:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="code-container">
+        <pre><code id="codeToCopy">@inproceedings{kim2015bamboo,
+  title={Bamboo ECC: Strong, safe, and flexible codes for reliable computer memory},
+  author={Kim, Jungrae and Sullivan, Michael and Erez, Mattan},
+  booktitle={2015 IEEE 21st International Symposium on High Performance Computer Architecture (HPCA)},
+  pages={101--112},
+  year={2015},
+  organization={IEEE}
+}
+        </code></pre>
+    </div>
+</body>
+</html>
 
 # Objectives
 - Implement **Rank-Level ECC (RL-ECC)** of DDR4 ECC-DIMM

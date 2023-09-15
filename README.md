@@ -15,6 +15,53 @@ This will greatly aid your studies on ECC (Error Correcting Code)
 
 The methods were applied in the following papers **[1-7]** (the code can be found in the SAL repo), so I encourage you to read through the issues, study the papers, examine the experimental code, and consider constructing experimental methodologies based on them.
 
+If you use 02_Application codes in your work, please use the following citation:
+- MRSim
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="code-container">
+        <pre><code id="codeToCopy">@inproceedings{kim2015bamboo,
+  title={Bamboo ECC: Strong, safe, and flexible codes for reliable computer memory},
+  author={Kim, Jungrae and Sullivan, Michael and Erez, Mattan},
+  booktitle={2015 IEEE 21st International Symposium on High Performance Computer Architecture (HPCA)},
+  pages={101--112},
+  year={2015},
+  organization={IEEE}
+}
+        </code></pre>
+    </div>
+</body>
+</html>
+
+- DDR5_ODECC_RLECC
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="code-container">
+        <pre><code id="codeToCopy">@inproceedings{kim2023unity,
+          title={Unity ECC: Unified Memory Protection Against Bit and Chip Errors},
+          author={Kim, Dongwhee and Lee, Jaeyoon and Jung, Wonyeong and Sullivan, Michael B and Kim, Jungrae},
+          booktitle={SC23: International Conference for High Performance Computing, Networking, Storage and Analysis},
+          pages={1--16},
+          year={2023},
+          organization={IEEE}
+          }
+        </code></pre>
+    </div>
+</body>
+</html>
+
 # 01_Basic
 - Basic ECC (Error Correcting Codes)
 - Contents: Hamming code, Hsiao code, CRC (Cyclic Redundancy Check) code, RS (Reed-Solomon) code, etc
