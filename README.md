@@ -2,9 +2,8 @@
 
 # This project is licensed under the terms of the CERN-OHL-S-2.0
 
-# Copyright (c) 2023
-# SungKyunKwan University Research & Business Foundation
-# All rights reserved.
+# Copyright (c) 2023 SungKyunKwan University Research & Business Foundation
+# Korea Copyright Commission (No. C-2023-043210)
 
 ## Author
 
