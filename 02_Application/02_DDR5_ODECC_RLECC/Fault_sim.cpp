@@ -12,28 +12,28 @@
 #include <cstring>
 
 // Configuration 
-// 필요로 하면 변경하기
+// Modify if necessary
 
 #define CHANNEL_WIDTH 40
 #define CHIP_NUM 10
-#define DATA_CHIP_NUM 8 // sub-channel마다 data chip 개수
+#define DATA_CHIP_NUM 8 // Number of data chips for each sub-channel
 #define CHIP_WIDTH 4
-#define BLHEIGHT 32 // Rank-level ECC (RECC)가 검사해야 하는 Burst length (On-die ECC (OECC)의 redundancy는 제외하고 BL32만 검사한다. conservative mode 조건 고려하기)
+#define BLHEIGHT 32 // Rank-level ECC (RECC) checks only the Burst length, excluding the redundancy of On-die ECC (OECC). Only BL32 is considered. Take into account the conservative mode condition.
 
-#define OECC_CW_LEN 136 // OECC의 codeword 길이 (bit 단위)
-#define OECC_DATA_LEN 128 // OECC의 dataward 길이 (bit 단위)
-#define OECC_REDUN_LEN 8 // OECC의 redundancy 길이 (bit 단위)
+#define OECC_CW_LEN 136 // Codeword length of OECC (in bits)
+#define OECC_DATA_LEN 128 // Dataword length of OECC (in bits)
+#define OECC_REDUN_LEN 8 // Redundancy length of OECC (in bits)
 
-#define RECC_CW_LEN 80 // RECC의 codeword 길이 (bit 단위)
-#define RECC_DATA_LEN 64 // RECC의 dataward 길이 (bit 단위)
-#define RECC_REDUN_LEN 16 // RECC의 redundancy 길이 (bit 단위)
+#define RECC_CW_LEN 80 // Codeword length of RECC (in bits)
+#define RECC_DATA_LEN 64 // Dataword length of RECC (in bits)
+#define RECC_REDUN_LEN 16 // Redundancy length of RECC (in bits)
 
-#define SE_ERROR_WEIGHT 0.4 // SE (Single Error)의 weight => 100번중 40번 꼴로 발생
-#define DE_ERROR_WEIGHT 0.3 // DE (Double Error)의 weight => 100번중 30번 꼴로 발생
-#define CHIPKILL_ERROR_WEIGHT 0.14 // CHIPKILL (Random error for 1 chip)의 weight => 100번중 14번 꼴로 발생
-#define SE_SE_ERROR_WEIGHT 0.16 // SE_SE 2chip error (1bit per-chip) 의 weight => 100번중 16번 꼴로 발생
+#define SE_ERROR_WEIGHT 0.4 // The weight of SE (Single Error) => Occurs once every 40 out of 100 times
+#define DE_ERROR_WEIGHT 0.3 // The weight of DE (Double Error) => Occurs 30 times out of 100.
+#define CHIPKILL_ERROR_WEIGHT 0.14 // The weight of CHIPKILL (Random error for single chip) => Occurs 14 times out of 100
+#define SE_SE_ERROR_WEIGHT 0.16 // The weight of SE_SE 2chip error (1bit per-chip) => Occurs 16 times out of 100
 
-#define RUN_NUM 1000000 // 실행 횟수
+#define RUN_NUM 1000000 // iteration count
 
 //configuration over
 
@@ -46,10 +46,10 @@ enum RECC_TYPE {RECC_OFF=0, RECC_ON=1}; // recc_type
 enum RESULT_TYPE {NE=0, CE=1, DUE=2, SDC=3}; // result_type
 
 
-// OECC, RECC 각각의 type을 string으로 지정. 이것을 기준으로 뒤에서 oecc, recc에서 어떻게 할지 바뀐다!!!
+// Specify the type of OECC and RECC as strings. Based on this, it will determine how to handle them in 'oecc' and 'recc' later on!!!
 void oecc_recc_type_assignment(string &OECC, string &RECC, int *oecc_type, int*recc_type, int oecc, int recc)
 {
-    // 1. OECC TYPE 지정 (ON/OFF)
+    // 1. Specify OECC TYPE (ON/OFF)
     switch (oecc){
         case OECC_OFF:
             OECC.replace(OECC.begin(), OECC.end(),"OECC_OFF");
@@ -62,7 +62,7 @@ void oecc_recc_type_assignment(string &OECC, string &RECC, int *oecc_type, int*r
         default:
             break;
     }
-    // 2. RECC TYPE 지정 (ON/OFF)
+    // 2. Specify RECC TYPE (ON/OFF)
     switch (recc){
         case RECC_OFF: 
             RECC.replace(RECC.begin(), RECC.end(),"RECC_OFF");
@@ -107,7 +107,7 @@ void error_injection_DE(int Fault_Chip_position, unsigned int Chip_array[][OECC_
 // Chipkill injection
 void error_injection_CHIPKILL(int Fault_Chip_position, unsigned int Chip_array[][OECC_CW_LEN])
 {
-    // 1개 chip에 있는 136 bit는 각각 50% 확률로 error가 발생한다.
+    // Each of the 136 bits in a single chip has a 50% probability of experiencing an error.
     for(int Fault_pos=0; Fault_pos<OECC_CW_LEN; Fault_pos++){ // 0~135
         if(rand()%2!=0) // 0(no error) 'or' 1(error)
             Chip_array[Fault_Chip_position][Fault_pos]^=1;
@@ -132,12 +132,12 @@ void error_correction_oecc(unsigned int *codeword)
 // RECC (80bit codeword, 64bit data, 16bit redundancy)
 int error_correction_recc(unsigned int *codeword)
 {
-    // RECC의 return은 최대 3가지 경우가 있다.
+    // There are up to three possible outcomes for RECC
     // 1. return NE;
     // 2. return CE;
     // 3. return DUE;
-    // 다양한 방법이 있으니 자유롭게 시도해보시기 바랍니다.
-    // RECC는 H_Matrix_RECC.txt를 사용하지 않아도 됩니다. 
+    // There are various methods available, so please feel free to try them
+    // RECC does not need to use H_Matrix_RECC.txt
 
     /*
     ///////////////////////////////////////////////////////
@@ -147,19 +147,19 @@ int error_correction_recc(unsigned int *codeword)
     ///////////////////////////////////////////////////////
     */
     
-    // 해당 return 0는 지우셔도 됩니다.
+    // You can remove the 'return 0'
     return 0;
 }
 
 int SDC_check(int BL, unsigned int Chip_array[][OECC_CW_LEN], int recc_type)
 {
-    // Error가 남아있는지 검사
+    // Check if there are any remaining errors
 
     int error_check=0;
 
     if(recc_type==RECC_ON){
-        for(int Error_chip_pos=0; Error_chip_pos<CHIP_NUM; Error_chip_pos++){ // 0~9번쨰 chip까지
-            for(int Fault_pos=BL*4; Fault_pos<(BL+2)*4; Fault_pos++){ // RECC를 실행한 Beat에서 error가 남아있는지 검사
+        for(int Error_chip_pos=0; Error_chip_pos<CHIP_NUM; Error_chip_pos++){ // From the 0th to the 9th chip
+            for(int Fault_pos=BL*4; Fault_pos<(BL+2)*4; Fault_pos++){ // Check for remaining errors in the Beat where RECC was executed
                 if(Chip_array[Error_chip_pos][Fault_pos]==1){
                     error_check++;
                     return error_check;
@@ -168,8 +168,8 @@ int SDC_check(int BL, unsigned int Chip_array[][OECC_CW_LEN], int recc_type)
         }
     }
     else if(recc_type==RECC_OFF){
-        for(int Error_chip_pos=0; Error_chip_pos<CHIP_NUM; Error_chip_pos++){ // 0~9번쨰 chip까지
-            for(int Fault_pos=0; Fault_pos<OECC_DATA_LEN; Fault_pos++){ // 0~127b 까지
+        for(int Error_chip_pos=0; Error_chip_pos<CHIP_NUM; Error_chip_pos++){ // From the 0th to the 9th chip
+            for(int Fault_pos=0; Fault_pos<OECC_DATA_LEN; Fault_pos++){ // From 0-bit to 127-bit
                 if(Chip_array[Error_chip_pos][Fault_pos]==1){
                     error_check++;
                     return error_check;
@@ -183,7 +183,7 @@ int SDC_check(int BL, unsigned int Chip_array[][OECC_CW_LEN], int recc_type)
 
 int main(int argc, char* argv[])
 {
-    // 1. H_Matrix 설정
+    // 1. Set up H_Matrix
     // OECC (On-die ECC)
     FILE *fp1=fopen("H_Matrix_OECC.txt","r");
     while(1){
@@ -216,25 +216,25 @@ int main(int argc, char* argv[])
     }
     fclose(fp2);
 
-    // 2. 출력 파일 이름 설정 & oecc/recc type 설정. 
-    // main 함수의 argv parameter로 받는다.
+    // 2. Set the output file name & configure the oecc/recc type.
+    // Receive it as the 'argv' parameter of the main function
 
-    // 파일명 예시
-    // ex : OECC_ON_RECC_ON -> OECC ON, RECC ON 인 경우
-    string OECC="X", RECC="X"; // => 파일 이름 생성을 위한 변수들. 그 이후로는 안쓰인다.
-    int oecc_type, recc_type; // => on-die ECC, Rank-level ECC 분류를 위해 쓰이는 변수. 뒤에서도 계속 사용된다.
+    // Example of a file name
+    // ex : OECC_ON_RECC_ON -> In the case of OECC ON, RECC ON
+    string OECC="X", RECC="X"; // => ariables for generating file names. Not used afterward
+    int oecc_type, recc_type; // => Variables used for categorizing on-die ECC and Rank-level ECC. Continuously used later on
     oecc_recc_type_assignment(OECC, RECC, &oecc_type, &recc_type, atoi(argv[1]), atoi(argv[2]));
     
     string Result_file_name = OECC + "_" + RECC + ".S";
-    FILE *fp3=fopen(Result_file_name.c_str(),"w"); // c_str : string class에서 담고 있는 문자열을 c에서의 const char* 타입으로 변환하여 반환해주는 멤버함수
+    FILE *fp3=fopen(Result_file_name.c_str(),"w"); // c_str: A member function of the string class that returns the string it contains as a 'const char*' type in C
 
-    // 3. 여기서부터 반복문 시작
-    // DIMM 설정 (Channel에 있는 chip 구성을 기본으로 한다.)
-    // DDR5 : x4 chip 기준으로 10개 chip이 있다. 각 chip은 on-die ECC codeword 136b이 있다.
+    // 3. Loop starts from here
+    // Set up DIMM (Based on the chip configuration in the Channel.)
+    // DDR5: There are 10 chips based on the x4 chip standard. Each chip has a 136b on-die ECC codeword
 
-    unsigned int Chip_array[CHIP_NUM][OECC_CW_LEN]; // 전체 chip 구성 (BL34 기준. [data : BL32, OECC-redundancy : BL2])
-    int CE_cnt=0, DUE_cnt=0, SDC_cnt=0; // CE, DUE, SDC 횟수
-    srand((unsigned int)time(NULL)); // 난수 시드값 계속 변화
+    unsigned int Chip_array[CHIP_NUM][OECC_CW_LEN]; // Overall chip configuration (Based on BL34 (Burst Length). [data: BL32, OECC-redundancy: BL2])
+    int CE_cnt=0, DUE_cnt=0, SDC_cnt=0; // CE, DUE, SDC counts
+    srand((unsigned int)time(NULL)); // Continuously changing the random seed value
     double error_scenario;
     for(int runtime=0; runtime<RUN_NUM; runtime++){
         if(runtime%1000000==0){
@@ -246,14 +246,14 @@ int main(int argc, char* argv[])
             fprintf(fp3,"\n===============\n");
 	    fflush(fp3);
         }
-        // 4. 10개 chip의 136b 전부를 0으로 초기화 (no-error)
-        // 이렇게 하면 굳이 encoding을 안해도 된다. no-error라면 syndrome이 0으로 나오기 때문!
-        // Linear block code의 특성 활용
+        // 4. Initialize all 136b of the 10 chips to 0 (no-error)
+        // By doing this, encoding is not necessary. If there's no error, the syndrome will come out as 0!
+        // Utilizing the properties of linear block codes
         for(int i=0; i<CHIP_NUM; i++)
             memset(Chip_array[i], 0, sizeof(unsigned int) * OECC_CW_LEN); 
 
         // 5. Error injection
-        // [1] 서로 다른 2개의 chip을 선택 (Fault_Chip_position)
+        // 5-1. Select two distinct chips (Fault_Chip_position)
         vector<int> Fault_Chip_position;
         for (;;) {
             Fault_Chip_position.clear();
@@ -262,7 +262,7 @@ int main(int argc, char* argv[])
             if (Fault_Chip_position[0] != Fault_Chip_position[1]) break;
         }
 
-        // [2] error injection (40% 확률 SE, 30% 확률 DE, 14% 확률 CHIPKILL, 16% 확률 SE_SE)
+        // 5-2. Error injection (40% probability for SE, 30% probability for DE, 14% probability for CHIPKILL, 16% probability for SE_SE)
         error_scenario = (double) rand() / RAND_MAX;
 
         if(error_scenario<SE_ERROR_WEIGHT) // 0.0~0.4
@@ -278,8 +278,8 @@ int main(int argc, char* argv[])
 
 
         // 6. OD-ECC
-        // (136, 128) Hamming SEC code: 136개의 1-bit error syndrome에 대응하면 correction 진행.
-        // 아닌 경우에는 correction을 진행하지 않는다.
+        // (136, 128) Hamming SEC code: If it corresponds to 136 1-bit error syndromes, correction is carried out
+        // If not, correction is not performed
         switch(oecc_type){
             case OECC_OFF:
                 break;
@@ -297,18 +297,18 @@ int main(int argc, char* argv[])
 
 
         // 7. RL-ECC
-        // Beat 2개를 묶어서 (80 bit) RL-ECC (Rank-level ECC) 실행
-        // RL-ECC는 NE/CE/DUE 결과를 return 한다.
-        // NE (No-Error) => Syndrome이 all zero이기에 error가 없다고 판별하여 error correction을 진행하지 않는다.
-        // CE (Correctable Error) // Syndrome이 0이 아니고, Correctable 하다고 판단하여 error correction을 진행한다.
-        // DUE (Detectable but Uncorrectable Error) // Syndrome이 0이 아니고, Correctable 하지 않다고 판단하여 error correction을 진행하지 않는다.
+        // Combine 2 Beats (80 bits) to execute RL-ECC (Rank-level ECC)
+        // RL-ECC returns NE/CE/DUE results.
+        // NE (No-Error) => Since the Syndrome is all zero, it is determined that there is no error and error correction is not performed.
+        // CE (Correctable Error) // If the Syndrome is not 0 and is deemed correctable, error correction is carried out.
+        // DUE (Detectable but Uncorrectable Error) // If the Syndrome is not 0 and is deemed uncorrectable, error correction is not performed.
 
-        int result_type_recc; // NE, CE, DUE, SDC 저장
-        int final_result, final_result_1=CE,final_result_2=CE; // 각각 2개 memory transfer block 고려한 최종 결과, 첫번째 memory transfer block, 두번째 memory transfer block 검사 결과
+        int result_type_recc; // NE, CE, DUE, SDC
+        int final_result, final_result_1=CE,final_result_2=CE; // Final results considering each of the two memory transfer blocks, the results of the first memory transfer block, and the results of the second memory transfer block
         int Chip_idx=0;
         switch(recc_type){ 
             case RECC_ON:
-                // 첫번째 memory transfer block
+                // First memory transfer block
                 for(int BL=0; BL<16; BL+=2){ // BL (Burst Length)<16 
                     unsigned int codeword[RECC_CW_LEN];
                     Chip_idx=0;
@@ -341,21 +341,21 @@ int main(int argc, char* argv[])
                         Chip_idx++;
                     }
 
-                    // SDC 검사 (1이 남아있으면 SDC)
+                    // SDC check (If a 1 remains, it's an SDC)
                     if(result_type_recc==CE || result_type_recc==NE){
                         int error_check=SDC_check(BL, Chip_array, recc_type);
                         if(error_check){
                             result_type_recc=SDC;
                         }
                     }
-                    // DUE 검사 (Restrained mode)
+                    // DUE check (Restrained mode [SC'23 Unity ECC])
                     if(result_type_recc==DUE || final_result_1==DUE)
                         final_result_1=DUE;
-                    else{ // 둘 중 우선순위가 큰 값 (SDC > CE > NE), 이전에 DUE가 나온 적이 없는 경우에만 들어갈 수 있다.
+                    else{ // "The value with the higher priority among the two (SDC > CE > NE). Only if there hasn't been a DUE previously can it be considered
                         final_result_1 = (final_result_1>result_type_recc) ? final_result_1 : result_type_recc;
                     }
                 }
-                // 두번째 memory transfer block
+                // Second memory transfer block
                 for(int BL=16; BL<32; BL+=2){ // BL : 16~31
                     unsigned int codeword[RECC_CW_LEN];
                     Chip_idx=0;
@@ -387,25 +387,25 @@ int main(int argc, char* argv[])
                         Chip_idx++;
                     }
 
-                    // SDC 검사 (1이 남아있으면 SDC)
+                    // SDC check (If a 1 remains, it's an SDC)
                     if(result_type_recc==CE || result_type_recc==NE){
                         int error_check=SDC_check(BL, Chip_array, recc_type);
                         if(error_check){
                             result_type_recc=SDC;
                         }
                     }
-                    // DUE 검사 (Restrained mode)
+                    // DUE check (Restrained mode)
                     if(result_type_recc==DUE || final_result_2==DUE)
                         final_result_2=DUE;
-                    else{ // 둘 중 우선순위가 큰 값 (SDC > CE > NE), 이전에 DUE가 나온 적이 없는 경우에만 들어갈 수 있다.
+                    else{ // The value with the higher priority among the two (SDC > CE > NE). Only if there hasn't been a DUE previously can it be considered
                         final_result_2 = (final_result_2>result_type_recc) ? final_result_2 : result_type_recc;
                     }
                 }
 
-                // 2개 memory transfer block 비교해서 최종결과 update
-                // SDC : 2개 memory transfer block 중에서 DUE 없고, 1개라도 SDC가 있으면 전체는 SDC
-                // DUE : 2개 memory transfer block 중에서 1개라도 DUE가 있으면 전체는 DUE
-                // CE : 그 외 경우
+                // Compare the two memory transfer blocks to update the final result
+                // SDC: If neither of the two memory transfer blocks has a DUE and at least one has an SDC, the overall result is SDC
+                // DUE: If at least one of the two memory transfer blocks has a DUE, the overall result is DUE
+                // CE: In all other cases
                 final_result = (final_result_1 > final_result_2) ? final_result_1 : final_result_2;
                 break;
             case RECC_OFF:{
@@ -419,17 +419,17 @@ int main(int argc, char* argv[])
                 break;
         }
 
-        // 8. CE/DUE/SDC 체크
-        // 최종 update (2개 memory transfer block 전부 고려)
-        // CE, DUE, SDC 개수 세기
+        // 8. Check for CE/DUE/SDC
+        // Final update (considering both memory transfer blocks)
+        // Count the number of CE, DUE, and SDC occurrences
         CE_cnt   += (final_result==CE)  ? 1 : 0;
         DUE_cnt  += (final_result==DUE) ? 1 : 0;
         SDC_cnt  += (final_result==SDC) ? 1 : 0;
             
     }
-    // for문 끝!!
+    // for-loop end!!
 
-    // 9. 최종 update
+    // 9. Final update
     fprintf(fp3,"\n===============\n");
     fprintf(fp3,"Runtime : %d\n",RUN_NUM);
     fprintf(fp3,"CE : %d\n",CE_cnt);
@@ -438,7 +438,7 @@ int main(int argc, char* argv[])
     fprintf(fp3,"\n===============\n");
     fflush(fp3);
 
-    // 최종 update (소숫점 표현)
+    // Final update (Decimal representation)
     fprintf(fp3,"\n===============\n");
     fprintf(fp3,"Runtime : %d\n",RUN_NUM);
     fprintf(fp3,"CE : %.11f\n",(double)CE_cnt/(double)RUN_NUM);
