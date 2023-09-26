@@ -1,6 +1,10 @@
-# ECC-exercise
+# ECC-ExerSim (Error-Correcting Code Exercise and Simulator)
 
 # This project is licensed under the terms of the CERN-OHL-S-2.0
+
+# Copyright (c) 2023
+# SungKyunKwan University Research & Business Foundation
+# All rights reserved.
 
 ## Author
 
