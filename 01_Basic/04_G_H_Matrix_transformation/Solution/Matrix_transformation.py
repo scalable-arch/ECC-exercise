@@ -1,8 +1,8 @@
-# H-Matrix를 입력하면 G-Matrix로 바꾸는 함수이다.
+# This function converts an H-Matrix into a G-Matrix.
 # input : H-Matrix.txt
-# output : systematic H-Matrix.txt, systematic G-Matrix.txt, G-Matrix.txt (input H-Matrix.txt에 대응하는 G-Matrix)
-# 그와 동시에 GH^T = 0 인지도 검사해준다.
-# H-Matrix를 입력하면 systematic H-Matrix, systematic G-Matrix, G-Matrix 3개를 출력한다.
+# output : systematic H-Matrix.txt, systematic G-Matrix.txt, G-Matrix.txt (the G-Matrix corresponding to the input H-Matrix.txt)
+# At the same time, it also checks if GH^T = 0.
+# Upon inputting an H-Matrix, it outputs three matrices: systematic H-Matrix, systematic G-Matrix, and G-Matrix.
 
 import numpy as np
 
@@ -15,10 +15,10 @@ def main():
     f=open("H_Matrix_to_G_Matrix_result.txt","w")
 
 
-    # 1. H_Matrix를 systematic H_Matrix로 변환
+    # 1. Convert H_Matrix to systematic H_Matrix
     for row_index in range(row_num-1,-1,-1): # 15~0
-        # H-Matrix의 해당 row 위치에서 1이 있는지 검사
-        # 없으면 column swap (기록 필요!)
+        # Check if there is a 1 in the given row position of the H-Matrix.
+        # If not, perform a column swap (record necessary!)
         if H_Matrix[row_index][column_num-row_num+row_index]!=1:
             f.write("\n\ncolumn swap start!\n")
             f.write(np.array2string(H_Matrix))
@@ -41,7 +41,7 @@ def main():
             H_Matrix[:,swap_start_index]=temp_row
             f.write("\ncolumn swap over!\n")
             f.write(np.array2string(H_Matrix))
-        # row operation 진행
+        # row operation (Gaussian Elimination)
         f.write("\n\n row operation start!!\n")
         for row_operation_index in range(row_num-1, -1, -1): # 15~0
             if row_operation_index==row_index:
@@ -56,7 +56,7 @@ def main():
             
     np.savetxt('H_Matrix_systematic.txt',H_Matrix, fmt='%d',delimiter=' ')
 
-    # 2. systematic H_Matrix를 systematic G_Matrix로 변환하고 GH^T=0 확인
+    # 2. Convert systematic H_Matrix to systematic G_Matrix and verify GH^T = 0
     G_Matrix=np.empty((column_num-row_num,column_num-row_num))
     for row_index in range(column_num-row_num):
         for column_index in range(column_num-row_num):
@@ -75,7 +75,7 @@ def main():
     else:
         print("GH^T_Systematic non all zero! error!")
 
-    # 3. systematic G-Matrix를 systmeatic H-Matrix로 변환하고 GH^T=0 확인
+    # 3. Convert systematic G-Matrix to systematic H-Matrix and verify GH^T = 0
     print("column swap index : ",column_swap_index)
     column_swap_count=len(column_swap_index)
     for swap_count in range(column_swap_count-1,-1,-1):

@@ -87,9 +87,9 @@ enum RESULT_TYPE {NE=0, CE=1, DUE=2, SDC=3}; // result_type
                    polynomial form -> index form  index_of[j=alpha**i] = i
    alpha=2 is the primitive element of GF(2**mm)
 
-    GF(2^4) 기준 (x^4+x+1)
+    Based on GF(2^4) -> primitive polynomial: x^4+x+1
 
-    index_of[0] = -1 -> 0000은 a^-1로 처리
+    index_of[0] = -1 -> 0000 is treated as a^-1
     index_of[a^0 (0001)] = 0
     index_of[a^1 (0010)] = 1
     index_of[a^2 (0100)] = 2
@@ -114,7 +114,7 @@ void generate_gf()
   mask = 1;
   alpha_to[mm] = 0;
   
-  // a^?의 vector form에서 1이 1개인 부분 -> 0000_0001, 0000_0010, ... 1000_0000 GF(2^8) 기준
+  // In the vector form of a^?, the parts with a single 1 -> 0000_0001, 0000_0010, ... 1000_0000 based on GF(2^8)
   for (i=0; i<mm; i++){ // 0~3 GF(2^4), 0~7 GF(2^8) 
     alpha_to[i] = mask;
     index_of[alpha_to[i]] = i;
@@ -123,9 +123,9 @@ void generate_gf()
     mask <<= 1;
   }
   index_of[alpha_to[mm]] = mm ;
-  // a^?의 vector form에서 1이 2개 이상인 부분
+  // Parts with two or more 1s in the vector form of a^?
   mask >>= 1 ;
-  for (i=mm+1; i<(int)pow(2.0,mm)-1; i++){ // 5~14, 9~254  (원래 nn)
+  for (i=mm+1; i<(int)pow(2.0,mm)-1; i++){ // 5~14, 9~254  (supposed to nn)
     if (alpha_to[i-1] >= mask)
       alpha_to[i] = alpha_to[mm] ^ ((alpha_to[i-1]^mask)<<1);
     else 
@@ -359,7 +359,7 @@ int main()
     */
     //printf("result report\n");
 
-    // 결과 report
+    // Result report
     if(result_type_rs_code==NE || result_type_rs_code==CE)
         CE_cnt++;
     else if(result_type_rs_code==DUE)
@@ -367,7 +367,7 @@ int main()
     else if(result_type_rs_code==SDC)
         SDC_cnt++;
 
-    // 다음 루프로 진입
+    // Enter the next loop
     cnt++;
   }
 
