@@ -33,7 +33,7 @@ If you use this code in your work, please use the following citation:
 # Objectives
 - Implement **On-Die ECC (OD-ECC) [1-2]** and **Rank-Level ECC (RL-ECC)** of DDR5 ECC-DIMM
 - Understand the ECC scheme to improve reliability
-- The above method has been used for several papers **[3-5]**
+- The above method has been used for several papers **[3-7]**
 - **I encourage you to implement the Rank-Level ECC (RL-ECC) freely**
 - **This assignment is designed to be open-ended, so don't be afraid to be innovative and creative with your approach**
 
@@ -143,4 +143,5 @@ In such cases, employing the CRC code could be a beneficial method
 - **[3]** Song, Yuseok, et al. "SEC-BADAEC: An Efficient ECC With No Vacancy for Strong Memory Protection." IEEE Access 10 (2022): 89769-89780.
 - **[4]** Kwon, Kiheon, et al. "EPA ECC: Error-Pattern-Aligned ECC for HBM2E." 2023 38th International Technical Conference on Circuits/Systems, Computers and Communications (ITC-CSCC). IEEE, 2023.
 - **[5]** Kim, Dongwhee, et al. "Unity ECC: Unified Memory Protection Against Bit and Chip Errors." Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis. 2023.
-
+- **[6]** Lim, Yujin, Kim, Dongwhee, and Jungrae Kim. "SCC: Efficient Error Correction Codes for MLC PCM." 2023 20th International SoC Design Conference (ISOCC). IEEE, 2023.
+- **[7]** Jung, Wonyeong, Kim, Dongwhee, and Jungrae Kim. "Synergistic Integration: An Optimal Combination of On-Die and Rank-Level ECC for Enhanced Reliability." 2023 20th International SoC Design Conference (ISOCC). IEEE, 2023.
