@@ -63,10 +63,11 @@ If you use MRSim code in your work, please use the following citation:
 # ECC configuration
 - RL-ECC: (72,64) Hsiao SEC-DED code **[1]**
 
-# Fault model configuration (FaultRateInfo.hh)
+# Operational faults model configuration (FaultRateInfo.hh)
 - **[6]** DDR2 Jaguar system
 ![DRAM fault types and rates (FIT/device) used in the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model%20Table.png)
-- **Future works: DDR3 [7], DDR4 [8]**
+- **Future works (operational faults) DDR3 [7], DDR4 [8]**
+- **Future works (inherent faults) [9]**
 
 # To do
 - Fill in the **hsiao.cc**
@@ -209,3 +210,4 @@ If the results differ from the above, your code might be wrong.
 - **[6]** Sridharan, Vilas, and Dean Liberty. "A study of DRAM failures in the field." SC'12: Proceedings of the International Conference on High Performance Computing, Networking, Storage and Analysis. IEEE, 2012.
 - **[7]** V. Sridharan, N. De Bardeleben, S. Blanchard, K. B. Ferreira, J. Stearley, J. Shalf, and S. Gurumurthi, ‘‘Memory errors in modern systems: The good, the bad, and the Ugly,’’ ACM Sigplan Notices, vol. 50, no. 4, pp. 297–310, Mar. 2015.
 - **[8]** Beigi, Majed Valad, et al. "A Systematic Study of DDR4 DRAM Faults in the Field." 2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA). IEEE, 2023.
+- **[9]** Gong, Seong-Lyong, Jungrae Kim, and Mattan Erez. "DRAM scaling error evaluation model using various retention time." 2017 47th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops (DSN-W). IEEE, 2017.
