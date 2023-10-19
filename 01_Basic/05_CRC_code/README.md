@@ -33,6 +33,7 @@ If the results differ from the above, please modify the crc.py
 
 # Hint
 - Modular-2 operation
+- [```Matlab CRC```](https://kr.mathworks.com/help/comm/ref/cyclgen.html)
 
 # References
 - **[1]** Peterson, William Wesley, and Daniel T. Brown. "Cyclic codes for error detection." Proceedings of the IRE 49.1 (1961): 228-235.
