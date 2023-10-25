@@ -12,7 +12,7 @@
 - [```ORCiD```](https://orcid.org/0009-0007-1673-1931?fbclid=PAAabkpwNHesKweJ6F2eGZDnFa2sch2211hf6ZY825YKuli5V7lcN7VIfT0CA)
 - [```LinkedIn```](https://www.linkedin.com/in/dongwhee-kim-5753a8290)
 
-I would like to express my gratitude to the people at SAL (Scalable Architecture Lab)
+I would like to express my gratitude to the people at [```SAL (Scalable Architecture Lab)```](https://scalable-arch.github.io/)
 
 This will greatly aid your studies on ECC (Error Correcting Code)
 
