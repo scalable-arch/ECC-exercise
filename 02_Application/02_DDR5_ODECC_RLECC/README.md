@@ -21,7 +21,6 @@ If you use this code in your work, please use the following citation:
           title={Unity ECC: Unified Memory Protection Against Bit and Chip Errors},
           author={Kim, Dongwhee and Lee, Jaeyoon and Jung, Wonyeong and Sullivan, Michael B and Kim, Jungrae},
           booktitle={SC23: International Conference for High Performance Computing, Networking, Storage and Analysis},
-          pages={1--16},
           year={2023},
           organization={IEEE}
           }
