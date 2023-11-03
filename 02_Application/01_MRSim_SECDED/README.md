@@ -212,3 +212,4 @@ If the results differ from the above, your code might be wrong.
 - **[7]** V. Sridharan, N. De Bardeleben, S. Blanchard, K. B. Ferreira, J. Stearley, J. Shalf, and S. Gurumurthi, ‘‘Memory errors in modern systems: The good, the bad, and the Ugly,’’ ACM Sigplan Notices, vol. 50, no. 4, pp. 297–310, Mar. 2015.
 - **[8]** Beigi, Majed Valad, et al. "A Systematic Study of DDR4 DRAM Faults in the Field." 2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA). IEEE, 2023.
 - **[9]** Gong, Seong-Lyong, Jungrae Kim, and Mattan Erez. "DRAM scaling error evaluation model using various retention time." 2017 47th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops (DSN-W). IEEE, 2017.
+- **[10]** Jung, Jeageun, and Mattan Erez. "Predicting Future-System Reliability with a Component-Level DRAM Fault Model." 2023 56th IEEE/ACM International Symposium on Microarchitecture (MICRO). IEEE, 2023.
