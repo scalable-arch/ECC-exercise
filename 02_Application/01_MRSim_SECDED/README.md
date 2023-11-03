@@ -64,10 +64,11 @@ If you use MRSim code in your work, please use the following citation:
 - RL-ECC: (72,64) Hsiao SEC-DED code **[1]**
 
 # Operational faults model configuration (FaultRateInfo.hh)
-- **[6]** DDR2 Jaguar system
+- # DDR2 Jaguar system [6]
 ![DRAM fault types and rates (FIT/device) used in the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model%20Table.png)
 - # Future works (operational faults) DDR3 [7], DDR4 [8]
 - # Future works (inherent faults) [9]
+- # Future works (MICRO'23 DRAM fault model paper) [10]
 
 # To do
 - Fill in the **hsiao.cc**
