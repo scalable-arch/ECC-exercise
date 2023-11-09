@@ -74,6 +74,8 @@ If you use 02_Application codes in your work, please use the following citation:
 - Target DRAM: DDR4, DDR5
 
 # 03_Synthesis (Verilog)
+- Prerequisites 1: **Compiler** (e.g., Synopsys Design Compiler)
+- Prerequisites 2: **Process library files (.db)** (e.g., UMC 28nm, TSMC 40nm)
 - 01_136_128_SEC: (136, 128) SEC code **[4]**
 - 02_104_06_SEC_DED: (104, 96) SEC-DED code **[6]**
 - 03_136_128_SEC_BADAEC: (136, 128) SEC-BADAEC code **[4]**
