@@ -54,7 +54,7 @@ If you use 02_Application codes in your work, please use the following citation:
     <div class="code-container">
         <pre><code id="codeToCopy">@inproceedings{kim2023unity,
           title={Unity ECC: Unified Memory Protection Against Bit and Chip Errors},
-          author={Kim, Dongwhee and Lee, Jaeyoon and Jung, Wonyeong and Sullivan, Michael B and Kim, Jungrae},
+          author={Kim, Dongwhee and Lee, Jaeyoon and Jung, Wonyeong and Sullivan, Michael and Kim, Jungrae},
           booktitle={SC23: International Conference for High Performance Computing, Networking, Storage and Analysis},
           year={2023},
           organization={IEEE}
