@@ -68,7 +68,8 @@ If you use MRSim code in your work, please use the following citation:
 ![DRAM fault types and rates (FIT/device) used in the exercise](https://github.com/xyz123479/ECC-exercise/blob/main/02_Application/01_MRSim_SECDED/MRSim-Fault%20model%20Table.png)
 - # Future works (operational faults) DDR3 [7], DDR4 [8]
 - # Future works (inherent faults) [9]
-- # Future works (MICRO'23 DRAM fault model paper) [10]
+- # Future works (DRAM error log (released by Alibaba)) [10]
+- # Future works (MICRO'23 DRAM fault model paper) [11]
 
 # To do
 - Fill in the **hsiao.cc**
@@ -212,4 +213,5 @@ If the results differ from the above, your code might be wrong.
 - **[7]** V. Sridharan, N. De Bardeleben, S. Blanchard, K. B. Ferreira, J. Stearley, J. Shalf, and S. Gurumurthi, ‘‘Memory errors in modern systems: The good, the bad, and the Ugly,’’ ACM Sigplan Notices, vol. 50, no. 4, pp. 297–310, Mar. 2015.
 - **[8]** Beigi, Majed Valad, et al. "A Systematic Study of DDR4 DRAM Faults in the Field." 2023 IEEE International Symposium on High-Performance Computer Architecture (HPCA). IEEE, 2023.
 - **[9]** Gong, Seong-Lyong, Jungrae Kim, and Mattan Erez. "DRAM scaling error evaluation model using various retention time." 2017 47th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops (DSN-W). IEEE, 2017.
-- **[10]** Jung, Jeageun, and Mattan Erez. "Predicting Future-System Reliability with a Component-Level DRAM Fault Model." 2023 56th IEEE/ACM International Symposium on Microarchitecture (MICRO). IEEE, 2023.
+- **[10]** Cheng, Zhinan, et al. "An in-depth correlative study between DRAM errors and server failures in production data centers." 2022 41st International Symposium on Reliable Distributed Systems (SRDS). IEEE, 2022.
+- **[11]** Jung, Jeageun, and Mattan Erez. "Predicting Future-System Reliability with a Component-Level DRAM Fault Model." 2023 56th IEEE/ACM International Symposium on Microarchitecture (MICRO). IEEE, 2023.
